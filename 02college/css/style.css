@@ -32,3 +32,7 @@
 }
 /*- + 부분*/
 .util_menu .right li:last-child a{padding-right:0;} /*1200간격 맞춤*/
+
+.utilmenuWrap{width: 1200px; margin: 0 auto;}
+.icon{margin-right: 30px;}
+.menuOne li a{float: left; width: 50px;}

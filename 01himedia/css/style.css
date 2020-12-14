@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+/*header*/
+div.utilWrap{border-bottom: 1px solid #ccc; margin-bottom: 10px;} /*utilWrap아래에 라인 생성*/
+div.util{width: 980px; margin: 0 auto;} /*가운데 정렬하는 부분*/
+ul.utilMenu{width: 280px;margin-left: auto;} /* 위드값 계싼해서 지정 필수 메뉴들 오른쪽으로 붙임*/
+ul.utilMenu li{float: left; position: relative;}
+ul.utilMenu li:after{ /*li의 각 after 위치에 생성하겠다는 의미 */
+		content: ""; display: block; /*인라인 태그이므로 블록단위로 생성*/
+		width: 1px; height: 10px; /*막대기사이즈*/
+		background-color: #f00; /*메뉴들 사이에 막대기 생성*/
+		position: absolute;
+		right: 0; top: 10px; /*막대기 위치*/
+}
+
+ul.utilMenu li:first-child:before{
+	content: ""; display: block; 
+	width: 1px; height: 10px; 
+	background-color: #00f;
+	position: absolute; left: 0;top: 10px;} /*앞에 막대기 생성*/
+ul.utilMenu li:last-child:after{content: ""; display: none;} /*마지막 막대기 없애기*/
+ul.utilMenu li a{display: block; padding: 0 10px; line-height: 30px;}
+#header h1{text-align : center; margin-bottom: 15px;}
+
+div.gnbWrap{background-color: #1d5da4; }
+nav.gnbMenu{width: 980px; margin: 00 auto;}
+nav.gnbMenu li{
+	float: left; 
+	width: 163.333px; 
+	border-right: 1px solid white; /*border값까지 위드값에 포함되게 되어 넓어짐*/
+	box-sizing: border-box; /*border값으로 나가는걸 방지 */
+}
+nav.gnbMenu li:first-child{ border-left: 1px solid white; } /*앞에 막대기 추가*/
+nav.gnbMenu li a{
+	display: block; line-height: 45px; 
+	text-align: center; color: white;
+	font-weight:bold;
+}
+nav.gnbMenu li a:hover{background-color: skyblue; color: #1d5da4;}
+
+/*visual Wrap 슬라이드 영역*/
+.visualWrap{
+	height: 400px; /*블럭단위 이므로 위드 안넣음*/
+	overflow: hidden; /*전구 밑에 넘쳐서 배너에 맞게 자르게 함 */
+	background-color: #223a6a;
+	background-image: url(../images/main_bg01.jpg); /*사진이 크기때매 여러개 반복*/
+	background-repeat: no-repeat; /*사진을 하나만 나오게 함 */
+	background-position: center; /*배경이미지가 왼쪽으로 있어서 가운데 배치 50 50 은 center*/
+	/*background: #223a6a url(../images/main_bg01.jpg) no-repeat center; 위에 4줄 단축해서 이렇게 써도 됨 */
+}
+.visualWrap .visual{
+	width: 980px; margin: 0 auto; position: relative; /*비쥬얼이미지들의 부모이기 떄문에 줌*/
+}
+
+.visual img.visualimg1{
+	position: absolute; left: 10px; top:70px;
+}
+.visual img.visualimg2{
+	position: absolute; right:-50px; top: -10px;
+}
+
+
+/*banner section*/
+.section{ background: #eee; }
+ul.banner{ width: 980px; margin: 0 auto; }
+ul.banner li:nth-child(1){ background: #7c99b9; }
+ul.banner li:nth-child(2){ background: #4f74a1; }
+ul.banner li:nth-child(3){ background: #4b8ce0; }
+ul.banner li:nth-child(4){ background: #3db5f2; }
+ul.banner li:nth-child(5){ background: #95c8ff; }
+ul.banner li{ float: left; width:196px; }
+ul.banner li a{ display: block; height: 196px; text-align: center; color:white; /*padding: 17px;*/ }
+ul.banner p{ font-size: 12px; } 
+ul.banner img{margin: 0 auto;} 
+
+
+/*content section #1st*/
+.contWrapOne{width: 980px; margin:0 auto;}
+.contWrapOne .content li{
+	float: left; width: 310px; 
+	margin-right: 25px; 
+	cursor: pointer;
+	} /*거터값 25px삽입*/
+.contWrapOne .content li:last-child{margin-right: 0;} 
+.contWrapOne .content div.body{border: 1px solid #ccc; border-top: 0 none;}/*윗선제거*/
+/*border-left: 1px solid #ccc;
+border-right: 1px solid #ccc;
+border-bottom: 1px solid #ccc; body에 이렇게 적어도 같은 결과*/
+ .contWrapOne .content div.body p{
+ 	overflow: hidden;
+ 	white-space: nowrap;
+ 	text-overflow:ellipsis; /*줄 바꿈으로 두줄 만들거기 떄문에 문장에 <br> 추가*/
+ }
+
+/*content section #2st*/
+.contWrapTWo{ width: 980px; margin:0 auto;} 
+.contWrapTWo .content li{ 
+	float: left; 
+	width: 310px; margin-right: 25px;
+	border: 1px solid #ddd;
+	padding: 20px;
+	overflow: hidden;
+} 
+.contWrapTWo .content li:last-child{ margin-right: 0;} 
+
+			/*background image*/
+.contWrapTWo .content li:nth-child(1){
+	/*background-image: url(../images/content_icon01.png);
+	background-repeat: no-repeat; /*사진 여러개 나오는거 방지
+	background-position: 140px 10px; /*사진 위치 조정*/
+	position: relative;	
+}
+			/*position image*/
+.contWrapTWo .content li:nth-child(1) img{
+	position: absolute;
+	right:-30px; top:0; 
+}
+
+
+.contWrapTWo .content li:nth-child(2){
+	background-image: url(../images/content_icon02.png);
+	background-repeat: no-repeat; 
+	background-position: 130px 0px;
+}
+.contWrapTWo .content li:nth-child(3){
+	background-image: url(../images/content_icon03.png);
+	background-repeat: no-repeat; 
+	background-position: 130px 0px;
+}
+.contWrapTWo .content .body{ width: 150px; position: relative; } 
+.contWrapTWo .content .body a{ font-size:14px; color:#4b8ce0;} 
+
+
+/*footer*/
+footer#footer{background: #5e5e5e;}
+.footerTopWrap{background: #4d4d4d;}
+.footerTop{ width: 980px; margin:0 auto; }
+.footerTop li{ float: left; position: relative;  }
+.footerTop li:after{
+	content: ""; display: block;
+	 width: 1px; height: 16px; 
+	 background: white;
+	 position: absolute;
+	 right: 0px; top: 13px; 
+	 }
+
+.footerTop li a{ display: block; line-height: 40px; color:white; padding: 0 15px;} /*상하 0 좌우 15*/
+.footerTop li:first-child a{padding-left: 0;}
+
+.footerBottom{width: 980px; margin: 0 auto; color:white;}
+.footerBottom .logo{float: left; width: 200px; font-size:20px; font-weight:bold;}
+.footerBottom .copy{float: left;}
+
+
+
+
+
+
+
+
+/*margin bottom*/
+.mb10{margin-bottom: 10px !important;}
+.mb15{margin-bottom: 15px !important;}
+.mb20{margin-bottom: 20px !important;}
+.mb5{margin-bottom: 5px !important;}
+.mb30{margin-bottom: 30px !important;}
+
+/*padding all*/
+.pa10{padding: 10px !important;}
+.pa15{padding: 15px !important;}
+.pa20{padding: 20px !important;}
+.pa5{padding: 5px !important;}
+
+/*padding top*/
+.pt10{padding-top: 10px !important;}
+.pt15{padding-top: 15px !important;}
+.pt20{padding-top: 20px !important;}
+.pt5{padding-top: 5px !important;}
+
+/*padding bottom*/
+.pb20{padding-bottom: 20px;}

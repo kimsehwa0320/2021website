@@ -40,15 +40,12 @@
 .utilmenuWrap .gnb{float:right;}
 .utilmenuWrap .menuOne{position: absolute; right:150px;}
 .utilmenuWrap .menuOne li{
-	float:left; width:120px;  font-size:18px; height: 50px; line-height: 100px;
+	float:left; width:120px;  font-size:18px; 
+	height: 50px; line-height: 100px;
 	text-align: center; font-weight: bold;
 }
-.utilmenuWrap .menuOne li a{
-	display:block; width: 100%;height: 100%;
-}
-.utilmenuWrap .menuOne li:hover a{
-	color:darkgray;
-} 
+.utilmenuWrap .menuOne li a{ display:block; width: 100%;height: 100%; }
+.utilmenuWrap .menuOne li:hover a{ color:darkgray; } 
 .utilmenuWrap .tabBtn{position: absolute; top: 25px; right: 0;}
 .utilmenuWrap .tabBtn a:first-child{right:45px;}
 
@@ -62,16 +59,96 @@
 	padding-bottom: 100px; /*푸터 */
 }
 
+
 #contents .title{
 	width: 1200px; height: 260px;
 	margin: 0 auto; position: relative;
+}
+
+#contents .title .iconTxt{
+	float: left;
+	position: absolute;	
+	letter-spacing: -8px;
+	top: 75px;	
+}
+#contents .title .iconTxt p{ color:#fff; }
+#contents .title .iconTxt p:first-child{ font-size:55px; }
+#contents .title .iconTxt p:last-child{ font-size:65px; font-weight: 600; }
+#contents .title .iconTwo{
+	position: absolute;	
+	right: 0;top:80px;
+	width: 440px;	
+}
+#contents .title .iconTwo li{
+	float:left;
+	text-align: center;	
+	width: 25%;	
+	padding-right: 20px;
+	font-weight: bold;
+}
+#contents .title .iconTwo li a{
+	display:block;
+	font-size:14px;
+	color:#fff;
+	width: 100%;height: 100%;	
+}
+
+/*slider*/
+.bx-wrapper{
+	-moz-box-shadow: none;
+	-webkit-box-shadow: 
+	none;box-shadow: none;
+    border: none; 
+    margin-bottom: 0;
+}
+
+ul.banner li{position: relative;}
+ul.banner .sliderTxt{position: absolute; top: 80px; left: 100px;}
+ul.banner .sliderTxt p{
+	color:#0044af; font-size:60px; 
+	font-weight: 400; padding-bottom: 25px;
+	letter-spacing: -5px;
+}
+ul.banner li .sliderTxt a{
+	display:block; width: 170px; height: 40px; 
+	line-height: 40px; background: #192d4e; 
+	color: #fff; text-align: center;
+}
+
+/*APP img2*/
+.container .banner .img2{ position: relative; }
+
+.img2{position: absolute;}
+.img2Txt{ position: absolute; top:80px; left:40px; color: #fff;}
+
+.container .banner .img2 h3{
+	font-size:35px;
+	font-weight: 200;
+	line-height: 40px;	
+	padding-bottom: 35px;
+}
+.container .banner .img2 p{
+	font-size:16px;
+	line-height: 20px;
+	padding-bottom: 35px;
+}
+.container .banner .img2 a{
+	border: 1px solid #fff;
+	background-color: rgba(0,0,0,0.7);
+	display:block;
+	width: 170px;height: 40px;line-height: 40px;
+	text-align: center;	
+	color: #fff;
 }
 
 
 #contents .container{width: 1200px; margin: 0 auto; background: #fff;} 
 #contents .container>ul>li{float: left; width: 25%; height: 225px; } 
 #contents .container>ul>li:nth-child(2n){background: pink;} /*짝수값만 핑크 먹음 */
-#contents .container>ul>li:nth-child(1){width: 75%; height: 450px; background: gray;}
+#contents .container>ul>li:nth-child(1){
+	width: 75%; height: 450px; background: gray;
+	position: relative; overflow: hidden;
+}
 #contents .container>ul>li:nth-child(2){_width: 25%; height: 450px;}
 #contents .container>ul>li:nth-child(3){}
 #contents .container>ul>li:nth-child(4){}

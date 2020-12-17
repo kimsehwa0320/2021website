@@ -37,7 +37,7 @@
 .utilmenuWrap{background: #fff;width: 1200px; margin: 0 auto; position: relative;}
 
 .utilmenuWrap .icon{float:left;}
-.utilmenuWrap .gnb{float:right;}
+.utilmenuWrap .nav{float:right;}
 .utilmenuWrap .menuOne{position: absolute; right:150px;}
 .utilmenuWrap .menuOne li{
 	float:left; width:120px;  font-size:18px; 
@@ -45,9 +45,16 @@
 	text-align: center; font-weight: bold;
 }
 .utilmenuWrap .menuOne li a{ display:block; width: 100%;height: 100%; }
-.utilmenuWrap .menuOne li:hover a{ color:darkgray; } 
-.utilmenuWrap .tabBtn{position: absolute; top: 25px; right: 0;}
-.utilmenuWrap .tabBtn a:first-child{right:45px;}
+.utilmenuWrap .menuOne li:hover a{ color:#0044AF; } 
+.utilmenuWrap .tabBtn{
+	padding-top:5px;
+	padding-left:60px;
+}
+.utilmenuWrap .tabBtn a{	
+	margin-top: 30px;
+	display: block; float:left;
+	width: 45px; height: 45px;
+}
 
 /*contents*/
 #contents{
@@ -102,14 +109,14 @@
     margin-bottom: 0;
 }
 
-ul.banner li{position: relative;}
-ul.banner .sliderTxt{position: absolute; top: 80px; left: 100px;}
-ul.banner .sliderTxt p{
+ul.banner .slider1 li{position: relative;}
+ul.banner .slider1 .sliderTxt{position: absolute; top: 80px; left: 100px;}
+ul.banner .slider1 .sliderTxt p{
 	color:#0044af; font-size:60px; 
 	font-weight: 400; padding-bottom: 25px;
 	letter-spacing: -5px;
 }
-ul.banner li .sliderTxt a{
+ul.banner li .slider1 .sliderTxt a{
 	display:block; width: 170px; height: 40px; 
 	line-height: 40px; background: #192d4e; 
 	color: #fff; text-align: center;
@@ -118,8 +125,7 @@ ul.banner li .sliderTxt a{
 /*APP img2*/
 .container .banner .img2{ position: relative; }
 
-.img2{position: absolute;}
-.img2Txt{ position: absolute; top:80px; left:40px; color: #fff;}
+.img2 .img2Txt{ position: absolute; top:80px; left:40px; color: #fff;}
 
 .container .banner .img2 h3{
 	font-size:35px;

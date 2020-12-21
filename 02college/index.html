@@ -11,12 +11,26 @@
 	<script src="js/jquery-3.1.1.min.js"></script>
 	 <script src="js/jquery.bxslider.js"></script> 
 	<script>
-		$(document).ready(function(){
-			var mySlider = $(".slider1").bxSlider({pager:false, auto:true });
-			$(".prevbtn").click(function(){mySlider.goToPrevSlide()});
-			$(".nextbtn").click(function(){mySlider.goToNextSlide()});
-			$(".slider2").bxSlider({controls:false, pagerCustom:"slider2Index"});
-		});
+        $(document).ready(function(){
+            var myslider1 = $(".slider").bxSlider({
+                controls:false,
+            });
+
+            $(".nextBtn").click(function(){
+                myslider1.goToNextSlide();
+            });
+            $(".prevBtn").click(function(){
+                myslider1.goToPrevSlide();
+            });
+        });
+
+        $(document).ready(function(){
+            var myslider2 = $(".slider2").bxSlider({
+                controls:false,
+                pagerCustom:".slider2Index"
+
+            });
+        });
 	</script>
 </head>
 <body>
@@ -50,12 +64,12 @@
 				<li><a href="#">학사안내</a></li>
 				<li><a href="#">대학생활</a></li>
 				<li><a href="#">학생지원센터</a></li>
-				<li class="tabBtn">
-					<a href="#"></a>
-					<a href="#"></a>
+				<li class="tabBtn clearfix">
+					<a href="#"><img src="images/menu.jpg" alt=""></a>
+					<a href="#"><img src="images/mypage.jpg" alt=""></a>
 				</li>
 			</ul>
-		</nav>	
+			</nav>	
 		</div>
 	</header>
 
@@ -73,9 +87,9 @@
 			</ul>	
 		</section>
 		<div class="container"><!-- 1200 moauto-->
-		<ul class="banner clearfix">
-			<li>
-				<ul class="slider1">
+			<ul class="banner clearfix">
+				<li class="img1">
+					<ul class="slider">
 					<li>
 						<img src="images/img1.jpg" alt="img1">
 						<div class="sliderTxt">
@@ -91,15 +105,19 @@
 						</div>
 					</li>
 				</ul>
+				<div class="prevBtn"><img src="images/prev.png" alt=""></div>
+				<div class="nextBtn"><img src="images/next.png" alt=""></div>
 			</li><!-- 75% --> 
-			<li class="img2">
-					<img src="images/img2.jpg" alt="img2" >
-					<div class="img2Txt">
-						<h3><strong>APP</strong>으로<br><strong>스마트 도서관</strong><br>바로이용하자!</h3>
-						<p>모바일 열람증은<br>도서관 자료실 / 도서대출 등에<br>사용 할 수 있습니다.</p>
-						<a href="#">자세히보기 ▶</a>
-					</div>
+
+			<li class=img2>
+				<img src="images/img2.jpg" alt="">
+				<div class="img2Txt">
+					<h3><strong>APP</strong>으로<br><strong>스마트 도서관</strong><br>바로이용하자!</h3>
+					<p>모바일 열람증은<br>도서관 자료실 / 도서대출 등에<br>사용 할 수 있습니다.</p>
+					<a href="#">자세히보기 ▶</a>
+				</div>
 			</li><!--25-->
+
 			<li class="img3">
 					<h3>HOT LINK</h3>
 					<ul class="hot clearfix">
@@ -126,19 +144,21 @@
 					</ul>
 					
 			</li><!--25-->
-			<li class="img5">
-					<h3>SNS NEWS</h3>
+			<li class="img5 clearfix">
+				<h3>SNS NEWS</h3>
+				<div class="snsNews clearfix">
 					<img src="images/cam.jpg" alt="">
 					<p>한국 대학교는<br>2017학년도 신입생<br>입학식을 3월 2일(목)<br>본교 종합체육관 ...</p>
-					<div class="sns clearfix">
-						<a href="#"><img src="" alt=""></a>
-						<a href="#"><img src="" alt=""></a>
-						<a href="#"><img src="" alt=""></a>
-						<a href="#"><img src="" alt=""></a>
-					</div>
+				</div>
+				<div class="sns clearfix">
+						<a href="#"><img src="images/fb.PNG" alt=""></a>
+						<a href="#"><img src="images/gg.PNG" alt=""></a>
+						<a href="#"><img src="images/tw.PNG" alt=""></a>
+						<a href="#"><img src="images/you.PNG" alt=""></a>
+				</div>
 			</li><!--25-->
 			<li class="img6">
-					<img src="images/img.jpg" alt="">
+					<img src="images/img6.jpg" alt="">
 					<div class="img6Txt"><a href="#"></a>캠퍼스투어</a></div>
 			</li><!--25-->
 			<li class="img7">
@@ -207,9 +227,10 @@
 		<p>
 			대표자 : 홍길동 &nbsp; 서울특별시 구로구 구로로 300(구로동 6가) &nbsp; 사업자등록번호 : 123-56-7890234<br>
 			통신판매업 신고번호 : 제 1234-서울 구로구-1004호 &nbsp; 개인정보관리 책임자 : 홍길동 &nbsp; 소비자피해보상보험<br>
-			고객센터 : 1234-5678 &nbsp;  FAX : 02-1234-5678 &nbsp; HANGUKUNIVERSITY @HANGUK.COM
+			고객센터 : 1234-5678 &nbsp;  FAX : 02-1234-5678 &nbsp; HANGUKUNIVERSITY @HANGUK.COM <br>
+			COPYRIGHT (C) HANGUK. ALL RIGHTS RESERVED.
 		</p>
-		<p>COPYRIGHT (C) HANGUK. ALL RIGHTS RESERVED.</p>
+		
 	</footer>
 
 	

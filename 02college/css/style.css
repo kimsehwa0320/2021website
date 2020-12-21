@@ -18,7 +18,7 @@
 보여주기용으로 화ㅏ면 표시할때 스타일시트값이먹어져있음 본인사이트유지용*/
 .util_menu .left li a:hover{background: white; color: #333;}
 
-.util_menu .right li{float: left; color:#fff; font-size:0.8em;}
+.util_menu .right li{float: left; color:#fff; font-size:0.8em; padding-right: 28px;}
 .util_menu .right li a{
 	display: block; line-height:40px;
 	padding: 0 10px; color: #fff;
@@ -37,33 +37,27 @@
 .utilmenuWrap{background: #fff;width: 1200px; margin: 0 auto; position: relative;}
 
 .utilmenuWrap .icon{float:left;}
-.utilmenuWrap .nav{float:right;}
-.utilmenuWrap .menuOne{position: absolute; right:150px;}
+/*.utilmenuWrap .nav{float:right;}*/
+.utilmenuWrap nav{padding-top:20px;float: right;}
+/*.utilmenuWrap .menuOne{position: absolute; right:150px;}*/
 .utilmenuWrap .menuOne li{
-	float:left; width:120px;  font-size:18px; 
-	height: 50px; line-height: 100px;
+	float:left; width:120px;  _font-size:18px; 
+	_height: 50px; _line-height: 100px;
 	text-align: center; font-weight: bold;
 }
-.utilmenuWrap .menuOne li a{ display:block; width: 100%;height: 100%; }
+.utilmenuWrap .menuOne li:nth-child(5){margin-right:10px;}
+.utilmenuWrap .menuOne li a{ display:block; height:70px;width: 120px;line-height:45px;}
 .utilmenuWrap .menuOne li:hover a{ color:#0044AF; } 
 .utilmenuWrap .tabBtn{
-	padding-top:5px;
-	padding-left:60px;
+	width: 95px;
 }
-.utilmenuWrap .tabBtn a{
-	position: relative;	
-	margin-top: 30px;
+.utilmenuWrap .menuOne li.tabBtn a{
+	float: left;
 	display: block; 
-	width: 45px; height: 45px;
+	width: 45px; height: 45px;margin-right:5px;
 }
-.tabBtn a:first-child{	
-	background-image: url(../images/menu.jpg);
-	
-}
-.tabBtn a:last-child{	
-	background-image: url(../images/mypage.jpg);
-}
-
+.utilmenuWrap .menuOne li.tabBtn a:last-child{margin-right: 0;}
+.utilmenuWrap .menuOne li.tabBtn img{display: block;}
 
 
 /*contents*/
@@ -119,23 +113,34 @@
     margin-bottom: 0;
 }
 
-ul.banner .slider1 li{position: relative;}
-ul.banner .slider1 .sliderTxt{position: absolute; top: 80px; left: 100px;}
-ul.banner .slider1 .sliderTxt p{
+ul.banner .slider li{position: relative; }
+ul.banner .slider .sliderTxt{position: absolute; top: 80px; left: 100px; }
+ul.banner .slider .sliderTxt p{
 	color:#0044af; font-size:60px; 
 	font-weight: 400; padding-bottom: 25px;
 	letter-spacing: -5px;
 }
-ul.banner li .slider1 .sliderTxt a{
+ul.banner li .slider .sliderTxt a{
 	display:block; width: 170px; height: 40px; 
 	line-height: 40px; background: #192d4e; 
 	color: #fff; text-align: center;
 }
-
+.img1{position: relative;}
+.nextBtn,.prevBtn{
+	position: absolute;top:50%; margin-top:-50px; 
+	cursor:pointer; background: #000; opacity: 0.5;
+}
+.nextBtn{right:0px;}
+.prevBtn{left:0px;}
 /*APP img2*/
-.img2{ position: relative; }
 
-.img2 .img2Txt{ position: absolute; top:80px; left:40px; color: #fff;}
+.img2{
+    position: relative;
+}
+.img2 .img2Txt{
+    position: absolute; color: #fff;
+    top: 80px; left: 30px;
+}
 
 .img2 h3{
 	font-size:35px;
@@ -159,8 +164,7 @@ ul.banner li .slider1 .sliderTxt a{
 
 
 #contents .container{width: 1200px; margin: 0 auto; background: #fff;} 
-#contents .container>ul>li{float: left; width: 25%; height: 225px; } 
-#contents .container>ul>li:nth-child(2n){background: pink;} /*짝수값만 핑크 먹음 */
+#contents .container>ul>li{float: left; width: 25%; height: 225px; }  
 #contents .container>ul>li:nth-child(1){
 	width: 75%; height: 450px; background: gray;
 	position: relative; overflow: hidden;
@@ -175,13 +179,15 @@ ul.banner li .slider1 .sliderTxt a{
 
 .container .banner .img3 {
 	background: #00163B;
+	padding:20px 30px;
 }
 .img3 h3{ 
-	padding-top: 20px; color: #fff;
+	color: #fff;
 	font-weight: 600; font-size:20px;
-	padding-left:20px; padding-bottom: 30px;
+	margin-bottom: 20px;
+
 }
-.img3 .hot{ padding-left: 35px; }
+.img3 .hot{/* padding-left: 35px;*/ }
 .img3 .hot li{ float:left; padding-right:20px; }
 .img3 .hot li:last-child{ padding-right:0; }
 .img3 .hot li a{ color:#fff; text-align: center; font-size:13px; }
@@ -207,16 +213,14 @@ ul.banner li .slider1 .sliderTxt a{
 .img4 .not li a .day{ position: absolute; right:0;  margin-right:20px; }
 
 
-.container .banner .img5{ background: #fff; position: relative; }
+.img5{ background: #fff; }
 .img5 h3{
-	padding-top: 20px;color: #000; 
-	padding-left: 20px; font-weight: 600; 
-	font-size:20px; padding-bottom: 20px;
+	padding: 18px; color: #000; font-size:20px; 
 }
-.img5 img{ margin-right: 10px; padding-left: 20px; }
-.img5  p{ position: absolute; top:65px; right: 16px; font-size:15px; }
-.img5 .sns{ position: absolute; right: 10px;bottom: 20px; }
-.img5 .sns a{ width: 30px;height: 30px; }
+.img5 .snsNews img{ float:left; margin-left: 18px; }
+.img5  p{ float:left; font-size:15px;margin-left: 10px; }
+.img5 .sns{ margin-left: 120px; margin-top: 30px; }
+
 
 .container .banner .img6{ position:relative; }
 .img6 .img6Txt{
@@ -261,11 +265,11 @@ ul.banner li .slider1 .sliderTxt a{
 .img8 .slider2Index a:hover{ background-color: #f62b1f; }
 
 /*footer*/
-.footer{ width: 1200px; margin: 0 auto; }
+.footer{ width: 1200px; margin: 0 auto; padding:30px 0;}
 .footer .logo img{ display: block; float: left; list-style: 100%; }
 .footer .footerTxt {
 	float: left; font-size: 12px;
-	margin-top: 30px; color: #6b6b6b;
+	 color: #6b6b6b;
 }
 .footer .footerTxt .footer_util li{
 	float: left; padding: 0 18px; 
@@ -282,10 +286,4 @@ ul.banner li .slider1 .sliderTxt a{
 }
 .footer .footer_util a{ display: block; font-size: 12px; color: #6b6b6b; }
 .footer p{ float: left; font-size: 12px; color: #6b6b6b; line-height: 20px; }
-.footer p:last-child{
-	display: block;
-	float: left; font-size: 12px; 
-	color: #6b6b6b; line-height: 30px; 
-	padding-right: 100px;
-} 
 

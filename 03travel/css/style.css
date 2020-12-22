@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+
+/*header*/
+.headerMain{
+	position: relative;
+	background: #0763a2;
+	height: 88px;
+    background-image: url(../images/airplane.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.headerWrap{ width: 980px; margin: 0 auto; position: relative; }
+.headerWrap img{ 
+	cursor: pointer; float: left; 
+	padding-top: 3.5px; 
+}
+.headerWrap .sns li{ float: left; cursor: pointer; width: 25px; margin-left: 5px; }
+
+.headerWrap fieldset{ 
+	width: 300px; height: 30px; line-height: 30px;
+	position: absolute; border: 0 none; 
+	background: #fff; border-radius:145px 145px;
+}
+.headerWrap fieldset label{ margin-left: 10px; font-size:12px; }
+.headerWrap fieldset .search{ border: 0 none; }
+.headerWrap fieldset .search{ border: 0 none; }
+.headerWrap fieldset .ph{ position: absolute; color: #fff;  }
+
+.headerWrap .sns{position: absolute; right: 0;}
+
+.
+/*.headerWrap{ width: 1920px; margin: 0 auto;position: relative; }*/
+/*.headerMenu{ width: 1600px; position: absolute; top: 80px; left: 30px;
+}}
+.headerMenu img{  }*/
+
+/*.headerMenu{ width: 1600px;height: 99px; float: left; position: absolute; }*/
+

@@ -234,7 +234,7 @@ ul.banner li .slider .sliderTxt a{
 .img6 .img6Txt a{ display:block; }
 
 .img7{ position: relative; }
-.img7 .video{ position: absolute; top: 40%; left: 125px; transform: translate(0px,0px) scale(1); }
+.img7 .video{ position: absolute; top: 40%; left: 125px; cursor: pointer; transform: scale(1); }
 .img7 .video:hover{ transform: scale(1.5); }
 
 .slider2 li{ position: relative; }

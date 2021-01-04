@@ -113,7 +113,119 @@ html,body{height: 100%;}
 	float:left;
 	width: 480px; height: 565px;
 }
-.conSlide .sl .sr{width: 100%;height: 300px;background: #ddd; margin-bottom: 20px;}
+.conSlide .sl .sr{width: 100%;height: 300px;background: #fff; margin-bottom: 20px;}
+
+
+.sr{
+    padding: 20px; 
+}
+.sr fieldset{
+    border: 0 none;
+    position: relative;
+    left: 30px;
+}
+.sr fieldset label{
+    float: left; display: block;
+    font-weight: bold; letter-spacing: -3px;
+}
+.sr .ct{
+    width: 280px;
+}
+.sr .go,.sr .stop{
+    width: 130px;
+}
+.sr input.go,.sr input.stop{
+	float: left;display: block; 
+	height: 30px;color: #cdcdcd;
+    border: 2px solid #ededed;
+    text-indent: 3px;/*font-weight:bold;*/
+    margin-top: 5px;margin-bottom: 10px;
+    border-radius: 5px;
+}
+.sr .seat{float: left;width: 120px;margin-right: 20px;}
+.sr .adult,.sr .baby{float: left;display: block;width: 66px;}
+.sr .adult{margin-right: 8px;}
+.sr .go{margin-right: 20px;}
+
+.sr fieldset select{
+    border: 2px solid #ededed;
+    border-radius: 5px;height: 30px;
+    color: #d2d2d2;text-indent: 3px;
+    margin-top: 5px;margin-bottom: 10px;
+}
+.sr .searchSubmit{
+    width: 282px;
+    height: 38px;
+    border: 0 none;
+    background: #e8501f;
+    border-radius: 10px;
+    background-image: url(../images/searchSubmit.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 15px;
+    margin-left: 140px;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+
+.slTab{
+    width: 130px;
+    height: 300px;
+    float: left;
+    text-indent:-9999px;
+}
+.slTab a.slTab1{
+    height: 75px; width: 120px;
+    display: block;
+    background: #006599;
+}
+.slTab a.slTab2{
+    height: 75px; width: 120px;
+    display: block;
+    background: #0099cb;
+}
+.slTab a.slTab3{
+    height: 75px; width: 120px;
+    display: block;
+    background: #0099cb;
+}
+.slTab a.slTab4{
+    height: 75px; width: 120px;
+    display: block;
+    background: #0099cb;
+}
+
+@keyframes b1{
+    0%{transform:translate(-250px, -70px);}
+    50%{transform:translate(-250px, -100px);}
+    100%{transform:translate(-250px, -70px);}
+}
+@keyframes b2{
+    0%{transform:translate(-200px, -30px);}
+    50%{transform:translate(-200px, -70px);}
+    100%{transform:translate(-200px, -30px);}
+}
+
+
+.contents02 .b1{
+    transform:translate(-250px, -70px);
+    animation-name: b1;
+    animation-duration: 5s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+.sectionOwn .b2{
+    transform:translate(-200px, -30px);
+    animation-name: b2;
+    animation-duration: 5s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+
 
 .conSlide .sl ul.contents01 li{
 	float:left; width: 230px; 

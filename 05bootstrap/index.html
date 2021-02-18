@@ -5,16 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>:::COMPANY:::</title>
-  <link rel="stylesheet" href="css./reset.css">
-  <link rel="stylesheet" href="css./all.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
   <style>
     :root{
       --primary-color1:#4458cc;
-      --primary-color2:#854f22;
+      --primary-color2:#854fee;
       --bg-color1:#efefef;
       --bg-color2:#f0f0f0;
       --text-color:#777;
@@ -26,6 +29,7 @@
     .headerWrap .nav-item{font-size:1.3em;border-bottom:4px solid transparent; transition: 0.3s;}
     /* transparent : 밑줄 색 없애기 */
     .headerWrap .nav-item:hover{border-bottom: 4px solid var(--primary-color2);}
+    .headerWrap.fixed-top{box-shadow: 0 0 20px gray; transition: 0.3s;}
     .visualWrap{
       background: url(assets/slider-bg.svg) no-repeat center;
       -webkit-background-size: cover;
@@ -41,7 +45,7 @@
 <body>
   <!-- navbar-light : 어두운 색 navbar-light : 밝은 색-->
   <!-- headerWrap start -->
-<div class="headerWrap">
+<div class="headerWrap bg-white">
   <div class="container pl-0 pr-0">
     <nav class="navbar navbar-expand-lg navbar-light">
       <a href="#" class="navbar-brand">
@@ -107,12 +111,13 @@
 <!-- content end -->
 
 <style>
-.service h2.title:after{
+.service h2.title:after,
+.portfolio h2.title:after{
   content:"";display: block;margin: 10px auto;
   width: 200px;height: 2px;
   background: var(--primary-color1);
 }
-.service p.subtitle{color:var(--text-color)}
+.service p.subtitle,.portfolio p.subtitle{color:var(--text-color)}
 .service .card img{height: 200px;}
 .service .card{background: var(--bg-color2);border: 0 none;transition: 0.3s;cursor: pointer;}
 .service .card:hover{box-shadow: var(--box-shadow);transform: scale(1.1)}
@@ -161,9 +166,92 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </div>
+<!-- service end -->
+<style>
+.portfolio .button-group button{
+  background: none; border: 0 none; font-weight:bold; outline:none; font-size:1.1em;
+}
+.portfolio .button-group button+button{margin-left: 30px;}
+.portfolio .button-group button.active{color:var(--primary-color2)}
+.portfolio .element-item img{border-radius: 5px;transition: 0.3s;}
+.portfolio .element-item img:hover{box-shadow: var(--box-shadow)}
+</style>
+<!-- portfolio -->
+<div class="portfolio">
+  <div class="container py-5">
+    <h2 class="title text-center">PORTFOLIO</h2>
+    <p class="subtitle text-center mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, perferendis.</p>
+    <div class="button-group mb-3">
+      <button type="button" data-filter="*" class="active" id="btn1">ALL</button>
+      <button type="button" data-filter=".website">WEBSITE</button>
+      <button type="button" data-filter=".illust">ILLUST</button>
+      <button type="button" data-filter=".photoshop">PHOTOSHOP</button>
+    </div>
+    <div class="row view">
+      <div class="col-6 col-lg-4 element-item website mb-3">
+        <img src="assets/servicos/1.jpg" alt="" class="img-fluid">
+      </div>
+      <div class="col-6 col-lg-4 element-item illust mb-3">
+        <img src="assets/servicos/2.jpg" alt="" class="img-fluid">
+      </div>
+      <div class="col-6 col-lg-4 element-item photoshop mb-3">
+        <img src="assets/servicos/3.jpg" alt="" class="img-fluid">
+      </div>
+      <div class="col-6 col-lg-4 element-item website mb-3">
+        <img src="assets/servicos/4.jpg" alt="" class="img-fluid">
+      </div>
+      <div class="col-6 col-lg-4 element-item illust mb-3">
+        <img src="assets/servicos/5.jpg" alt="" class="img-fluid">
+      </div>
+      <div class="col-6 col-lg-4 element-item photoshop mb-3">
+        <img src="assets/servicos/6.jpg" alt="" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+// menu
+  var navOffset = $(".headerWrap").height()+50;
+  function navBar(){
+    $(window).scroll(function(){
+      var scroll = $(window).scrollTop();
+      if(scroll>navOffset){
+        $(".headerWrap").addClass("fixed-top");
+      }else{
+        $(".headerWrap").removeClass("fixed-top");
+      }
+    });
+  }
+  navBar();
+
+  //portfolio
+  var btns = $(".portfolio .button-group button");
+  btns.click(function(e){
+    btns.removeClass('active');
+    e.target.classList.add("active")
+
+    var selector = $(e.target).attr("data-filter");
+    $(".portfolio .view").isotope({
+      filter:selector
+    });
+    return false;
+  });
+
+  // isotope 초기화
+  $(".portfolio .button-group #btn1").trigger('click');
+
+</script>
+
+
+
+
+
+
+
 </body>
 </html>

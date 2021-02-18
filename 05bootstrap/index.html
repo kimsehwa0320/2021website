@@ -15,6 +15,8 @@
     :root{
       --primary-color1:#4458cc;
       --primary-color2:#854f22;
+      --bg-color1:#efefef;
+      --bg-color2:#f0f0f0;
       --text-color:#777;
       --border-color:#20f1f1;
       --gradient-color:linear-gradient(90deg,#4458dc 0%,#854fee 100%);
@@ -31,6 +33,8 @@
     }
     .button.primary-button{box-shadow:var(--box-shadow);background: var(--gradient-color); color:#fff;}
     .secondary-button{box-shadow:var(--box-shadow);}
+    /* content */
+    .content{background: var(--bg-color1);}
 
   </style>
 </head>
@@ -82,8 +86,84 @@
     </div>
   </div>
 </div>
+<!-- visual end -->
+<!-- content start -->
+<div class="content">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-6 text-center order-2 order-md-1">
+        <img src="assets/sobre.svg" alt="" class="img-fluid">
+      </div>
+      <div class="col-md-6 order-1 order-md-2 text-center text-md-left mb-5 mb-md-0">
+        <!-- order-1 : 자식요소의 몇번째 요소 나오게 할지 (글자를 먼저 나오게 함) -->
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, consequuntur.</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat ipsam, fugiat voluptates eaque deserunt quia, similique in ab ipsum temporibus hic facere! Id reiciendis aperiam hic nisi quidem, porro dolore.</p>
+        <a href="#!" class="btn button primary-button px-3 d-block d-md-inline-block">ENTER CONTACT</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- content end -->
 
+<style>
+.service h2.title:after{
+  content:"";display: block;margin: 10px auto;
+  width: 200px;height: 2px;
+  background: var(--primary-color1);
+}
+.service p.subtitle{color:var(--text-color)}
+.service .card img{height: 200px;}
+.service .card{background: var(--bg-color2);border: 0 none;transition: 0.3s;cursor: pointer;}
+.service .card:hover{box-shadow: var(--box-shadow);transform: scale(1.1)}
 
+</style>
+<!-- service start -->
+<div class="service">
+  <div class="container py-5">
+    <h2 class="title text-center">SERVICE</h2>
+    <p class="subtitle text-center mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, perferendis.</p>
+    <div class="row">
 
+      <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+        <div class="card pt-4 pl-3 pr-3 text-center">
+          <img src="assets/destaque1.svg" alt="" class="img-fluid m-3">
+          <div class="card-body">
+            <h4 class="card-title">Lorem ipsum.</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, nostrum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+        <div class="card pt-4 pl-3 pr-3 text-center">
+          <img src="assets/destaque2.svg" alt="" class="img-fluid m-3">
+          <div class="card-body">
+            <h4 class="card-title">Lorem ipsum.</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, nostrum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+        <div class="card pt-4 pl-3 pr-3 text-center">
+          <img src="assets/destaque3.svg" alt="" class="img-fluid m-3">
+          <div class="card-body">
+            <h4 class="card-title">Lorem ipsum.</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, nostrum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+        <div class="card pt-4 pl-3 pr-3 text-center">
+          <img src="assets/destaque4.svg" alt="" class="img-fluid m-3">
+          <div class="card-body">
+            <h4 class="card-title">Lorem ipsum.</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, nostrum.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
 </body>
 </html>

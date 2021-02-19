@@ -5,15 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>:::COMPANY:::</title>
+
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="js/isotope.pkgd.min.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+
+
   <style>
     :root{
       --primary-color1:#4458cc;
@@ -112,12 +119,15 @@
 
 <style>
 .service h2.title:after,
-.portfolio h2.title:after{
+.portfolio h2.title:after,
+.customer h2.title:after{
   content:"";display: block;margin: 10px auto;
   width: 200px;height: 2px;
   background: var(--primary-color1);
 }
-.service p.subtitle,.portfolio p.subtitle{color:var(--text-color)}
+.service p.subtitle,
+.portfolio p.subtitle,
+.customer p.subtitle{color:var(--text-color)}
 .service .card img{height: 200px;}
 .service .card{background: var(--bg-color2);border: 0 none;transition: 0.3s;cursor: pointer;}
 .service .card:hover{box-shadow: var(--box-shadow);transform: scale(1.1)}
@@ -202,7 +212,7 @@
       <!--  -->
       <div class="col-6 col-lg-4 element-item illust mb-3">
         <a href="assets/servicos/2.jpg" class="popup_link d-block mb-3">
-          <img src="assets/servicos/1.jpg" alt="" class="img-fluid">
+          <img src="assets/servicos/2.jpg" alt="" class="img-fluid">
         </a>
         <h4 class="mb-0">Lorem ipsum.</h4>
         <p>Lorem ipsum dolor sit.</p>
@@ -210,7 +220,7 @@
       <!--  -->
       <div class="col-6 col-lg-4 element-item website mb-3">
         <a href="assets/servicos/3.jpg" class="popup_link d-block mb-3">
-          <img src="assets/servicos/1.jpg" alt="" class="img-fluid">
+          <img src="assets/servicos/3.jpg" alt="" class="img-fluid">
         </a>
         <h4 class="mb-0">Lorem ipsum.</h4>
         <p>Lorem ipsum dolor sit.</p>
@@ -218,7 +228,7 @@
       <!--  -->
       <div class="col-6 col-lg-4 element-item photoshop mb-3">
         <a href="assets/servicos/4.jpg" class="popup_link d-block mb-3">
-          <img src="assets/servicos/1.jpg" alt="" class="img-fluid">
+          <img src="assets/servicos/4.jpg" alt="" class="img-fluid">
         </a>
         <h4 class="mb-0">Lorem ipsum.</h4>
         <p>Lorem ipsum dolor sit.</p>
@@ -226,7 +236,7 @@
       <!--  -->
       <div class="col-6 col-lg-4 element-item illust mb-3">
         <a href="assets/servicos/5.jpg" class="popup_link d-block mb-3">
-          <img src="assets/servicos/1.jpg" alt="" class="img-fluid">
+          <img src="assets/servicos/5.jpg" alt="" class="img-fluid">
         </a>
         <h4 class="mb-0">Lorem ipsum.</h4>
         <p>Lorem ipsum dolor sit.</p>
@@ -234,15 +244,80 @@
       <!--  -->
       <div class="col-6 col-lg-4 element-item illust mb-3">
         <a href="assets/servicos/6.jpg" class="popup_link d-block mb-3">
-          <img src="assets/servicos/1.jpg" alt="" class="img-fluid">
+          <img src="assets/servicos/6.jpg" alt="" class="img-fluid">
         </a>
         <h4 class="mb-0">Lorem ipsum.</h4>
         <p>Lorem ipsum dolor sit.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- slider (customer) -->
+<style>
+.customer .sliderView{
+  padding: 30px; border-radius: 5px; background: var(--bg-color2);
+}
+</style>
+<div class="customer">
+  <div class="container">
+    <h2 class="title text-center">CUSTOMER</h2>
+    <p class="subtitle text-center mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, perferendis.</p>
+    <div class="owl-carousel owl-theme owl-loaded">
+      <!-- #1 -->
+      <div>
+        <div class="sliderView d-flex">
+          <img src="assets/user.svg" alt="" class="img-fluid" style="max-width:150px">
+          <div class="pl-3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, sed.</p>
+            <p>
+              <img src="assets/quote.svg" alt="" style="max-width:35px" class="d-block ml-auto">
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- #2 -->
+      <div>
+        <div class="sliderView d-flex">
+          <img src="assets/user.svg" alt="" class="img-fluid" style="max-width:150px">
+          <div class="pl-3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, sed.</p>
+            <p>
+              <img src="assets/quote.svg" alt="" style="max-width:35px" class="d-block ml-auto">
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- #3 -->
+      <div>
+        <div class="sliderView d-flex">
+          <img src="assets/user.svg" alt="" class="img-fluid" style="max-width:150px">
+          <div class="pl-3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, sed.</p>
+            <p>
+              <img src="assets/quote.svg" alt="" style="max-width:35px" class="d-block ml-auto">
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- #4 -->
+      <div>
+        <div class="sliderView d-flex">
+          <img src="assets/user.svg" alt="" class="img-fluid" style="max-width:150px">
+          <div class="pl-3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, sed.</p>
+            <p>
+              <img src="assets/quote.svg" alt="" style="max-width:35px" class="d-block ml-auto">
+            </p>
+          </div>
+        </div>
       </div>
 
     </div>
   </div>
 </div>
+
 
 
 <script>
@@ -278,6 +353,20 @@
 
   //magnify
   $(".view .popup_link").magnificPopup({type:"image"})
+
+  // owl-carousel
+  $(".customer .owl-carousel").owlCarousel({
+    loop:false,
+    margin:30,
+    autoplay:true,
+    dots:true,
+    nav:false,
+    responsive:{
+      0:{items:1},
+      600:{items:1},
+      1000:{items:2}
+    }
+  });
 
 </script>
 

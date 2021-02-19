@@ -191,24 +191,55 @@
       <button type="button" data-filter=".photoshop">PHOTOSHOP</button>
     </div>
     <div class="row view">
+      <!--  -->
       <div class="col-6 col-lg-4 element-item website mb-3">
-        <img src="assets/servicos/1.jpg" alt="" class="img-fluid">
+        <a href="assets/servicos/1.jpg" class="popup_link d-block mb-3">
+          <img src="assets/servicos/1.jpg" alt="" class="img-fluid">
+        </a>
+        <h4 class="mb-0">Lorem ipsum.</h4>
+        <p>Lorem ipsum dolor sit.</p>
       </div>
+      <!--  -->
       <div class="col-6 col-lg-4 element-item illust mb-3">
-        <img src="assets/servicos/2.jpg" alt="" class="img-fluid">
+        <a href="assets/servicos/2.jpg" class="popup_link d-block mb-3">
+          <img src="assets/servicos/1.jpg" alt="" class="img-fluid">
+        </a>
+        <h4 class="mb-0">Lorem ipsum.</h4>
+        <p>Lorem ipsum dolor sit.</p>
       </div>
-      <div class="col-6 col-lg-4 element-item photoshop mb-3">
-        <img src="assets/servicos/3.jpg" alt="" class="img-fluid">
-      </div>
+      <!--  -->
       <div class="col-6 col-lg-4 element-item website mb-3">
-        <img src="assets/servicos/4.jpg" alt="" class="img-fluid">
+        <a href="assets/servicos/3.jpg" class="popup_link d-block mb-3">
+          <img src="assets/servicos/1.jpg" alt="" class="img-fluid">
+        </a>
+        <h4 class="mb-0">Lorem ipsum.</h4>
+        <p>Lorem ipsum dolor sit.</p>
       </div>
-      <div class="col-6 col-lg-4 element-item illust mb-3">
-        <img src="assets/servicos/5.jpg" alt="" class="img-fluid">
-      </div>
+      <!--  -->
       <div class="col-6 col-lg-4 element-item photoshop mb-3">
-        <img src="assets/servicos/6.jpg" alt="" class="img-fluid">
+        <a href="assets/servicos/4.jpg" class="popup_link d-block mb-3">
+          <img src="assets/servicos/1.jpg" alt="" class="img-fluid">
+        </a>
+        <h4 class="mb-0">Lorem ipsum.</h4>
+        <p>Lorem ipsum dolor sit.</p>
       </div>
+      <!--  -->
+      <div class="col-6 col-lg-4 element-item illust mb-3">
+        <a href="assets/servicos/5.jpg" class="popup_link d-block mb-3">
+          <img src="assets/servicos/1.jpg" alt="" class="img-fluid">
+        </a>
+        <h4 class="mb-0">Lorem ipsum.</h4>
+        <p>Lorem ipsum dolor sit.</p>
+      </div>
+      <!--  -->
+      <div class="col-6 col-lg-4 element-item illust mb-3">
+        <a href="assets/servicos/6.jpg" class="popup_link d-block mb-3">
+          <img src="assets/servicos/1.jpg" alt="" class="img-fluid">
+        </a>
+        <h4 class="mb-0">Lorem ipsum.</h4>
+        <p>Lorem ipsum dolor sit.</p>
+      </div>
+
     </div>
   </div>
 </div>
@@ -244,6 +275,9 @@
 
   // isotope 초기화
   $(".portfolio .button-group #btn1").trigger('click');
+
+  //magnify
+  $(".view .popup_link").magnificPopup({type:"image"})
 
 </script>
 

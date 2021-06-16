@@ -44,6 +44,10 @@
             $(".top_btn").fadeOut();
           }
         } );
+
+        var tabmove = function(number) {
+          location.href = "product.html?tab=" + number;
+        };
       });
 
     $(function(){
@@ -115,6 +119,21 @@
         $(".menu-trigger").removeClass("change");
         $("#main_menu").removeAttr("style");
       });
+
+      $("body").append("<div id=\"glayLayer\"></div><div id=\"overLayer\"></div>");
+
+            $("a.modal").click(function(e){
+              e.preventDefault();
+              //return false;
+              var ahref = $(this).attr("href");
+              console.log(ahref);
+              $("#glayLayer").show();
+              $("#overLayer").show().html("<img src=\"" + ahref + "\">");
+            });
+            $("#glayLayer,#overLayer").click(function(){
+              $("#glayLayer,#overLayer").hide();
+            });
+
     });
   </script>
 </head>
@@ -142,10 +161,15 @@
       <ul class="clearfix" id="topMenu">
         <li><a href="index.html"><img src="images/k_logo.png" alt="" class="hd_logo blind_pc">HOME</a></li>
         <li class="blind_pc">&nbsp;</li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="product.html">PRODUCT</a></li>
-        <li><a href="support.html">SUPPORT</a></li>
-        <!-- <li data-menuanchor="m5st"><a href="#m5st">SERVICE</a></li> -->
+        <li><a href="about.html" class="pp">ABOUT</a></li>
+        <li><a href="product.html" class="pp">PRODUCT</a></li>
+        <li><a href="support.html" class="pp">SUPPORT</a></li>
+        <ul class="clearfix" id="topMenu_2">
+          <li></li>
+          <li></li>
+          <li><a href="https://www.facebook.com/Klarwind-US-104259765185755/?ref=pages_you_manage" target="_blank"><img src="images/fb.png" alt=""></a></li>
+          <li><a href="https://instagram.com/klarwind_usa?utm_medium=copy_link" target="_blank"><img src="images/ig.png" alt=""></a></li>
+        </ul>
       </ul>
     </div>
     <div class="bar">
@@ -163,17 +187,17 @@
     <div class="section page1" data-anchor="m1st">
       <div class="its blind_pc">
         <h1>IT’S</h1>
-        <h2>KLARWIND</h2>
+        <h2>Klarwind</h2>
       </div>
       <div class="blind_mo">
-        <h1>IT’S KLARWIND</h1>
+        <h1>IT’S Klarwind</h1>
       </div>
       <div class="go wow fadeIn blind_pc" data-wow-delay="0.4s">
-        <p class="vWrap"><a href="https://www.amazon.com/ref=nav_logo" target="blank">GO<br>AMAZON</a></p>
+        <p class="vWrap"><a href="https://www.amazon.com/s?k=klarwind&ref=nb_sb_noss_2" target="blank">GO<br>AMAZON</a></p>
         <div class="vWrap_bg"></div>
       </div>
       <div class="go wow fadeIn blind_mo" data-wow-delay="0.4s">
-        <p class="vWrap"><a href="https://www.amazon.com/ref=nav_logo" target="blank">GO AMAZON</a></p>
+        <p class="vWrap"><a href="https://www.amazon.com/s?k=klarwind&ref=nb_sb_noss_2" target="blank">GO AMAZON</a></p>
       </div>
       <div class="sliderWrap">
         <ul class="msinSlide">
@@ -192,7 +216,7 @@
           <li>
             <img src="images/main3.jpg" alt="">
             <div class="mainTxt3">
-              <p>To make <br> &nbsp;<span class="mainh3">"you Comfort"</span></p>
+              <p>To make &nbsp;<span class="mainh3">"you Comfort"</span></p>
             </div>
           </li>
         </ul>
@@ -280,7 +304,7 @@
           <div class="klarwind300">
             <h1>Klarwind 100</h1>
             <p>Klarwind 100 is designed to cover up to small size room or kids room.</p>
-            <a href="product.html">coming</a>
+            <a href="product.html">Coming Soon</a>
           </div>
         </div>
         <div class="mySlides">
@@ -290,7 +314,8 @@
           <div class="klarwind300">
             <h1>Klarwind 300</h1>
             <p>Klarwind 300 is designed to cover up to medium size room.</p>
-            <a href="product.html">more</a>
+            <a onClick="tabmove(1)">More</a>
+
           </div>
         </div>
         <div class="mySlides">
@@ -300,7 +325,7 @@
           <div class="klarwind300">
             <h1>Klarwind 500</h1>
             <p>Klarwind 500 is designed to cover up to large size room.</p>
-            <a href="product.html">more</a>
+            <a onClick="tabmove(2)">More</a>
           </div>
         </div>
         <div class="mySlides">
@@ -310,7 +335,7 @@
           <div class="klarwind300">
             <h1>Klarwind 500S</h1>
             <p>Klarwind 500S is designed to cover up to large size room.</p>
-            <a href="product.html">more</a>
+            <a onClick="tabmove(3)">More</a>
           </div>
         </div>
         <div class="mySlides">
@@ -320,7 +345,7 @@
           <div class="klarwind300">
             <h1>Klarwind 700</h1>
             <p>Klarwind 700 is designed to cover up to work space or office.</p>
-            <a href="product.html">more</a>
+            <a onClick="tabmove(4)">More</a>
           </div>
         </div>
         <a class="prev" onclick="plusSlides(-1)">❮</a>

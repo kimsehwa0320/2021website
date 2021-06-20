@@ -15,7 +15,8 @@
 	<link rel="stylesheet" href="../css/animate.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
-  <script src="js/sub_menu.js"></script>
+  <script src="js/jquery.easypiechart.js"></script>
+  <script src="js/jquery.easypiechart.min.js"></script>
 	<script src="js/wow.js"></script>
 	<script>
 		new WOW().init();
@@ -126,93 +127,80 @@
           $('.tab-cont').eq(index).css('display','block');
 
         });
+
+        $('.chart1').easyPieChart({
+          barColor: '#707070',
+          trackColor: 'rgba(255, 255, 255, 0.1)',
+          scaleColor: false,
+          lineCap: 'butt',
+          lineWidth: 35,
+          size: 240,
+          animate: 1000,
+          onStart: $.noop,
+          onStop: $.noop
+        });
+        $('.chart2').easyPieChart({
+          barColor: '#705a4c',
+          trackColor: 'rgba(255, 255, 255, 0.1)',
+          scaleColor: false,
+          lineCap: 'butt',
+          lineWidth: 35,
+          size: 240,
+          animate: 1000,
+          onStart: $.noop,
+          onStop: $.noop
+        });
+        $('.chart3').easyPieChart({
+          barColor: '#81ad54',
+          trackColor: 'rgba(255, 255, 255, 0.1)',
+          scaleColor: false,
+          lineCap: 'butt',
+          lineWidth: 35,
+          size: 240,
+          animate: 1000,
+          onStart: $.noop,
+          onStop: $.noop
+        });
+        $('.chart4').easyPieChart({
+          barColor: '#707070',
+          trackColor: 'rgba(255, 255, 255, 0.1)',
+          scaleColor: false,
+          lineCap: 'butt',
+          lineWidth: 20,
+          size: 100,
+          animate: 1000,
+          onStart: $.noop,
+          onStop: $.noop
+        });
+        $('.chart5').easyPieChart({
+          barColor: '#705a4c',
+          trackColor: 'rgba(255, 255, 255, 0.1)',
+          scaleColor: false,
+          lineCap: 'butt',
+          lineWidth: 20,
+          size: 100,
+          animate: 1000,
+          onStart: $.noop,
+          onStop: $.noop
+        });
+        $('.chart6').easyPieChart({
+          barColor: '#81ad54',
+          trackColor: 'rgba(255, 255, 255, 0.1)',
+          scaleColor: false,
+          lineCap: 'butt',
+          lineWidth: 20,
+          size: 100,
+          animate: 1000,
+          onStart: $.noop,
+          onStop: $.noop
+        });
+
+
       });
 
-      var piesiteFired = 0;
-      $(document).ready(function() {
-          var $win = $(window),
-              $win_height = $(window).height(),
-              // - A multiple of viewport height - The higher this number the sooner triggered.
-              windowPercentage = $(window).height() * 0.9;
-          $win.on("scroll", scrollReveal);
-          function scrollReveal() {
-              var scrolled = $win.scrollTop();
-
-      $(".piesite").each(function() {
-                 var $this = $(this),
-                     offsetTop = $this.offset().top;
-                 if (
-                     scrolled + windowPercentage > offsetTop ||
-                     $win_height > offsetTop
-                 ) {
-                     if (piesiteFired == 0) {
-                         timerSeconds = 3;
-                         timerFinish = new Date().getTime() + timerSeconds * 1000;
-                         $(".piesite").each(function(a) {
-                             pie = $("#pie_" + a).data("pie");
-                             timer = setInterval(
-                                 "stoppie(" + a + ", " + pie + ")",
-                                 0
-                             );
-                         });
-                         piesiteFired = 1;
-                     }
-                 } else {
-                     // To keep them triggered, lose this block.
-                     $(".piesite").each(function() {
-                         piesiteFired = 0;
-                     });
-                 }
-             });
-         }
-         scrollReveal();
-      });
-
-      var timer;
-      var timerFinish;
-      var timerSeconds;
-
-      function drawTimer(c, a) {
-         $("#pie_" + c).html(
-             '<div class="percent"></div><div id="slice"' +
-                 (a > 200 ? ' class="gt50"' : "") +
-                 '><div class="pie"></div>' +
-                 (a > 200 ? '<div class="pie fill"></div>' : "") +
-                 "</div>"
-         );
-         var b = 360 / 400 * a;
-         $("#pie_" + c + " #slice .pie").css({
-             "-moz-transform": "rotate(" + b + "deg)",
-             "-webkit-transform": "rotate(" + b + "deg)",
-             "-o-transform": "rotate(" + b + "deg)",
-             transform: "rotate(" + b + "deg)"
-         });
-         a = Math.floor(a * 400) / 400;
-         arr = a.toString().split(".");
-         intPart = arr[0];
-         $("#pie_" + c + " .percent").html(
-             '<span class="int">' +
-                 intPart +
-                 "</span>" +
-                 '<span class="symbol">%</span>'
-         );
-      }
-      function stoppie(d, b) {
-         var c = (timerFinish - new Date().getTime()) / 1000;
-         var a = 400 - c / timerSeconds * 400;
-         a = Math.floor(a * 400) / 400;
-         if (a <= b) {
-             drawTimer(d, a);
-         } else {
-             b = $("#pie_" + d).data("pie");
-             arr = b.toString().split(".");
-             $("#pie_" + d + " .percent .int").html(arr[0]);
-         }
-      }
 
   </script>
 </head>
-
 <header>
 <div class="header_top">
   <nav id="navTop">
@@ -289,7 +277,7 @@ $(".subMenuTab li").click(function(){
 });
 $(document).ready(function() {
   $(".accordionTxt").hide();
-  //content 클래스를 가진 div를 표시/숨김(토글)
+
   $(".heading").click(function()
   {
     $(this).next(".accordionTxt").slideToggle(500);
@@ -322,7 +310,7 @@ $(document).ready(function() {
     <div class="ProductSub_container">
       <div class="subMenuTab">
         <ul class="tabtitle">
-          <li>KLARWIND 100</li>
+          <li class="selected">KLARWIND 100</li>
           <li>KLARWIND 300</li>
           <li>KLARWIND 500</li>
           <li>KLARWIND 500S</li>
@@ -445,13 +433,13 @@ $(document).ready(function() {
               <div class="product2"></div>
             </li>
             <li class="k300Sub_3">
-              <h1>Super strong High-purification of Dual air flow</h1>
+              <h1 class="w720">Super strong High-purification of Dual air flow</h1>
               <h3>The ultimate air care by its dual air flow</h3>
               <div class="product3"></div>
             </li>
             <li class="k300Sub_4">
               <h1>Over 99.9% filiteration by HEPA filter</h1>
-              <h3>The powerful performance of Hepa Filter removes over 99.9% ultrafine dust, <br>but also odors, pollen, smoke and harmful gases.</h3>
+              <h3 class="w300">The powerful performance of Hepa Filter removes over 99.9% ultrafine dust, <br>but also odors, pollen, smoke and harmful gases.</h3>
               <div class="product4">
                 <img src="images/product3.jpg" alt="">
                 <ul class="clearfix">
@@ -480,7 +468,7 @@ $(document).ready(function() {
                 </li>
                 <li>
                   <p class="pro5">3-5 stage</p>
-                  <p>Deodorization filter Eliminate life odor, sick building and harmful gases</p>
+                  <p>Deodorization filter Eliminate life odor,<br> sick building and harmful gases</p>
                 </li>
               </ul>
             </li>
@@ -495,7 +483,7 @@ $(document).ready(function() {
                       <ul>
                           <h3>Simply change the mode for your needs</h3>
                       </ul>
-                      <ul class="clearfix">
+                      <ul class="clearfix mo_smart1">
                         <li class="wow fadeIn" data-wow-delay="0.34s">
                           <img src="images/lock.png" alt="">
                           <p>Child Lock</p>
@@ -513,7 +501,7 @@ $(document).ready(function() {
                           <p>Dimmer</p>
                         </li>
                       </ul>
-                      <ul class="clearfix">
+                      <ul class="clearfix mo_smart2">
                         <li>
                           <img src="images/sleep.png" alt="">
                           <p>Sleep</p>
@@ -529,7 +517,7 @@ $(document).ready(function() {
                       </ul>
                     </div>
                   </li>
-                  <li>
+                  <li class="cg">
                     <img src="images/k300_iconbg.jpg" alt="">
                   </li>
                 </ul>
@@ -539,7 +527,7 @@ $(document).ready(function() {
               <div class="pro_7">
                 <h1>Smart Automatic Mode</h1>
                 <h3>
-                  Detect the indoor air condition, it automatically adjusts the level of cleanliness
+                  Detect the indoor air condition, it automatically adjusts<br> the level of cleanliness
                   to maintain pleasant indoor air
                 </h3>
                   <div class="smart">
@@ -590,17 +578,20 @@ $(document).ready(function() {
                       <li class="design">
                           <h1 class="p4">SMOKE</h1>
                           <h5>max : 450</h5>
-                          <div class="piesite" id="pie_0" data-pie="276"></div>
+                          <div class="chart chart1" data-percent="63"><span class="title">276</span></div>
+                          <div class="chart chart4" data-percent="63"><span class="title">276</span></div>
                       </li>
                       <li class="usability">
                           <h1 class="p4">DUST</h1>
                           <h5>max : 400</h5>
-                          <div class="piesite" id="pie_2" data-pie="304"></div>
+                          <div class="chart chart2" data-percent="71"><span class="title">304</span></div>
+                          <div class="chart chart5" data-percent="71"><span class="title">304</span></div>
                       </li>
                       <li class="creativity">
                           <h1 class="p4">POLLEN</h1>
                           <h5>max : 450</h5>
-                          <div class="piesite" id="pie_1" data-pie="361"></div>
+                          <div class="chart chart3" data-percent="76"><span class="title">361</span></div>
+                          <div class="chart chart6" data-percent="76"><span class="title">361</span></div>
                       </li>
                   </ul>
               </div>
@@ -715,7 +706,7 @@ $(document).ready(function() {
                 <h4 class="heading">Specifications<img src="images/down.png" alt="" class="down"></h4>
                   <div class="accordionTxt">
                     <li>· &nbsp;<span>Coverage(ft2):</span> 4ACH:933 2ACH:1867  <br></li>
-                    <li>· &nbsp;<span>AHAM Verified CADR (CFM) Smoke, Dust, Pollen:</span> 411, 396, 450<br></li>
+                    <li>· &nbsp;<span>AHAM Verified CADR (CFM) Smoke, Dust, Pollen:</span> 411, 397, 450<br></li>
                     <li>· &nbsp;<span>Air Quality Indicator:</span> Temp, Humidity & Fine-dust sensor(PM2.5)<br></li>
                     <li>· &nbsp;<span>Filter:</span> Washable Pre filter + Dust Collection(99.9%) + Activated Carbon<br></li>
                     <li>· &nbsp;<span>Fan Speed:</span> Auto + 5 Speed<br></li>
@@ -766,13 +757,13 @@ $(document).ready(function() {
               <div class="product2_500"></div>
             </li>
             <li class="k300Sub_3">
-              <h1>Super strong High-purification of Dual air flow</h1>
+              <h1 class="w720">Super strong High-purification of Dual air flow</h1>
               <h3>The ultimate air care by its dual air flow</h3>
               <div class="product3_500"></div>
             </li>
             <li class="k300Sub_4">
               <h1>Over 99.9% filiteration by HEPA filter</h1>
-              <h3>The powerful performance of Hepa Filter removes over 99.9% ultrafine dust, <br>but also odors, pollen, smoke and harmful gases</h3>
+              <h3 class="w300">The powerful performance of Hepa Filter removes over 99.9% ultrafine dust, <br>but also odors, pollen, smoke and harmful gases</h3>
               <div class="product4_700">
                 <img src="images/product4_700.jpg" alt="">
                 <ul class="clearfix">
@@ -865,7 +856,7 @@ $(document).ready(function() {
               <div class="pro_500_7">
                 <h1>Smart Automatic Mode</h1>
                 <h3>
-                  Detect the indoor air condition, it automatically adjusts the level of cleanliness
+                  Detect the indoor air condition, it automatically adjusts<br> the level of cleanliness
                   to maintain pleasant indoor air
                 </h3>
                   <div class="smart">
@@ -916,17 +907,20 @@ $(document).ready(function() {
                       <li class="design">
                           <h1 class="p4">SMOKE</h1>
                           <h5>max : 450</h5>
-                          <div class="piesite" id="pie_0" data-pie="276"></div>
+                          <div class="chart chart1" data-percent="90"><span class="title">411</span></div>
+                          <div class="chart chart4" data-percent="90"><span class="title">411</span></div>
                       </li>
                       <li class="usability">
                           <h1 class="p4">DUST</h1>
                           <h5>max : 400</h5>
-                          <div class="piesite" id="pie_2" data-pie="304"></div>
+                          <div class="chart chart2" data-percent="97"><span class="title">397</span></div>
+                          <div class="chart chart5" data-percent="97"><span class="title">397</span></div>
                       </li>
                       <li class="creativity">
                           <h1 class="p4">POLLEN</h1>
                           <h5>max : 450</h5>
-                          <div class="piesite" id="pie_1" data-pie="361"></div>
+                          <div class="chart chart3" data-percent="100"><span class="title">450</span></div>
+                          <div class="chart chart6" data-percent="100"><span class="title">450</span></div>
                       </li>
                   </ul>
               </div>
@@ -1092,13 +1086,13 @@ $(document).ready(function() {
             <div class="product2_500s"></div>
           </li>
           <li class="k300Sub_3">
-            <h1>Enjoy the clean air with your lovely dog</h1>
+            <h1 class="w720">Enjoy the clean air with your lovely dog</h1>
             <h3>Eliminate pet odors and pet dander</h3>
             <div class="product3_500s"></div>
           </li>
           <li class="k300Sub_4">
             <h1>Over 99.9% filiteration by HEPA filter</h1>
-            <h3>The powerful performance of Hepa Filter removes over 99.9% ultrafine dust, <br>but also odors, pollen, smoke and harmful gases</h3>
+            <h3 class="w300">The powerful performance of Hepa Filter removes over 99.9% ultrafine dust, <br>but also odors, pollen, smoke and harmful gases</h3>
             <div class="product4_700">
               <img src="images/product4_700.jpg" alt="">
               <ul class="clearfix">
@@ -1209,17 +1203,20 @@ $(document).ready(function() {
                     <li class="design">
                         <h1 class="p4">SMOKE</h1>
                         <h5>max : 450</h5>
-                        <div class="piesite" id="pie_0" data-pie="276"></div>
+                        <div class="chart chart1" data-percent="93"><span class="title">434</span></div>
+                        <div class="chart chart4" data-percent="93"><span class="title">434</span></div>
                     </li>
                     <li class="usability">
                         <h1 class="p4">DUST</h1>
                         <h5>max : 400</h5>
-                        <div class="piesite" id="pie_2" data-pie="304"></div>
+                        <div class="chart chart2" data-percent="100"><span class="title">400</span></div>
+                        <div class="chart chart5" data-percent="100"><span class="title">400</span></div>
                     </li>
                     <li class="creativity">
                         <h1 class="p4">POLLEN</h1>
                         <h5>max : 450</h5>
-                        <div class="piesite" id="pie_1" data-pie="361"></div>
+                        <div class="chart chart3" data-percent="100"><span class="title">450</span></div>
+                        <div class="chart chart6" data-percent="100"><span class="title">450</span></div>
                     </li>
                 </ul>
             </div>
@@ -1386,13 +1383,13 @@ $(document).ready(function() {
             <div class="product2_700"></div>
           </li>
           <li class="k300Sub_3">
-            <h1>Super strong High-purification of Dual air flow</h1>
+            <h1 class="w720">Super strong High-purification of Dual air flow</h1>
             <h3>The ultimate air care by its dual air flow</h3>
             <div class="product3_700"></div>
           </li>
           <li class="k300Sub_4">
             <h1>Over 99.9% filiteration by HEPA filter</h1>
-            <h3>The powerful performance of Hepa Filter removes over 99.9% ultrafine dust, <br>but also odors, pollen, smoke and harmful gases</h3>
+            <h3 class="w300">The powerful performance of Hepa Filter removes over 99.9% ultrafine dust, <br>but also odors, pollen, smoke and harmful gases</h3>
             <div class="product4_700">
               <img src="images/product4_700.jpg" alt="">
               <ul class="clearfix">
@@ -1432,7 +1429,7 @@ $(document).ready(function() {
           <li class="k700Sub_6">
             <div class="product700_bg">
               <ul class="clearfix k700ul1">
-                <li>
+                <li class="cg">
                   <img src="images/k700_iconbg.jpg" alt="">
                 </li>
                 <li>
@@ -1443,8 +1440,8 @@ $(document).ready(function() {
                     <ul>
                         <h3>Simply change the mode for your needs</h3>
                     </ul>
-                    <ul class="clearfix">
-                      <li class="wow fadeIn" data-wow-delay="0.34s">
+                    <ul class="clearfix mo_smart1">
+                      <li>
                         <img src="images/lock.png" alt="">
                         <p>Child Lock</p>
                       </li>
@@ -1461,7 +1458,7 @@ $(document).ready(function() {
                         <p>Dimmer</p>
                       </li>
                     </ul>
-                    <ul class="clearfix">
+                    <ul class="clearfix mo_smart2">
                       <li>
                         <img src="images/sleep.png" alt="">
                         <p>Sleep</p>
@@ -1556,17 +1553,20 @@ $(document).ready(function() {
                     <li class="design">
                         <h1 class="p4">SMOKE</h1>
                         <h5>max : 450</h5>
-                        <div class="piesite" id="pie_0" data-pie="276"></div>
+                        <div class="chart chart1" data-percent="100"><span class="title">450</span></div>
+                        <div class="chart chart4" data-percent="100"><span class="title">450</span></div>
                     </li>
                     <li class="usability">
                         <h1 class="p4">DUST</h1>
                         <h5>max : 400</h5>
-                        <div class="piesite" id="pie_2" data-pie="304"></div>
+                        <div class="chart chart2" data-percent="100"><span class="title">400</span></div>
+                        <div class="chart chart5" data-percent="100"><span class="title">400</span></div>
                     </li>
                     <li class="creativity">
                         <h1 class="p4">POLLEN</h1>
                         <h5>max : 450</h5>
-                        <div class="piesite" id="pie_1" data-pie="361"></div>
+                        <div class="chart chart3" data-percent="100"><span class="title">450</span></div>
+                        <div class="chart chart6" data-percent="100"><span class="title">450</span></div>
                     </li>
                 </ul>
             </div>

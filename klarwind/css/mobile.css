@@ -566,6 +566,8 @@ text-align: left;
 .visualTxt1 h2{letter-spacing: -0.5px;font-size: 14px;width: 300px;}
 .visualTxt1 p{letter-spacing: -0.5px;font-size: 9px;width: 300px;}
 
+.menu1st .item1_txt{padding-bottom: 30%;}
+
 /* accordionMenu */
 .accordion_container{margin: 0 auto;}
 .accordionContent{

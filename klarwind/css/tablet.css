@@ -478,6 +478,7 @@ text-align: left;
   position: relative;
   width: 10%;
 }
+.mapMenu1 i,.mapMenu2 i,.mapMenu3 i,.mapMenu4 i{font-size: 20px;}
 .toggle,.toggle_2,.toggle_3,.toggle_4 {
   display: none;
 }
@@ -564,11 +565,6 @@ text-align: left;
     transform: translate(-50%, -50%) scale(0);
     transition: all 0.3s;
     opacity: 0;
-}
-
-.toggle:checked ~ .tab,.toggle_2:checked ~ .tab,.toggle_3:checked ~ .tab,.toggle_4:checked ~ .tab {
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
 }
 
 .About_container .about_bg3{

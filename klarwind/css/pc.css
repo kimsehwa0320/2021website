@@ -1,5 +1,5 @@
 @charset "utf-8";
-.mainTxt3
+.section.page1
 h1{font-family: 'Noto Sans', sans-serif; font-weight: 700;}
 html{height: 100%;}
 body{ height: 100%;min-width: 992px;width: 100%;overflow-x: hidden;font-family: 'Noto Sans', sans-serif;}
@@ -54,6 +54,7 @@ nav#navTop #topMenu_2 img{width: 40px;}
 
 /* MAIN PAGE */
 /* background all */
+#fullpage{width: 1920px; min-width: 992px;height: 1080px;margin: 0 auto;}
 .section.page3,
 .section.page5,
 .section.page6,
@@ -62,7 +63,7 @@ nav#navTop #topMenu_2 img{width: 40px;}
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
-  position: relative;width: 1920px;height: 100vh;
+  position: absolute;width: 100%;height: 100vh;
 }
 .section.page3{background-image: url(../images);}
 .section.page4{}
@@ -74,11 +75,10 @@ nav#navTop #topMenu_2 img{width: 40px;}
   position: relative;width: 100%;height: 100%;
   left: 50%;transform: translateX(-50%);
 }
-.section.page1 h1, .section.page1 h2{
-  position: absolute;letter-spacing: -8px;left: 0;
+.section.page1 h1{
+  position: absolute;letter-spacing: -8px;left: 0;line-height: 170px;
+  bottom: 10%;font-size: 220px;padding-left: 13px;
 }
-.section.page1 h1{bottom: 22%;font-size: 220px;padding-left: 13px;}
-.section.page1 h2{bottom: 1.5%;font-size: 230px;}
 .section.page1 .sliderWrap{
   position: absolute; width: 50%; right: 0;font-weight: bold;
   top: 50%; transform: translateY(-50%);overflow: auto;letter-spacing: -1px;

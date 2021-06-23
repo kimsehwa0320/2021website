@@ -155,7 +155,7 @@ nav#navTop #topMenu_2 img{width: 40px;}
 .section.page2 .view1st>div{top: 47%;}
 .section.page2 .view2st>div{top: 47%;}
 .section.page2 .page2_slide1{left:10%;text-align: right;}
-.section.page2 .page2_slide1 h1{font-size: 76px;padding-bottom: 5%;}
+.section.page2 .page2_slide1 h1{font-size: 66px;padding-bottom: 5%;}
 .section.page2 .page2_slide1 p{line-height: 35px; font-size: 20px;padding-bottom: 8%;}
 .section.page2 .page2_slide1 a{
   background: #52aff6; padding: 15px 20px;
@@ -931,7 +931,7 @@ border-bottom: 1px solid #ccc;
 .aboutContainer2 .asia {left: 75%;top:-5%;}
 .aboutContainer2 .eu {left: 50.5%;top: -25%;}
 .aboutContainer2 .Oceania {width: 10%;bottom: 28%;right: 12%;}
-.aboutContainer2 .korea {width: 10%;right: 13%;top:26%;}
+.aboutContainer2 .Korea {width: 10%;right: 13%;top:26%;}
 .aboutContainer2 .MiddleEast {left: 60%;top: 25%;}
 
 .mapMenu1,.mapMenu2,.mapMenu3,.mapMenu4 {

@@ -1,5 +1,5 @@
 @charset "utf-8";
-.page6_row
+.mainTxt3
 h1{font-family: 'Noto Sans', sans-serif; font-weight: 700;}
 html{height: 100%;}
 body{ height: 100%;min-width: 992px;width: 100%;overflow-x: hidden;font-family: 'Noto Sans', sans-serif;}
@@ -81,7 +81,7 @@ nav#navTop #topMenu_2 img{width: 40px;}
 .section.page1 h2{bottom: 1.5%;font-size: 230px;}
 .section.page1 .sliderWrap{
   position: absolute; width: 50%; right: 0;font-weight: bold;
-  top: 50%; transform: translateY(-50%);overflow: auto;letter-spacing: -2px;
+  top: 50%; transform: translateY(-50%);overflow: auto;letter-spacing: -1px;
 }
 
 
@@ -89,7 +89,7 @@ nav#navTop #topMenu_2 img{width: 40px;}
 .mainTxt1,.mainTxt2,.mainTxt3{position: absolute;transform: translate(-50%,-50%);}
 .section.page1 .sliderWrap li .mainTxt1{left: 41%;top: 47%;}
 .section.page1 .sliderWrap li .mainTxt2{right: -10%;top: 45%;text-align: right;}
-.section.page1 .sliderWrap li .mainTxt3{left: 50%;top: 30%;color: #fff;}
+.section.page1 .sliderWrap li .mainTxt3{left: 50%;top: 35%;color: #fff;text-align: center;}
 
 .section.page1 .sliderWrap li p{font-size: 28px;}
 .section.page1 .sliderWrap li h3{font-size: 42px;width: 100%;color:#52aff6;}

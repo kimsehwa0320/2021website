@@ -918,7 +918,7 @@ border-bottom: 1px solid #ccc;
 .aboutContainer2 .grobal p{width: 700px;font-size: 24px;text-align: right;font-weight: 600;letter-spacing: -1px;padding-right: 6%;}
 .aboutContainer2 .b_bar{position: absolute; width: 15px; background: #000; height: 170px;top: 45%;right: 0;}
 /* .aboutContainer2 .mapContainer{position: absolute;margin: 0 auto;} */
-.mapimg img, .NortAmerica, .MiddleEast, .Oceania ,.asia , .eu, .asia, .korea{
+.mapimg img, .NortAmerica, .MiddleEast, .Oceania ,.asia , .eu, .asia, .Korea{
   position: absolute;transition: 0.3s;text-align: center;
   color:#52aff6;font-weight: bold;font-size: 22px;
 }

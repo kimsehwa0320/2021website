@@ -384,6 +384,17 @@ text-align: left;
     max-width: 50%;
   }
 }
+#glayLayer{
+  position: fixed;width: 100%;height: 100%;
+  background: #000;opacity:0.6;left: 0;top: 0;
+  display: none;
+}
+#overLayer{
+  position: fixed;_height: 300px;
+  left: 50%;top: 55%;transform:translate(-50%,-50%);
+  display: none;
+}
+
 /* .section.page6 */
 .section.page5{background: #000;color:#fff;width: 100%;}
 .section.page5 .container5{max-width: 991px;height: 100%;padding: 10% 5%;}

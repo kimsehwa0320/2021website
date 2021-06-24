@@ -30,12 +30,6 @@
         auto:true,
         touchEnabled:false,
         });
-        $('.msinSlide').bxSlider({
-        pager: false,
-        mode:'vertical',
-        controls:false,
-        auto:true,
-        });
         $('.msinSlide_2').bxSlider({
         pager: false,
         controls:false,
@@ -93,8 +87,6 @@
             }
           }
         });
-
-
       $(".subContent div").hide().eq(0).show();
       $(".subMenuTab li").click(function(){
         var i = $(this).index();
@@ -131,6 +123,25 @@
       $("#glayLayer,#overLayer").click(function(){
         $("#glayLayer,#overLayer").hide();
       });
+
+      var current = 0;
+      var banner = $(".mainSlide li");
+      var banCount = banner.length; //banner 수
+      var viewTop = 0; //z-index값
+
+      function slider(){
+        banner.eq(current).css("opacity",1);
+
+        current++;
+        if(current==banCount){current=0} //banCount도 5로 banner과 같음
+
+        move(current); //증가 된 current값
+      }
+      setInterval(slider,3000); //setInterval은 javascript 임
+
+      function move(i){
+        banner.eq(i).css({opacity:0,"z-index":viewTop++}).animate({opacity:1},1000);
+      }
     });
   </script>
 </head>
@@ -189,7 +200,7 @@
     <!-- section 1st -->
     <div class="section page1" data-anchor="m1st">
       <div class="its blind_pc">
-        <h1>It’s <br>Klarwind</h1>
+        <h1><span class="h12">It’s</span> <br>Klarwind</h1>
         <!-- <h2>Klarwind</h2> -->
       </div>
       <div class="blind_mo">
@@ -203,7 +214,7 @@
         <p class="vWrap"><a href="https://www.amazon.com/Klarwind-Smart-Purifier-Blue-300/dp/B08BZHX5MB/ref=sr_1_2?dchild=1&keywords=klarwind&qid=1624267439&sr=8-2" target="_blank">GO AMAZON</a></p>
       </div>
       <div class="sliderWrap">
-        <ul class="msinSlide blind_pc">
+        <ul class="mainSlide blind_pc">
           <li>
             <div class="mainTxt1" class="blind_pc">
               <p>To show<br> &nbsp;<span class="mainh3">"How to clean"</span></p>
@@ -255,7 +266,7 @@
         <li class="view2st">
           <div class="page2_slide2">
             <h1>Feel fresh air</h1>
-            <p>Klarwind brand is aiming for the best value in terms of performance, design and reliability. <span class="blind_pc">Also, it won
+            <p><span class"t">Klarwind</span> brand is aiming for the best value in terms of performance, design and reliability. <span class="blind_pc">Also, it won
             several awards at prestigious European design competitions in Europe and recognized for its excellence in design.</span>
             </p>
             <a href="https://www.amazon.com/Klarwind-Smart-Purifier-Blue-300/dp/B08BZHX5MB/ref=sr_1_2?dchild=1&keywords=klarwind&qid=1624267439&sr=8-2" target="_blank">BUY NOW</a>
@@ -265,7 +276,7 @@
         <li class="view1st">
         <div class="page2_slide1">
           <h1>Make your home healthier</h1>
-          <p>KLARWIND is a synthesis composing with "KLAR" which means "Clean" in Germany and "WIND" in English.</p>
+          <p><span class"t">Klarwind</span> is a synthesis composing with "KLAR" which means "Clean" in Germany and "WIND" in English.</p>
           <a href="https://www.amazon.com/Klarwind-Smart-Purifier-Blue-300/dp/B08BZHX5MB/ref=sr_1_2?dchild=1&keywords=klarwind&qid=1624267439&sr=8-2" target="_blank">BUY NOW</a>
             <img src="images/aham_intertek.jpg" alt="">
         </div>
@@ -277,7 +288,7 @@
     <div class="section page3 clearfix" data-anchor="m3st">
       <img src="images/page3_bg_mobile.png" alt="" class="page3_img1 blind_mo">
           <div class="whyT">
-            <h1 class="page3_t1" id="onView3st">WHY<br><span style="color:#52aff6;">KLARWIND?<br></span></h1>
+            <h1 class="page3_t1" id="onView3st">Why<br><span style="color:#52aff6;">Klarwind?<br></span></h1>
             <h4 class="click blind_mo onView4st" id="modal_btn">Click</h4>
             <div class="modal_bg"></div>
             <div class="modal_wrap blind_mo">
@@ -285,12 +296,12 @@
                 <h2 class="page3_p1"><mark style="background: #99ccf3;">Fresh air all around your family</mark></h2>
                 <p>To protect your family from global pandemic, air pollutions and climate change,
                 We have a mission to provide enrich and exceptional experience at your home by providing cleaner air in your place.</p>
-                <p>KLARWIND, a South Korean company specializing in air quality control products,
-                was created in response to the issues of air pollution that is present in South Korea.
-                KLARWIND is continuing to raise the standards for air quality control products both domestically and internationally
+                <p>Klarwind, a Korea company specializing in air quality control products,
+                was created in response to the issues of air pollution that is present in Korea.
+                Klarwind is continuing to raise the standards for air quality control products both domestically and internationally
                 by providing energy efficient products.
-                KLARWIND products are recognized for its integration of advanced technologies paired with creative simplistic designs and ease of use.
-                When purchasing a KLARWIND product,
+                Klarwind products are recognized for its integration of advanced technologies paired with creative simplistic designs and ease of use.
+                When purchasing a Klarwind product,
                 you can be assured that you are in good hands with a quality product designed for your comfort and safety in mind!</p>
               </div>
               <div class="modal_close"><a href="#">close</a></div>
@@ -302,12 +313,12 @@
             <h2 class="page3_p1"><mark style="background: #99ccf3;">Fresh air all around your family</mark></h2>
             <p class="page3_p2">To protect your family from global pandemic, air pollutions and climate change,
             We have a mission to provide enrich and exceptional experience at your home by providing cleaner air in your place.</p>
-            <p class="page3_p3">KLARWIND, a South Korean company specializing in air quality control products,
-            was created in response to the issues of air pollution that is present in South Korea.
-            KLARWIND is continuing to raise the standards for air quality control products both domestically and internationally
+            <p class="page3_p3">Klarwind, a Korea company specializing in air quality control products,
+            was created in response to the issues of air pollution that is present in Korea.
+            Klarwind is continuing to raise the standards for air quality control products both domestically and internationally
             by providing energy efficient products.
-            KLARWIND products are recognized for its integration of advanced technologies paired with creative simplistic designs and ease of use.
-            When purchasing a KLARWIND product,
+            Klarwind products are recognized for its integration of advanced technologies paired with creative simplistic designs and ease of use.
+            When purchasing a Klarwind product,
             you can be assured that you are in good hands with a quality product designed for your comfort and safety in mind!</p>
           </div>
     </div>
@@ -326,7 +337,7 @@
           <img src="images/k100_mo.jpg" style="width:100%" class="blind_mo">
           <div class="klarwind300">
             <h1>Klarwind 100</h1>
-            <p>Klarwind 100 is designed to cover up to small size room or kids room.</p>
+            <p>Designed for small size room or kids room.</p>
             <a href="product.html#tab_1">Coming Soon</a>
           </div>
         </div>
@@ -336,7 +347,7 @@
           <img src="images/k300_mo.jpg" style="width:100%" class="blind_mo">
           <div class="klarwind300">
             <h1>Klarwind 300</h1>
-            <p>Klarwind 300 is designed to cover up to medium size room.</p>
+            <p>Designed for medium size room.</p>
             <a href="product.html#tab_2">More</a>
 
           </div>
@@ -347,7 +358,7 @@
           <img src="images/k500_mo.jpg" style="width:100%" class="blind_mo">
           <div class="klarwind300">
             <h1>Klarwind 500</h1>
-            <p>Klarwind 500 is designed to cover up to large size room.</p>
+            <p>Designed for large size room.</p>
             <a href="product.html#tab_3">More</a>
           </div>
         </div>
@@ -357,7 +368,7 @@
           <img src="images/k500s_mo.jpg" style="width:100%" class="blind_mo">
           <div class="klarwind300">
             <h1>Klarwind 500S</h1>
-            <p>Klarwind 500S is designed to cover up to large size room.</p>
+            <p>Designed for large size room.</p>
             <a href="product.html#tab_4">More</a>
           </div>
         </div>
@@ -367,7 +378,7 @@
           <img src="images/k700_mo.jpg" style="width:100%" class="blind_mo">
           <div class="klarwind300">
             <h1>Klarwind 700</h1>
-            <p>Klarwind 700 is designed to cover up to work space or office.</p>
+            <p>Designed for work space or office.</p>
             <a href="product.html#tab_5">More</a>
           </div>
         </div>
@@ -401,7 +412,7 @@
       <div class="container6">
         <div class="page6_header">
           <h1>Klarwind Gallery</h1>
-          <p>Match anytime, anywhere.</p>
+          <p>Any time, Any where, Any seasin</p>
         </div>
         <!-- Photo Grid -->
         <div class="page6_row">
@@ -436,7 +447,7 @@
         <div class="markheader">
           <div class="box"></div>
           <div>
-            <h1>KLARWIND CERTIFICATION DETAILS LIST</h1>
+            <h1>Certification & Awards</h1>
           </div>
           <ul class="mark">
             <li class="clearfix">

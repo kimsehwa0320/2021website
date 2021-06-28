@@ -772,9 +772,12 @@ border-bottom: 1px solid #ccc;
 .subContent .menu4st .imgbox,
 .subContent .menu5st .imgbox
 {
-  margin: 0 auto;box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.4);
-  padding: 70px 35px 0 35px;width: 300px;display: block;margin-bottom: 10%;
+  margin: 0 auto;width: 100%;
+  padding: 70px 35px 0 35px;display: block;margin-bottom: 15%;
 }
+.imgbox_shadow{box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.4);}
+.imgbox img{width: 300px;display: block;margin: 0 auto;padding-top: 5%;}
+
 .subContent .menu1st h3,
 .subContent .menu2st h3,
 .subContent .menu3st h3,
@@ -832,6 +835,7 @@ border-bottom: 1px solid #ccc;
 
 /* SubContainer_2 */
 .item1_txt>h3{padding-top: 7%;}
+
 .k00img .product1,.product1_500,.product_700,.product_500s,
 .k300Sub_2 .product2,.product2_500,.product2_500s,.product2_700,
 .k300Sub_3 .product3,.product3_700,.product3_500s,.product3_500,

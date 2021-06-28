@@ -198,6 +198,7 @@ nav#navTop #topMenu_2 img{width: 40px;}
 .section.page2 .bx-wrapper{margin-bottom: 0;}
 
 /* .section.page3  */
+.it{font-style: italic;}
 .section.page3{width: 1800px;position: relative;left: 50%;transform: translateX(-50%);}
 .section.page3 .page3_t1{
   position: absolute; font-size: 86px; font-weight: bold;

@@ -1,5 +1,5 @@
 @charset "utf-8";
-.item1_txt
+.abot_left6
 h1{font-family: 'Noto Sans', sans-serif; font-weight: 700;}
 html{height: 100%;}
 body{ height: 100%;min-width: 992px;width: 100%;overflow-x: hidden;font-family: 'Noto Sans', sans-serif;}
@@ -198,7 +198,7 @@ nav#navTop #topMenu_2 img{width: 40px;}
 .section.page2 .bx-wrapper{margin-bottom: 0;}
 
 /* .section.page3  */
-.it{font-style: italic;}
+.it{font-style: italic;font-weight: bold;}
 .section.page3{width: 1800px;position: relative;left: 50%;transform: translateX(-50%);}
 .section.page3 .page3_t1{
   position: absolute; font-size: 86px; font-weight: bold;
@@ -652,7 +652,7 @@ border-bottom: 1px solid #ccc;
 .k300Sub_5 li:last-child, .k700Sub_5 li:last-child{margin-right:0;}
 .k300Sub_5 li>p, .k700Sub_5 li>p, .k500sSub_5 li>p,.k500Sub_5 li>p{font-size: 24px;letter-spacing: -1px;}
 .k300Sub_5 li .pro5, .k700Sub_5 li .pro5,.k500sSub_5 li .pro5,.k500Sub_5 li .pro5{font-size: 32px;font-weight: bold;}
-.textR{text-align: right;}
+.textL{text-align: left;}
 
 
 .k300Sub_6{width: 100%;height: 1130px;min-height: 900px; }
@@ -950,10 +950,10 @@ border-bottom: 1px solid #ccc;
 
 .aboutContainer2 .NortAmerica {left: 18%;top:22%;}
 .aboutContainer2 .asia {left: 75%;top:-8%;}
-.aboutContainer2 .eu {left: 50.5%;top: -31%;}
+.aboutContainer2 .eu {left: 51%;top: -32%;}
 .aboutContainer2 .Oceania {width: 10%;bottom: 35%;right: 12%;}
 .aboutContainer2 .korea {width: 10%;right: 13%;top:20%;}
-.aboutContainer2 .MiddleEast {left: 59%;top: 17%;}
+.aboutContainer2 .MiddleEast {left: 61%;top: 20%;}
 
 .mapMenu1,.mapMenu2,.mapMenu3,.mapMenu4 {
   position: relative;
@@ -1055,14 +1055,14 @@ border-bottom: 1px solid #ccc;
 }
 
 .mapMenu1 > .toggle:checked ~ .tab:nth-of-type(1) {
-  top: -122px;
-  left: 0px;
+  top: -50px;
+  left: -100px;
   transition-delay: 0s;
 }
 
 .mapMenu1 > .toggle:checked ~ .tab:nth-of-type(2) {
-  top: -40px;
-  left: 120px;
+  top: 0;
+  left: -100px;
   transition-delay: 0.125s;
 }
 
@@ -1316,7 +1316,7 @@ padding-right: 16%;}
 }
 .about_footer{
   position: absolute;left: 50%;transform: translateX(-50%);
-  width: 100%;top: 720%;
+  width: 100%;top: 700%;
 }
 .about_footer h6{
   position: absolute;left: 50%;transform: translateX(-50%);

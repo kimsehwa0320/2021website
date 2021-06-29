@@ -975,14 +975,13 @@ border-bottom: 1px solid #ccc;
 }
 
 .mapMenu1 p,.mapMenu2 p,.mapMenu3 p,.mapMenu4 p{
-
+    text-align: left;
     margin: 0 auto;
     line-height: 15px;
     font-weight: 700;
     font-size: 0.9em;
     text-shadow: 2px 2px 4px #52aff6;
 }
-.mapMenu1 p,.mapMenu2 p{text-align: left;}
 .Oceania:hover,.korea:hover{transform:scale(1.1);}
 .toggle + .style:hover,.toggle_2 + .style:hover,.toggle_3 + .style:hover,.toggle_4 + .style:hover{
   transform: translate(-50%, -50%) scale(1.1);
@@ -1210,10 +1209,6 @@ border-bottom: 1px solid #ccc;
 .mapMenu4 > .toggle_4:checked ~ .tab:nth-of-type(9) {
   top: 400px;
   left: -100px;transition-delay: 0.9s;
-}
-.mapMenu4 > .toggle_4:checked ~ .tab:nth-of-type(10) {
-  top: 450px;
-  left: -100px;transition-delay: 1.0s;
 }
 
 .About_container .about_bg3{

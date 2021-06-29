@@ -104,6 +104,9 @@ nav#navTop #topMenu_2 img{width: 40px;margin: 0 -50px;}
 
 
 /* section.page1*/
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
+    background: #52aff6;
+}
 .section.page1,.section.page2{
   position: relative;width: 100%;height: 100%;
   left: 50%;transform: translateX(-50%);

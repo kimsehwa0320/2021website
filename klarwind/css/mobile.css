@@ -100,12 +100,18 @@ nav#navTop #topMenu_2 img{width: 40px;margin: 0 -50px;}
 }
 
 /* section.page1*/
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span{
+    background: #52aff6;
+}
+
 .section.page1,.section.page2{
   position: relative;width: 100%;
   left: 50%;transform: translateX(-50%);
 }
 .section.page1 h1{
-  position: absolute;font-size: 54px;letter-spacing: -2px;top: 15%;text-align: center;
+  position: absolute;font-size: 54px;letter-spacing: -2px;top: 12%;text-align: center;
   left: 50%;transform: translateX(-50%);width: 100%;
 }
 .mainSlide img{display: block;margin: 0 auto;width: 80%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);} /*사이 공백 없애고 사이즈 조정*/
@@ -114,7 +120,7 @@ nav#navTop #topMenu_2 img{width: 40px;margin: 0 -50px;}
   margin: 0 auto;
   overflow: hidden;
   position: absolute; width: 100%; right: 0;font-weight: bold;
-  top: 76%; transform: translateY(-50%);overflow: auto;letter-spacing: -1px;
+  top: 73%; transform: translateY(-50%);overflow: auto;letter-spacing: -1px;
 }
 .mainSlide ul{width: 100%;height: 100%;position: relative;}
 .mainSlide li{position: absolute;opacity: 0;}
@@ -122,7 +128,7 @@ nav#navTop #topMenu_2 img{width: 40px;margin: 0 -50px;}
 
 .section.page1 .sliderWrap li img{display: block;margin: 0 auto;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);width: 95%;}
 .mainTxt1,.mainTxt2,.mainTxt3{position: absolute;text-align: center;}
-.section.page1 .sliderWrap li .mainTxt1{left: 50%;top: 50%;transform: translate(-50%,-50%);width: 300px;}
+.section.page1 .sliderWrap li .mainTxt1{left: 50%;top: 20%;transform: translate(-50%,-50%);width: 300px;}
 .section.page1 .sliderWrap li .mainTxt2{right:5%;top: 50%;transform: translateY(-50%);}
 .section.page1 .sliderWrap li .mainTxt3{left: 50%;top: 30%;color: #fff;transform: translate(-50%,-50%);}
 
@@ -130,7 +136,7 @@ nav#navTop #topMenu_2 img{width: 40px;margin: 0 -50px;}
 .section.page1 .sliderWrap li h3{font-size: 26px;width: 100%;color:#52aff6;}
 .section.page1 .sliderWrap li .mainh3{font-size: 26px;width: 100%;color:#52aff6;}
 
-.section.page1 .go{position: absolute;left: 50%;transform: translateX(-50%);bottom: 18%;}
+.section.page1 .go{position: absolute;left: 50%;transform: translateX(-50%);bottom: 20%;}
 .section.page1 .vWrap a{letter-spacing:-2px ;font-size: 24px;text-align: center;font-weight:bold;}
 
 .section.page1 .go:hover .vWrap a{transform: scale(1.1);z-index: 8;color:#52aff6;}
@@ -462,12 +468,12 @@ text-align: left;
 
 .aboutContainer2 .NortAmerica img, .Oceania img, .asia img, .MiddleEast img, .eu img, .asia img, .korea img{width: 100%;transition: 0.3s;}
 
-.aboutContainer2 .NortAmerica {left: 15%;top:40%;}
-.aboutContainer2 .asia {left: 77%;top:-60%;}
-.aboutContainer2 .eu {left: 51%;top: -113%;}
-.aboutContainer2 .Oceania {width: 10%;top: 56%;right: 8%;}
+.aboutContainer2 .NortAmerica {left: 16%;top:25%;}
+.aboutContainer2 .asia {left: 77%;top:-50%;}
+.aboutContainer2 .eu {left: 51%;top: -95%;}
+.aboutContainer2 .Oceania {width: 10%;top: 47%;right: 8%;}
 .aboutContainer2 .Korea {width: 10%;right: 11%;top:25%;}
-.aboutContainer2 .MiddleEast {left: 61%;top: 7%;}
+.aboutContainer2 .MiddleEast {left: 62%;top: 14%;}
 
 .mapMenu1,.mapMenu2,.mapMenu3,.mapMenu4 {
   position: relative;
@@ -1381,7 +1387,7 @@ input[type=submit]:hover {
 
 
 .scroll{
-  position: absolute; bottom: 0; padding-bottom: 10%; left: 50%;
+  position: absolute; bottom: 0; padding-bottom: 12%; left: 50%;
   transform:translateX(-50%);
   animation-name:xScroll;
   animation-duration:0.8s;

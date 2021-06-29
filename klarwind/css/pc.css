@@ -1,5 +1,5 @@
 @charset "utf-8";
-.abot_left6
+.mainSlide
 h1{font-family: 'Noto Sans', sans-serif; font-weight: 700;}
 html{height: 100%;}
 body{ height: 100%;min-width: 992px;width: 100%;overflow-x: hidden;font-family: 'Noto Sans', sans-serif;}
@@ -86,7 +86,7 @@ nav#navTop #topMenu_2 img{width: 40px;}
 }
 .h12{font-size: 134px;
     padding-left: 1%;}
-.page2_slide1 .t, .page2_slide2 .t{font-style: italic;}
+
 
 .mainSlide img{display: block;margin: 0 auto;width: 95%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);} /*사이 공백 없애고 사이즈 조정*/
 .mainSlide{

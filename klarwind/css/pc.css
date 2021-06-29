@@ -54,7 +54,7 @@ nav#navTop #topMenu_2 img{width: 40px;}
 
 /* MAIN PAGE */
 /* background all */
-#fullpage{width: 1920px; min-width: 992px;height: calc(100% - 90px);margin: 0 auto;}
+#fullpage{width: 100%; min-width: 992px;height: calc(100% - 90px);margin: 0 auto;}
 .section.page3,
 .section.page5,
 .section.page6,

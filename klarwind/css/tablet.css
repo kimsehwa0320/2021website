@@ -112,10 +112,6 @@ nav#navTop #topMenu_2 img{width: 40px;margin: 0 -50px;}
   position: absolute;font-size: 98px;letter-spacing: -3px;top: 8%;text-align: center;
   left: 50%;transform: translateX(-50%);width: 100%;
 }
-/* .section.page1 .sliderWrap{
-  position: absolute;width: 80%;font-weight: bold;
-  overflow: auto;letter-spacing: -1px;left: 50%;top: 50%;transform: translate(-50%,-50%);
-} */
 .mainSlide img{display: block;margin: 0 auto;width: 80%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);} /*사이 공백 없애고 사이즈 조정*/
 .mainSlide{
   height: 100%;

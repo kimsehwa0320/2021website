@@ -181,27 +181,16 @@ nav#navTop #topMenu_2 img{width: 40px;}
 
 
 /* .section.page2  */
-.section.page2 .view1st{
-  background-image: url(../images/k_banner_two1.jpg);width: 100vw;height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;position: relative;
+.section.page2 .view2st,.section.page2 .view1st{
+  width: 100vw;height: 100vh;
+  position: relative;
   display:flex;justify-content: center;align-items:center;
 }
-.section.page2 .view2st{
-  background-image: url(../images/k_banner_two2.jpg);width: 100vw;height: 100vh;
-  background-position: center;position: relative;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-  display:flex;justify-content: center;align-items:center;
-}
-.section.page2 .view1st>div,.section.page2 .view2st>div{
+.section.page2 .page2_slide1,.section.page2 .page2_slide2{
  width:550px;position: absolute;transform: translateY(-50%);
 }
-.section.page2 .view1st>div{top: 47%;}
-.section.page2 .view2st>div{top: 47%;}
+.section.page2 .page2_slide1{top: 47%;}
+.section.page2 .page2_slide2{top: 47%;}
 .section.page2 .page2_slide1{left:10%;text-align: right;}
 .section.page2 .page2_slide1 h1{font-size: 66px;padding-bottom: 5%;}
 .section.page2 .page2_slide1 p{line-height: 35px; font-size: 20px;padding-bottom: 8%;}
@@ -215,6 +204,9 @@ nav#navTop #topMenu_2 img{width: 40px;}
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);border: 1px solid #52aff6;
 }
 .section.page2 .page2_slide1 img{position: absolute;width: 40%;padding-top: 10%;right: 0;}
+
+.viewbg1{position: absolute;right: 0;width: 50%;}
+.viewbg2{position: absolute;left: 0;width: 50%;}
 
 .page2 .page2_slide2{right:10%;}
 .section.page2 .page2_slide2 h1{font-size: 76px;padding-bottom: 5%;}

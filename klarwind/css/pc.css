@@ -102,10 +102,10 @@ nav#navTop #topMenu_2 img{width: 40px;}
 .mainSlide li{position: absolute;opacity: 0;}
 .mainSlide li:nth-child(1){_top: 50%; _transform: translateY(-50%);left: 0;opacity: 1;}
 
-.mainTxt1,.mainTxt2,.mainTxt3{position: absolute;text-align: center;}
-.section.page1 .sliderWrap li .mainTxt1{left: 50%;top: 20%;color: #fff;transform: translateX(-50%);}
-.section.page1 .sliderWrap li .mainTxt2{right: 8%;top: 45%;transform: translateY(-50%);}
-.section.page1 .sliderWrap li .mainTxt3{left: 50%;top: 30%;color: #fff;transform: translate(-50%,-50%);}
+.mainTxt1,.mainTxt2,.mainTxt3{position: absolute;text-align: center;left: 50%;transform: translateX(-50%);color: #fff;}
+.section.page1 .sliderWrap li .mainTxt1{top: 20%;}
+.section.page1 .sliderWrap li .mainTxt2{top: 45%;}
+.section.page1 .sliderWrap li .mainTxt3{top: 5%;}
 
 .section.page1 .sliderWrap li p{font-size: 28px;}
 .section.page1 .sliderWrap li h3{font-size: 42px;width: 100%;color:#52aff6;}

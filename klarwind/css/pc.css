@@ -89,10 +89,13 @@ nav#navTop #topMenu_2 img{width: 40px;}
 .h12{font-size: 134px;
     padding-left: 10px;}
 
-.slideTxt{position: absolute;margin-top: 2.8%;}
+.slideTxt{position: absolute;top: 38.5%;}
 .slideTxt p{
-  margin-left:25px;font-weight: bold;
-  font-size: 18px;letter-spacing: -1px;
+  margin-left:25px;font-weight: bold;_color:#4f4f4f;
+  font-size: 32px;letter-spacing: -1.7px;
+  background: linear-gradient(to right, #afafaf, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 

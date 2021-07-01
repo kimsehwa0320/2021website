@@ -109,7 +109,6 @@ nav#navTop #topMenu_2 img{width: 40px;}
 .section.page1 .sliderWrap li h3{font-size: 42px;width: 100%;color:#52aff6;}
 
 .cardContainer{position: absolute;top: 33%; transform: translateX(-50%);left: 47%;}
-.cardContainer img{width: 65px;}
 .cardContainer{
     height:auto;
     width:150px;
@@ -1517,8 +1516,8 @@ input[type=submit]:hover {
   animation-direction:alternate; z-index: 3;
 }
 @keyframes xScroll{
-  from{bottom: 360px;}
-  to{bottom: 380px;}
+  from{bottom: 45%;}
+  to{bottom: 40%;}
 }
 
 

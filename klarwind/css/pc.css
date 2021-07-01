@@ -181,7 +181,7 @@ nav#navTop #topMenu_2 img{width: 40px;}
 .section.page2 .view2st,.section.page2 .view1st{
   width: 100vw;height: 100vh;
   position: relative;
-  display:flex;justify-content: center;align-items:center;
+  display:flex;justify-content: center;
 }
 .section.page2 .page2_slide1,.section.page2 .page2_slide2{
  width:550px;position: absolute;transform: translateY(-50%);
@@ -931,22 +931,23 @@ border-bottom: 1px solid #ccc;
 }
 .About_container .aboutContainer1{
   position: absolute;left: 50%;transform: translateX(-50%);
-  width: 1800px;height: 250px;
+  width: 1920px;height: 250px;
 }
 
-.About_container .aboutContainer1 li{float: left;}
+.About_container .aboutContainer1 li{float: left;width: 50%;}
 .About_container .aboutContainer1 .abot_left1{
-  position: absolute;left: 0;top: 19.5%;width: 45%;
+  position: absolute;left: 0;top: 19.5%;width: 50%;
   justify-content: center;align-items:center;color:#fff;
 }
 .About_container .aboutContainer1 .abot_right1{
-  position: absolute;right: 0;width: 47%;padding-top: 10%
+  position: absolute;right: 0;padding-top: 10%; margin: 0 auto;width: 50%;
 
 }
 .About_container .aboutContainer1 .abot_left1 h1{font-size: 110px;letter-spacing: -4px;padding-left: 9%;}
-.About_container .aboutContainer1 .abot_left1 p{font-size: 18px;padding-bottom: 4%;line-height: 30px;}
+.About_container .aboutContainer1 .abot_left1 p{
+  font-size: 18px;padding-bottom: 4%;line-height: 30px;width: 90%;padding-left: 4%;}
 .About_container .aboutContainer1 .abot_left1 .left_p{ padding-top: 57%;text-align: right;position: absolute;}
-.About_container .aboutContainer1 .abot_left1 img{width: 80%;position: absolute;left:20%;}
+.About_container .aboutContainer1 .abot_left1 img{position: absolute;left:20%;}
 
 .About_container .aboutContainer1 .abot_right1 img{width: 80%;display: block;margin: 0 auto;}
 .About_container .aboutContainer1 .abot_right1 p{

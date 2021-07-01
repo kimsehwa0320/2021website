@@ -139,7 +139,7 @@ nav#navTop #topMenu_2 img{width: 40px;margin: 0 -50px;}
 
 .cardContainer img{width: 45px;}
 .cardContainer{
-    height:auto;
+    height:250px;
     width:150px;
 
     display:inline-block;
@@ -1439,6 +1439,6 @@ input[type=submit]:hover {
   animation-direction:alternate; z-index: 3;
 }
 @keyframes xScroll{
-  from{bottom: 3%;}
-  to{bottom: 7%;}
+  from{bottom: 1%;}
+  to{bottom: 4%;}
 }

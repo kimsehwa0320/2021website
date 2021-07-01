@@ -113,7 +113,7 @@ nav#navTop #topMenu_2 img{width: 40px;margin: 0 -50px;}
   position: absolute;font-size: 54px;letter-spacing: -2px;top: 8%;text-align: center;
   left: 50%;transform: translateX(-50%);width: 100%;
 }
-.mainSlide img{display: block;margin: 0 auto;width: 80%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);} /*사이 공백 없애고 사이즈 조정*/
+.mainSlide img{display: block;margin: 0 auto;width: 95%;} /*사이 공백 없애고 사이즈 조정*/
 .mainSlide{
   height: 100%;
   margin: 0 auto;
@@ -125,7 +125,7 @@ nav#navTop #topMenu_2 img{width: 40px;margin: 0 -50px;}
 .mainSlide li{position: absolute;opacity: 0;}
 .mainSlide li:nth-child(1){_top: 50%; _transform: translateY(-50%);left: 0;opacity: 1;}
 
-.section.page1 .sliderWrap li img{display: block;margin: 0 auto;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);width: 95%;}
+
 .mainTxt1,.mainTxt2,.mainTxt3{position: absolute;text-align: center;}
 .section.page1 .sliderWrap li .mainTxt1{left: 50%;top: 20%;transform: translate(-50%,-50%);width: 300px;}
 .section.page1 .sliderWrap li .mainTxt2{right:5%;top: 50%;transform: translateY(-50%);}
@@ -137,7 +137,7 @@ nav#navTop #topMenu_2 img{width: 40px;margin: 0 -50px;}
 
 .cardContainer{position: absolute;bottom:0;transform: translateX(-50%);left: 50%;}
 
-.cardContainer img{width: 40px;}
+.cardContainer img{width: 45px;}
 .cardContainer{
     height:auto;
     width:150px;

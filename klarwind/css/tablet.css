@@ -116,7 +116,7 @@ nav#navTop #topMenu_2 img{width: 40px;margin: 0 -50px;}
   position: absolute;font-size: 98px;letter-spacing: -3px;top: 4%;text-align: center;
   left: 50%;transform: translateX(-50%);width: 100%;
 }
-.mainSlide img{display: block;margin: 0 auto;width: 80%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);} /*사이 공백 없애고 사이즈 조정*/
+.mainSlide img{display: block;margin: 0 auto;width: 85%;} /*사이 공백 없애고 사이즈 조정*/
 .mainSlide{
   height: 100%;
   margin: 0 auto;
@@ -127,7 +127,7 @@ nav#navTop #topMenu_2 img{width: 40px;margin: 0 -50px;}
 .mainSlide ul{width: 100%;height: 100%;position: relative;}
 .mainSlide li{position: absolute;opacity: 0;}
 .mainSlide li:nth-child(1){_top: 50%; _transform: translateY(-50%);left: 0;opacity: 1;}
-/* .section.page1 .sliderWrap li img{display: block;margin: 0 auto;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);width: 95%;} */
+
 .mainTxt1,.mainTxt2,.mainTxt3{position: absolute;text-align: center;}
 .section.page1 .sliderWrap li .mainTxt1{color:#fff;left: 50%;top: 15%;transform: translateX(-50%);}
 .section.page1 .sliderWrap li .mainTxt2{right: 10%;top: 45%;transform: translateY(-50%);}
@@ -137,7 +137,11 @@ nav#navTop #topMenu_2 img{width: 40px;margin: 0 -50px;}
 .section.page1 .sliderWrap li h3{font-size: 42px;width: 100%;color:#52aff6;}
 .section.page1 .sliderWrap li .mainh3{font-size: 42px;width: 100%;color:#52aff6;}
 
-.cardContainer{position: absolute;bottom: 10px;transform: translateX(-50%);left: 50%;}
+.cardContainer{
+  position: absolute;bottom: 0;
+  transform: translateX(-50%);left: 50%;
+  margin-bottom: 2%;
+}
 
 .cardContainer{
     height:auto;

@@ -1,5 +1,5 @@
 @charset "utf-8";
-.mainSlide
+
 h1{font-family: 'Noto Sans', sans-serif; font-weight: 700;}
 html{height: 100%;}
 body{ height: 100%;min-width: 992px;width: 100%;overflow-x: hidden;font-family: 'Noto Sans', sans-serif;}
@@ -1404,7 +1404,7 @@ input[type=submit] {-webkit-appearance:none;}
 input[type=text],
 input[type=email],
 input[type=number],
-select[id=country], textarea[id=subject]
+select[id=country], textarea[id=question]
 {
   width: 100%;
   padding: 12px;

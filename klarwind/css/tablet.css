@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 html,body{ height: 100%;font-family: Arial;}
 body{font-family: 'Noto Sans', sans-serif; min-width: 557px;max-width: 991px;height: 100%;}
 h1{font-family: 'Noto Sans', sans-serif; font-weight: 700;}
@@ -753,7 +754,7 @@ input[type=submit] {-webkit-appearance:none;}
 input[type=text],
 input[type=email],
 input[type=number],
-select[id=country], textarea[id=subject]
+select[id=country], textarea[id=question]
 {
   width: 100%;
   padding: 12px;

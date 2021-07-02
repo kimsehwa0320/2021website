@@ -144,7 +144,7 @@ nav#navTop #topMenu_2 img{width: 40px;margin: 0 -50px;}
 }
 
 .cardContainer{
-    height:auto;
+    height:275px;
     width:150px;
 
     display:inline-block;
@@ -1454,6 +1454,6 @@ border-bottom: 1px solid #ccc;
   animation-direction:alternate; z-index: 3;
 }
 @keyframes xScroll{
-  from{bottom:6%;}
-  to{bottom: 9%;}
+  from{bottom:5%;}
+  to{bottom: 8%;}
 }

@@ -266,7 +266,7 @@ nav#navTop #topMenu_2 img{width: 40px;}
 .section.page4 .container4 {position: relative;width: 100%;height: 100%;}
 .section.page4 #klarwind4_video{vertical-align: middle;width: 100%;height: 100%;object-fit:cover;}
 .section.page4 .mySlides {width: 100%;height: 100%;overflow: hidden;}
-.section.page4 .mySlides img{height: auto; width: 100%;transform: scale(1.35);padding-top: 12%;}
+.section.page4 .mySlides img{height: auto; width: 100%;transform: scale(1.35);padding-top: 12%;margin-left: 120px;}
 
 .section.page4 .section.page4 .cursor {cursor: pointer;}
 .section.page4 .prev,
@@ -313,11 +313,11 @@ nav#navTop #topMenu_2 img{width: 40px;}
 .section.page4 .active,
 .section.page4 .demo:hover {opacity: 1;}
 
-.klarwind300{position: absolute;top: 25%;right: 13%;width: 800px;}
-.klarwind300 h1{font-size: 72px;padding-bottom: 2%;}
-.klarwind300 p{font-size: 32px;padding-bottom: 6%;}
+.klarwind300{position: absolute;top: 30%;right: 5%;width: 450px;}
+.klarwind300 h1{font-size: 42px;padding-bottom: 2%;}
+.klarwind300 p{font-size: 24px;padding-bottom: 6%;}
 .klarwind300 a{
-  background: #52aff6; padding: 15px 25px;font-size: 26px;
+  background: #52aff6; padding: 15px 25px;font-size: 22px;
   color:#fff;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   transition: 0.3s;
 }
@@ -326,7 +326,7 @@ nav#navTop #topMenu_2 img{width: 40px;}
 }
 
 /* .section.page5 */
-.section.page6 .container6{ max-width: 1600px;position: relative;left: 50%;transform: translateX(-50%);}
+.section.page6 .container6{ max-width: 1355px;position: relative;left: 50%;transform: translateX(-50%);}
 .section.page6 .page6_column{overflow: hidden;}
 .section.page6 .page6_column img:hover{
   box-shadow: 0 0 7px 1px #52aff6;
@@ -363,13 +363,6 @@ nav#navTop #topMenu_2 img{width: 40px;}
   transition: 0.3s;cursor: pointer;
 }
 
-@media screen and (max-width: 991px) {
-  .page6_column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
 #glayLayer{
   position: fixed;width: 100%;height: 100%;
   background: #000;opacity:0.6;left: 0;top: 0;
@@ -384,30 +377,30 @@ nav#navTop #topMenu_2 img{width: 40px;}
 /* section.page6 */
 .section.page5{background: #000;color:#fff;width: 100%;
 }
-.section.page5 .container5{max-width: 1400px;}
+.section.page5 .container5{max-width: 1000px;}
 .section.page5 .markheader{
-  position: absolute;min-width: 992px;max-width: 1400px;height: 100%;
+  position: absolute;min-width: 1024px;max-width: 1355px;height: 100%;
   left: 50%;transform: translateX(-50%);top: 0;
 
 }
 .section.page5 .box{
-  position: absolute; left: 13%;transform: translateX(-50%); top: 0;
+  position: absolute; left: 25%;transform: translateX(-50%); top: 0;
   width: 7px;height: 100%;background: #fff;
 }
 .section.page5 h1{
   position: absolute;text-align: center;
-  font-size: 68px; font-weight: bold; z-index: 15;top: 10%;
-  background: #000; padding: 3.5%; width: 100%;
+  font-size: 46px; font-weight: bold; z-index: 15;top: 8%;
+  background: #000; padding: 2%; width: 100%;
 }
 
 .section.page5 .mark{
-  position: absolute;top: 30%;width: 100%;
-  left: 47%;transform: translateX(-50%);
+  position: absolute;top: 26%;width: 70%;
+  left: 50%;transform: translateX(-50%);
 }
 .section.page5 .mark1,.mark2,.mark3,.mark4{float: left;padding-bottom: 3%;}
-.section.page5 .mark img{width: 15%;float: left;padding-top: 1%;}
-.section.page5 h3{padding-left: 20%;padding-bottom: 1%;padding-top: 2%;}
-.section.page5 p{padding-left: 20%;font-weight: lighter;}
+.section.page5 .mark img{width: 12%;float: left;padding-top: 2.5%;}
+.section.page5 h3{padding-left: 20%;padding-bottom: 1%;padding-top: 2%;font-size: 16px;}
+.section.page5 p{padding-left: 20%;font-weight: lighter;font-size: 14px;}
 
 
 /* PRODUCT PAGE */

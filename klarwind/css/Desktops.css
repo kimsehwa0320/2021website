@@ -447,13 +447,13 @@ border-bottom: 1px solid #ccc;
 }
 .accordionTxt {
 padding: 3% 0;
-font-size: 24px;
+font-size: 20px;
 border-bottom: 1px solid #ccc;
 }
-.accordionContent h4 { padding: 4% 0;font-size:28px; color:#626262;font-weight: 400;}
+.accordionContent h4 { padding: 4% 0;font-size:26px; color:#626262;font-weight: 400;}
 .accordionTxt li{padding-bottom: 3%;letter-spacing: -1px;}
 .accordionTxt li:last-child{padding-bottom: 0;}
-.accordionTxt li>span{font-size:24px;font-weight: bold;}
+.accordionTxt li>span{font-size:20px;font-weight: bold;}
 .accordionTxt h5{font-weight: 100;font-size: 22px;color:#626262;}
 
 
@@ -478,7 +478,7 @@ border-bottom: 1px solid #ccc;
   left: 50%;transform: translateX(-50%);
 }
 .ProductSub_container{
-  position: absolute;width: 1260px; min-width: 1024px;height: 100%;
+  position: absolute;width: 1100px; min-width: 1024px;height: 100%;
   left: 50%;transform: translateX(-50%);padding: 0 5%;
 }
 .subMenuTab li.selected{
@@ -530,7 +530,7 @@ border-bottom: 1px solid #ccc;
 .subContent .menu3st h1,
 .subContent .menu4st h1,
 .subContent .menu5st h1
-{font-size: 32px;letter-spacing: -1px;}
+{font-size: 28px;letter-spacing: -1px;}
 .subContent .menu1st h2,
 .subContent .menu2st h2,
 .subContent .menu3st h2,
@@ -543,7 +543,7 @@ border-bottom: 1px solid #ccc;
 .menu3st p,
 .menu4st p,
 .menu5st p
-{font-size: 18px;padding: 2% 0;line-height: 20px;}
+{font-size: 16px;padding: 2% 0;line-height: 20px;}
 .menu1st a,
 .menu2st a,
 .menu3st a,
@@ -609,7 +609,7 @@ border-bottom: 1px solid #ccc;
 .k300 .k300Sub{
   position: absolute;width: 1000px;left: 50%;transform: translateX(-50%);padding-top: 5%;
 }
-.k300 .k300p1{font-size: 52px; font-weight: bold;}
+.k300 .k300p1{font-size: 46px; font-weight: bold;}
 .k300 .k300Sub>p{text-align: justify;position: absolute;left: 50%;transform: translateX(-50%);}
 
 .k00img{padding-top: 10%;height: 920px;}
@@ -633,7 +633,7 @@ border-bottom: 1px solid #ccc;
 
 .k3002{
   position: absolute;width: 1000px;
-  margin-top: 100%;left: 50%;transform: translateX(-50%);
+  margin-top: 116%;left: 50%;transform: translateX(-50%);
   text-align: center;
 }
 .k300Sub_2{width: 100%;height: 830px;}
@@ -741,7 +741,7 @@ border-bottom: 1px solid #ccc;
 .cg{width: 50%;height: 600px;}
 .cg img{width: 100%;height: 100%; object-fit:cover;}
 .k700Sub_6 .k700ul2 ul, .k300Sub2_6 .k700ul2 ul{display: flex;justify-content: center;align-items: center;}
-.k700Sub_6 .k700ul2 h1, .k300Sub2_6 .k700ul2 h1{padding-top: 24%;}
+.k700Sub_6 .k700ul2 h1, .k300Sub2_6 .k700ul2 h1{padding-top: 20%;}
 .k700Sub_6 .k700ul2 h3, .k300Sub2_6 .k700ul2 h3{padding-bottom: 10%;}
 .k700Sub_6 .k700ul2 ul li, .k300Sub2_6 .k700ul2 ul li{float: left;width: 100px;padding-bottom: 5%;transition: 0.3s;}
 .k700Sub_6 .k700_block, .k300Sub2_6 .k700_block{height: 100px;}
@@ -755,11 +755,13 @@ border-bottom: 1px solid #ccc;
 }
 .k500Sub_7{background-image: url(../images/product8_500.jpg);}
 .k300Sub_7{background-image: url(../images/product8.jpg);}
-.k300Sub_7 .pro_7{position: absolute;width: 500px;right: 0;padding-top: 1%;}
+.k300Sub_7 .pro_7{position: absolute;width: 50%;right: 0;padding-top: 1%;}
 .k500Sub_7 .pro_500_7{position: absolute;width: 40%;left: 5%;padding-top: 1%;}
 .k300Sub_7 h1,.k500Sub_7 h1{padding-bottom: 1.5%;}
 
-.k300Sub_7 .pro_7 .smart img,.k500Sub_7 .pro_500_7 .smart img{position: absolute;left: 50%;transform: translateX(-50%);width: 6.5%;}
+.k300Sub_7 .pro_7 .smart img,.k500Sub_7 .pro_500_7 .smart img{position: absolute;left: 50%;transform: translateX(-50%);}
+.k300Sub_7 .pro_7 .smart img{width: 5.5%;}
+.k500Sub_7 .pro_500_7 .smart img{width: 6.5%;}
 .k300Sub_7 .pro_7 .smart .smart_ul, .k500Sub_7 .pro_500_7 .smart .smart_ul{width: 100%;position: absolute;left: 50%;transform: translateX(-50%);}
 .k300Sub_7 .pro_7 .smart .smart_ul1,.k300Sub_7 .pro_7 .smart .smart_ul2,
 .k500Sub_7 .pro_500_7 .smart .smart_ul1,.k500Sub_7 .pro_500_7 .smart .smart_ul2

@@ -25,11 +25,11 @@ nav#navTop{
   box-shadow: 5px 10px 8px 0 rgba(0, 0, 0, 0.03);
 }
 nav#navTop #topMenu li{float: left; font-size:16px; position: relative;letter-spacing: -1px; font-weight: bold;}
-nav#navTop #topMenu .hd_logo{ position: absolute; z-index: 2;}
+nav#navTop #topMenu .hd_logo{ position: absolute; z-index: 2;width: 130px;padding-top: 8px;}
 nav#navTop #topMenu .ctg{padding-left:7% ;}
 
 /* nav#navTop #main_menu{box-shadow: 5px 10px 8px 0 rgba(0, 0, 0, 0.02);} */
-nav#navTop #topMenu li:nth-child(2){width: 120px;}
+nav#navTop #topMenu li:nth-child(2){width: 100px;}
 nav#navTop #topMenu li:nth-child(2) a,
 nav#navTop #topMenu li:nth-child(3) a,
 nav#navTop #topMenu li:nth-child(4) a,
@@ -412,7 +412,7 @@ nav#navTop #topMenu_2 img{width: 40px;}
 .ProductSub_header{position: relative;max-width:1355px;min-width: 1024px;height: 700px;}
 .ProductSub_banner{position: absolute;background: #000;height: 580px;width: 100vw;}
 .ProductSub_banner .box{
-  position: absolute;width: 550px;height: 520px;top: 15%;
+  position: absolute;width: 550px;height: 520px;top: 18%;
   background: #f8f9fa; left: 50%;transform: translateX(-50%);
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.4);
 }
@@ -421,7 +421,7 @@ nav#navTop #topMenu_2 img{width: 40px;}
 }
 .ProductSub_banner h1{
   position: absolute;top: 0;right: 0;color: #52aff6;letter-spacing: -4px;
-  font-size: 50px;padding-right: 3%;text-align: right;
+  font-size: 46px;padding-right: 3%;text-align: right;
   font-weight: bold;line-height: 57px;padding-top: 2%;
 }
 .visualTxt1{
@@ -564,7 +564,7 @@ border-bottom: 1px solid #ccc;
   width: 100vw; height: 1.5px; background: #797878;opacity: 0.3;
 }
 .menu1st .product_footer img{
-  width: 170px;padding-top: 10px;margin-bottom: 1%;
+  width: 100px;padding-top: 10px;margin-bottom: 1%;
 }
 .buttonAll a
 {
@@ -957,7 +957,7 @@ border-bottom: 1px solid #ccc;
   width: 100vw; height: 1.5px; background: #797878;opacity: 0.3;
 }
 .product_footer img{
-  width: 170px;padding-top: 10px;margin-bottom: 1%;
+  width: 100px;padding-top: 10px;margin-bottom: 1%;
 }
 
 
@@ -1381,7 +1381,7 @@ border-bottom: 1px solid #ccc;
   position: absolute;left: 50%;transform: translateX(-50%);
   width: 100vw; height: 1.5px; background: #797878;opacity: 0.3;
 }
-.about_footer img{position: absolute;left: 50%;transform: translateX(-50%);padding-top: 10px;}
+.about_footer img{position: absolute;left: 50%;transform: translateX(-50%);padding-top: 10px;width: 100px;}
 
 
 
@@ -1490,7 +1490,7 @@ input[type=submit]:hover {
   display: block;margin: 0 auto;
   width: 100vw; height: 1.5px; background: #797878;opacity: 0.3;
 }
-.support_footer img{width: 170px;display: block;margin: 0 auto;padding-top: 10px;}
+.support_footer img{width: 100px;display: block;margin: 0 auto;padding-top: 10px;}
 
 
 /* TOP BUTTON */

@@ -132,9 +132,7 @@ nav#navTop #topMenu_2 img{width: 40px;margin: 0 -50px;}
 .mainSlide li:nth-child(1){_top: 50%; _transform: translateY(-50%);left: 0;opacity: 1;}
 
 .mainTxt1,.mainTxt2,.mainTxt3{position: absolute;text-align: center;}
-.section.page1 .sliderWrap li .mainTxt1{color:#fff;left: 50%;top: 15%;transform: translateX(-50%);}
-.section.page1 .sliderWrap li .mainTxt2{right: 10%;top: 45%;transform: translateY(-50%);}
-.section.page1 .sliderWrap li .mainTxt3{left: 50%;top: 30%;color: #fff;transform: translate(-50%,-50%);}
+
 
 .section.page1 .sliderWrap li p{font-size: 28px;}
 .section.page1 .sliderWrap li h3{font-size: 42px;width: 100%;color:#52aff6;}

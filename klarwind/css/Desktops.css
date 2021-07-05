@@ -91,17 +91,20 @@ nav#navTop #topMenu_2 img{width: 40px;}
 
 .slideTxt{position: absolute;top: 36%;}
 .slideTxt p{
-  margin-left:25px;font-weight: bold;_color:#4f4f4f;
-  font-size: 22px;letter-spacing: -1.7px;
-  background: linear-gradient(to right, #afafaf, #000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
+  margin-left:25px;font-weight: bold;color:#4f4f4f;
+  font-size: 32px;letter-spacing: -1.7px;
 }
+  @supports (background-clip:text;){
+    .slideTxt p {
+      background-image: linear-gradient(to right, #afafaf, #000);
+      background-clip:text;
+      color:transparent;
+    }
+  }
 
 
 .mainSlide img{
-  width:100%;height: 100vh;object-fit:cover;
+  width:100%;height: 100%;object-fit:cover;
 
   }
 .mainSlide{

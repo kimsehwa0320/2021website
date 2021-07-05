@@ -322,10 +322,12 @@ text-align: left;
 .section.page4{position: relative;width: 100%;}
 .section.page4 #klarwind4_video{vertical-align: middle;height: 100vh;}
 .section.page4 .container {position: absolute;left: 50%;transform: translateX(-50%);}
-.section.page4 img{padding-top: 3%;}
+.section.page4 .myS {height: 100%;position: absolute;top: 10%;}
+.section.page4 .myS img{height:306px;width: auto;}
+
 .section.page4 .klarwind300 {text-align: center;width: 100%;}
-.section.page4 .klarwind300 h1{font-size: 26px;}
-.section.page4 .klarwind300 p{font-size: 18px;padding: 2% 15% 10% 15%;}
+.section.page4 .klarwind300 h1{font-size: 22px;}
+.section.page4 .klarwind300 p{font-size: 13px;padding: 2% 15% 10% 15%;}
 .klarwind300 a{
   background: #52aff6; padding: 15px 20px;
   color:#fff;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
@@ -454,16 +456,16 @@ text-align: left;
 }
 .section.page5 h1{
   position: absolute; left: 50%;transform: translateX(-50%);width: 90%;
-  top: 17%;font-size: 26px;font-weight: bold; z-index: 15;letter-spacing: -1px;
+  top: 14%;font-size: 26px;font-weight: bold; z-index: 15;letter-spacing: -1px;
 }
 .section.page5 .mark{
-  position: absolute;left: 50%;transform: translateX(-50%);top: 33%;
+  position: absolute;left: 50%;transform: translateX(-50%);top: 26%;
   justify-content: center;align-items: center;width: 90%;
 }
 .mark li{float: left;width: 50%;}
 .section.page5 .mark1,.mark2,.mark3,.mark4{padding-bottom: 7%;}
 .section.page5 img{width: 100%;padding-bottom: 1%;margin-left: 15%;}
-.section.page5 h3{font-size: 12px;padding:  0 7%;padding-bottom: 1%;}
+.section.page5 h3{font-size: 12px;padding:  0 7%;padding-bottom: 10%;}
 .section.page5 p{display: none;}
 
 
@@ -516,7 +518,7 @@ text-align: left;
 .aboutContainer2 .asia {left: 77%;top:-50%;}
 .aboutContainer2 .eu {left: 51%;top: -95%;}
 .aboutContainer2 .Oceania {width: 10%;top: 47%;right: 8%;}
-.aboutContainer2 .Korea {width: 10%;right: 11%;top:25%;}
+.aboutContainer2 .korea {width: 10%;right: 11%;top:19%;}
 .aboutContainer2 .MiddleEast {left: 62%;top: 14%;}
 
 .mapMenu1,.mapMenu2,.mapMenu3,.mapMenu4 {

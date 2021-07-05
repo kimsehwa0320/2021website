@@ -20,12 +20,12 @@ header{ width: 100vw;}
 #navTop .blind_mo{display: none;}
 .blind_mo{display: none;}
 nav#navTop{
-  position: fixed; background: #fff;
+  position: fixed; background: #fff;height: 9%;
   width: 100%;z-index:1;padding-left: 10px;
   box-shadow: 5px 10px 8px 0 rgba(0, 0, 0, 0.03);
 }
 nav#navTop #topMenu li{float: left; font-size:16px; position: relative;letter-spacing: -1px; font-weight: bold;}
-nav#navTop #topMenu .hd_logo{ position: absolute; z-index: 2;padding-top: 3px;}
+nav#navTop #topMenu .hd_logo{ position: absolute; z-index: 2;}
 nav#navTop #topMenu .ctg{padding-left:7% ;}
 
 /* nav#navTop #main_menu{box-shadow: 5px 10px 8px 0 rgba(0, 0, 0, 0.02);} */
@@ -36,7 +36,7 @@ nav#navTop #topMenu li:nth-child(4) a,
 nav#navTop #topMenu li:nth-child(5) a{
   display: block; text-align:center;
 }
-.pp{padding: 33px 15px;}
+.pp{padding: 30px 15px;}
 nav#navTop #topMenu li.active a{color:#52aff6;}
 nav#navTop #topMenu li:nth-child(2) a:hover,
 nav#navTop #topMenu li:nth-child(3) a:hover,
@@ -45,7 +45,7 @@ nav#navTop #topMenu li:nth-child(5) a:hover{color:#52aff6;}
 #main_menu li:first-child a{color:#fff;}
 #main_menu li:first-child a:hover{color:#fff;}
 
-nav#navTop #topMenu_2{padding-top: 2.2%;}
+nav#navTop #topMenu_2{padding-top: 1.6%;}
 nav#navTop #topMenu_2 li{float: right;}
 nav#navTop #topMenu_2 li a{padding: 0;}
 nav#navTop #topMenu_2 li:nth-child(3){margin-right: 30px;}

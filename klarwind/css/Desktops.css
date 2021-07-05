@@ -1562,15 +1562,15 @@ input[type=submit]:hover {
 }
 .scroll img{width: 70%;}
 .scroll{
-  position: absolute;left: 45.7%;transform: translateX(-50%);
+  position: absolute;left: 45.7%;top: 72%;transform: translate(-50%,-50%);
   animation-name:xScroll;
   animation-duration:0.8s;
   animation-iteration-count:infinite;
   animation-direction:alternate; z-index: 3;
 }
 @keyframes xScroll{
-  from{bottom: 43%;}
-  to{bottom: 40%;}
+  from{top: 72%;}
+  to{bottom: 76%;}
 }
 
 

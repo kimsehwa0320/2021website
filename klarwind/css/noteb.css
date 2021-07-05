@@ -200,7 +200,7 @@ nav#navTop #topMenu_2 img{width: 40px;}
 }
 .section.page2 .page2_slide1,.section.page2 .page2_slide2{top: 43%;}
 .section.page2 .page2_slide1{left: 0%;text-align: right;}
-.section.page2 .page2_slide1 h1{font-size: 50px;padding-bottom: 3%;}
+.section.page2 .page2_slide1 h1{font-size: 51px;padding-bottom: 3%;}
 .section.page2 .page2_slide1 p{line-height: 30px; font-size: 18px;padding-bottom: 8%;width: 80%;margin-left: 20%;}
 .section.page2 .page2_slide1 a{
   background: #52aff6; padding: 15px 20px;
@@ -221,7 +221,7 @@ nav#navTop #topMenu_2 img{width: 40px;}
 .viewbg2 img{width:100%;height: 100vh;object-fit:cover;}
 
 .page2 .page2_slide2{right:0%;}
-.section.page2 .page2_slide2 h1{font-size: 50px;padding-bottom: 3%;}
+.section.page2 .page2_slide2 h1{font-size: 51px;padding-bottom: 3%;}
 .section.page2 .page2_slide2 p{line-height: 30px; font-size: 18px;padding-bottom: 8%;width: 80%;}
 .section.page2 .page2_slide2 a{
   background: #52aff6; padding: 15px 20px;
@@ -1010,17 +1010,17 @@ border-bottom: 1px solid #ccc;
   position: absolute;transition: 0.3s;text-align: center;
   color:#52aff6;font-weight: bold;font-size: 22px;
 }
-.aboutContainer2 .mapimg img{top: 24%;width: 100%;left: 50%;transform: translateX(-50%);}
+.aboutContainer2 .mapimg img{top: 23%;width: 85%;left: 50%;transform: translateX(-50%);}
 .aboutContainer2 .mapContainer{position: absolute;top: 24%;width: 100%;height: 935px;left: 50%;transform: translateX(-50%);}
 
 .aboutContainer2 .NortAmerica img, .Oceania img, .asia img, .MiddleEast img, .eu img, .asia img, .korea img{width: 100%;transition: 0.3s;}
 
-.aboutContainer2 .NortAmerica {left: 18%;top:16%;}
-.aboutContainer2 .asia {left: 75%;top:-8%;}
-.aboutContainer2 .eu {left: 51%;top: -32%;}
-.aboutContainer2 .Oceania {width: 10%;top: 31%;right: 12%;}
-.aboutContainer2 .korea {width: 10%;right: 13%;top:13%;}
-.aboutContainer2 .MiddleEast {left: 61%;top: 14%;}
+.aboutContainer2 .NortAmerica {left: 23%;top:16%;}
+.aboutContainer2 .asia {left: 71%;top:-10%;}
+.aboutContainer2 .eu {left: 51%;top: -37%;}
+.aboutContainer2 .Oceania {width: 10%;top: 40%;right: 16%;}
+.aboutContainer2 .korea {width: 10%;right: 18%;top:14%;}
+.aboutContainer2 .MiddleEast {left: 59%;top: 14%;}
 
 .mapMenu1,.mapMenu2,.mapMenu3,.mapMenu4 {
   position: relative;
@@ -1313,12 +1313,12 @@ border-bottom: 1px solid #ccc;
 .aboutContainer4 .abot_left4 h1{font-size: 62px;letter-spacing: -2px;left: 35%;padding-bottom: 9%;}
 .aboutContainer4 .abot_left4 p{font-size: 18px;font-weight:500;letter-spacing: -1px;text-align: justify;}
 
-.slider_4 img{display: block; width: 350px;} /*사이 공백 없애고 사이즈 조정*/
+.slider_4 img{display: block; width: 600px;} /*사이 공백 없애고 사이즈 조정*/
 .slider_4{
-  width: 350px; height: 350px;
-  margin: 50px auto;background: #000;
+  width: 600px; height: 600px;
+  margin: 0 auto;background: #000;
   overflow: hidden;
-  position: absolute;top: 45%;transform: translateY(-50%);left: 16%;
+  position: absolute;top: 50%;left: 50%;transform: translate(,-50%-50%);
 }
 .slider_4 ul{width: 350px; height: 350px; position: relative;}
 .slider_4 li{position: absolute;opacity: 0;}

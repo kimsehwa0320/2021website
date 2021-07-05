@@ -1313,14 +1313,14 @@ border-bottom: 1px solid #ccc;
 .aboutContainer4 .abot_left4 h1{font-size: 62px;letter-spacing: -2px;left: 35%;padding-bottom: 9%;}
 .aboutContainer4 .abot_left4 p{font-size: 18px;font-weight:500;letter-spacing: -1px;text-align: justify;}
 
-.slider_4 img{display: block; width: 600px;} /*사이 공백 없애고 사이즈 조정*/
+.slider_4 img{display: block;margin: 0 auto;} /*사이 공백 없애고 사이즈 조정*/
 .slider_4{
-  width: 600px; height: 600px;
+  width: 70%; height: auto;
   margin: 0 auto;background: #000;
   overflow: hidden;
-  position: absolute;top: 50%;left: 50%;transform: translate(,-50%''-50%);
+  position: absolute;top: 47%;left: 50%;transform: translate(-50%,-50%);
 }
-.slider_4 ul{width: 350px; height: 350px; position: relative;}
+.slider_4 ul{width: 700px; height: 550px; position: relative;}
 .slider_4 li{position: absolute;opacity: 0;}
 .slider_4 li:nth-child(1){_top: 50%; _transform: translateY(-50%);left: 0;opacity: 1;}
 

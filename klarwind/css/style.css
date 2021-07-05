@@ -5,5 +5,5 @@
 @import "noteb.css" all and (min-width : 1366px) and (max-width: 1700px);
 @import "Desktops.css" all and (min-width : 1024px) and (max-width: 1365px);
 @import "tabletwidth.css" all and (min-width: 992px) and (max-width: 1023px);
-@import "tablet.css" all and (min-width: 557px) and (max-width: 991px) and (orientation : portrait);
+@import "tablet.css" all and (min-width: 557px) and (max-width: 991px);
 @import "mobile.css" all and (max-width: 557px);

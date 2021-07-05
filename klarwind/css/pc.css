@@ -959,7 +959,7 @@ margin: 0 auto;
   position: absolute;right: 0;padding-top: 10%; margin: 0 auto;width: 50%;
 
 }
-.About_container .aboutContainer1 .abot_left1 h1{font-size: 110px;letter-spacing: -4px;padding-left: 20%;}
+.About_container .aboutContainer1 .abot_left1 h1{font-size: 110px;letter-spacing: -4px;text-align: right;padding-right: 3%;}
 .About_container .aboutContainer1 .abot_left1 p{
   font-size: 18px;padding-bottom: 4%;line-height: 30px;width: 90%;padding-left: 4%;}
 .About_container .aboutContainer1 .abot_left1 .left_p{ padding-top: 57%;text-align: right;position: absolute;}

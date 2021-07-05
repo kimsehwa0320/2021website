@@ -1364,7 +1364,7 @@ margin: 0 auto;
 
 
 /* SUPPORT */
-.Support_container{position: relative;width:1920px;height: 2550px;left: 50%;transform: translateX(-50%);padding-top: 4%;text-align: center;}
+.Support_container{position: relative;width:1920px;height: 2650px;left: 50%;transform: translateX(-50%);padding-top: 4%;text-align: center;}
 .Support_banner{height: 500px;text-align: left;min-width: 1701px;}
 .Support_banner h1, .Support_banner p{margin-left: 2%;}
 .Support_banner h1{font-size: 140px;position: absolute;top: 16%;left: 6%;letter-spacing: -6px;}

@@ -141,7 +141,7 @@ nav#navTop #topMenu_2 img{width: 40px;margin: 0 -50px;}
 .cardContainer{
     height:250px;
     width:150px;
-
+    z-index: 3;
     display:inline-block;
 }
 .cardContainer div{

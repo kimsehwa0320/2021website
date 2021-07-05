@@ -92,7 +92,7 @@ nav#navTop #topMenu_2 img{width: 40px;}
 .slideTxt{position: absolute;top: 36%;}
 .slideTxt p{
   margin-left:25px;font-weight: bold;color:#4f4f4f;
-  font-size: 32px;letter-spacing: -1.7px;
+  font-size: 24px;letter-spacing: -1.7px;
 }
   @supports (background-clip:text;){
     .slideTxt p {

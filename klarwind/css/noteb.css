@@ -1559,10 +1559,10 @@ input[type=submit]:hover {
   animation-iteration-count:infinite;
   animation-direction:alternate; z-index: 4;
 }
-@keyframes xScroll{
+/* @keyframes xScroll{
   from{top: 55%;}
   to{top: 60%;}
-}
+} */
 
 
 .mr20{_margin-right: 20px;}

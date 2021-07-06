@@ -117,10 +117,10 @@ nav#navTop #topMenu_2 img{width: 40px;}
 .section.page1 .sliderWrap li p{font-size: 30px;}
 .section.page1 .sliderWrap li h3{font-size: 42px;width: 100%;color:#52aff6;}
 
-.cardContainer{position: absolute;top: 25%; transform: translateX(-50%);left: 45.2%;}
+.cardContainer{position: absolute;top: 20%; transform: translateX(-50%);left: 45.2%;}
 .cardContainer img{width: 40%;}
 .cardContainer{
-    height:auto;
+    height:150px;
     width:150px;
     display:inline-block;
 }
@@ -143,7 +143,7 @@ nav#navTop #topMenu_2 img{width: 40px;}
 
 .cardContainer div:last-child{
     position:relative;
-    top:-150px;
+    top:-130px;
     transform:rotateY(180deg);
     -webkit-transform:rotateY(180deg);
     -ms-transform:rotateY(180deg);
@@ -1557,16 +1557,16 @@ input[type=submit]:hover {
 }
 .scroll img{width: 70%;}
 .scroll{
-  position: absolute;left: 45.7%;top: 72%;transform: translate(-50%,-50%);
+  position: absolute;left: 45.7%;transform: translateX(-50%);
   animation-name:xScroll;
   animation-duration:0.8s;
   animation-iteration-count:infinite;
   animation-direction:alternate; z-index: 3;
 }
-@keyframes xScroll{
+/* @keyframes xScroll{
   from{top: 67%;}
   to{bottom: 72%;}
-}
+} */
 
 
 .mr20{_margin-right: 20px;}

@@ -563,14 +563,7 @@ text-align: left;
     padding-top: 50px;
     font-weight: 700;
 }
-.Oceania:hover,.korea:hover{transform:scale(1.1);}
-.toggle + .style:hover,.toggle_2 + .style:hover,.toggle_3 + .style:hover,.toggle_4 + .style:hover{
-  transform: translate(-50%, -50%) scale(1.1);
-}
 
-.toggle:checked + .style,.toggle_2:checked + .style,.toggle_3:checked + .style,.toggle_4:checked + .style {
-  transform: translate(-50%, -50%) scale(.5);
-}
 
 .mapMenu1 input[type=checkbox] + label:before,
 .mapMenu2 input[type=checkbox] + label:before,

@@ -1555,7 +1555,7 @@ input[type=submit]:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
     border-color: transparent transparent transparent #3f3f3f;
 }
-.scroll img{width: 70%;}
+.scroll img{width: 70%;position: absolute;}
 .scroll{
   position: absolute;left: 45.7%;transform: translateX(-50%);
   animation-name:xScroll;
@@ -1563,10 +1563,10 @@ input[type=submit]:hover {
   animation-iteration-count:infinite;
   animation-direction:alternate; z-index: 3;
 }
-/* @keyframes xScroll{
-  from{top: 67%;}
-  to{bottom: 72%;}
-} */
+@keyframes xScroll{
+  from{top: 55%;}
+  to{bottom: 60%;}
+}
 
 
 .mr20{_margin-right: 20px;}

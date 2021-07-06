@@ -1385,7 +1385,7 @@ border-bottom: 1px solid #ccc;
 
 /* SUPPORT */
 .Support_container{
-  position: relative;width: 100%;height: 2100px;
+  position: relative;width: 100%;height: 2700px;
   left: 50%;transform: translateX(-50%);
   text-align: center;padding-top: 4%;
 }
@@ -1414,11 +1414,11 @@ border-bottom: 1px solid #ccc;
 }
 
 .Support_container .SupportHelp{
-  width: 100%;margin: 0 auto;
+  width: 1700px;margin: 0 auto;
   padding-top: 80%;
 }
 .Support_container .SupportHelp>ul{
-  position: absolute; width: 1700px; left: 50%;transform: translateX(-50%);
+  position: absolute; width: 100%; left: 50%;transform: translateX(-50%);
 }
 
 .Support_container .SupportHelp .left_contact{position: absolute;width: 45%;left: 0;padding-left: 5%;}

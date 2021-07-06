@@ -449,13 +449,13 @@ border-bottom: 1px solid #ccc;
 }
 .accordionTxt {
 padding: 3% 0;
-font-size: 24px;
+font-size: 20px;
 border-bottom: 1px solid #ccc;
 }
-.accordionContent h4 { padding: 4% 0;font-size:28px; color:#626262;font-weight: 400;}
-.accordionTxt li{padding-bottom: 3%;letter-spacing: -1px;}
+.accordionContent h4 { padding: 4% 0;font-size:24px; color:#626262;font-weight: 400;}
+.accordionTxt li{padding-bottom: 2%;letter-spacing: -1px;}
 .accordionTxt li:last-child{padding-bottom: 0;}
-.accordionTxt li>span{font-size:24px;font-weight: bold;}
+.accordionTxt li>span{font-size:21px;font-weight: bold;}
 .accordionTxt h5{font-weight: 100;font-size: 22px;color:#626262;}
 
 

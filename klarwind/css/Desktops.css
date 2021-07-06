@@ -308,7 +308,7 @@ nav#navTop #topMenu_2 img{width: 40px;}
   display: table;
   clear: both;
 }
-.section.page4 .column {float: left;width: 16.66%;overflow: hidden;height: 140px;}
+.section.page4 .column {float: left;width: 16.66%;overflow: hidden;height: 124px;}
 .section.page4 .column img{transition: 0.3s;cursor: pointer;}
 .section.page4 .column:hover img{transform: scale(1.3);}
 .section.page4 .active,

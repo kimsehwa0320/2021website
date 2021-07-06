@@ -465,7 +465,7 @@ text-align: left;
 }
 .mark li{float: left;width: 50%;}
 .section.page5 .mark1,.mark2,.mark3,.mark4{padding-bottom: 7%;}
-.section.page5 img{width: 100%;padding-bottom: 1%;margin-left: 15%;}
+.section.page5 .mark img{width: 100%;padding-bottom: 1%;margin-left: 15%;}
 .section.page5 h3{font-size: 12px;padding:  0 7%;padding-bottom: 10%;}
 .section.page5 p{display: none;}
 
@@ -1366,7 +1366,7 @@ input[type=submit]:hover {
 .scrolltop {
   display: none;
   position: fixed;
-  right: 30px;
+  left: 50%;
   bottom: 50px;
   z-index: 1030;
   font-size: 1.875rem;
@@ -1378,13 +1378,13 @@ input[type=submit]:hover {
   color: #dc3545;
   _transition: all 0.5s ease-in-out;
 }
-.scrolltop img{width: 50px;}
+.scrolltop img{width: 60px;}
 #backToTop{transition: 0.3s;}
 
 .top_btn{
-  position: absolute;bottom: 7%;right: 5%;padding: 5%;
+  position: absolute;bottom: 15%;right: 50%;padding: 5%;
 }
-.top_btn img{position: absolute;width: 100px;}
+.top_btn img{position: absolute;width: 100%;transform: scale(2.1);}
 
 /* bxslider */
 .bx-wrapper {

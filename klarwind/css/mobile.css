@@ -319,9 +319,8 @@ text-align: left;
 
 
 /* .section.page4 */
-.section.page4{position: relative;width: 100%;}
-.section.page4 .blind_video{display: none;}
-.section.page4 video{display: none;}
+.section.page4{position: relative;width: 100%;height: 100%;}
+.section.page4 video{position: absolute;height: 100%;top: 50%;transform: translateY(-50%);}
 .section.page4 .container {position: absolute;left: 50%;transform: translateX(-50%);}
 .section.page4 .myS {height: 100%;position: absolute;top: 14%;}
 .section.page4 .myS img{height:306px;width: auto;}

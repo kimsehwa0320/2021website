@@ -424,7 +424,6 @@ text-align: left;
 .page6_column img {
   margin-top: 8px;
   vertical-align: middle;
-  width: 50%;
   transition: 0.3s;cursor: pointer;
 }
 
@@ -441,10 +440,11 @@ text-align: left;
   display: none;
 }
 #overLayer{
-  position: fixed;
+  position: fixed;width: 100%;
   left: 50%;top: 55%;transform:translate(-50%,-50%);
   display: none;
 }
+#overLayer img{width: 100%;}
 
 /* .section.page6 */
 .section.page5{background: #000;color:#fff;width: 100%;

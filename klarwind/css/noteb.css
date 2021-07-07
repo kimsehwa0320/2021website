@@ -1387,21 +1387,22 @@ border-bottom: 1px solid #ccc;
   left: 50%;transform: translateX(-50%);
   text-align: center;padding-top: 4%;
 }
-.Support_banner{height: 500px;text-align: left;}
-.Support_banner h1, .Support_banner p{margin-left: 2%;left: 50%; transform: translateX(-50%);}
-.Support_banner h1{font-size: 140px;position: absolute;top: 28%;letter-spacing: -6px;}
-.Support_banner p{font-size: 38px;position: absolute;top: 36%;letter-spacing: -2px;}
-.Support_banner img{position: absolute;top: 7%;width: 100%;}
+.Support_banner{height: 500px;text-align: center;width: 1700px;}
+.Support_banner h1, .Support_banner p{width: 100%;margin: 0 auto;}
+.Support_banner h1{font-size: 112px;position: absolute;top: 20%;letter-spacing: -6px;}
+.Support_banner p{font-size: 34px;position: absolute;top: 25.5%;letter-spacing: -2px;}
+.Support_banner img{width: 100%;}
 
-.Support_container .SuppoerWrap{position: absolute;width: 1700px;left: 50%;transform: translateX(-50%);padding: 0 5%;}
+.Support_container .SuppoerWrap{position: absolute;width: 1450px;padding: 0 5%;}
 
-.Support_container .SupportTab {position: absolute;padding-top: 24%;z-index: 4;}
+.Support_container .SupportTab {position: absolute;padding-top: 20%;z-index: 4;}
 .Support_container .SupportTab h1{position: absolute;text-align: left;left: 3%;font-size: 38px;padding: 1% 0;}
 .Support_container .SupportTab .S_bar1{position: absolute;background: #000; width: 15px; height: 71px;}
-.Support_container .SupportTab li{float: left;width: 290px;margin-right: 20px;padding-top: 13%;}
-.Support_container .SupportTab li img{width: 290px;padding-bottom: 16%;}
+.Support_container .SupportTab ul{width: 100%;}
+.Support_container .SupportTab li{float: left;width: 20%;padding-top: 13%;}
+.Support_container .SupportTab li img{width: 90%;padding-bottom: 16%;}
 .Support_container .SupportTab li:last-child{margin-right: 0;}
-.Support_container .SupportTab p{font-size: 24px;font-weight: bold;padding-bottom: 8%;}
+.Support_container .SupportTab p{font-size: 24px;font-weight: bold;padding-bottom: 8%;letter-spacing: -0.5px;}
 .Support_container .SupportTab .A{
   background: #52aff6;padding: 12px 20px;transition: 0.3s;
   color:#fff;font-size: 16px;
@@ -1419,8 +1420,8 @@ border-bottom: 1px solid #ccc;
   position: absolute; width: 100%; left: 50%;transform: translateX(-50%);
 }
 
-.Support_container .SupportHelp .left_contact{position: absolute;width: 45%;left: 0;padding-left: 5%;}
-.Support_container .SupportHelp .right_contact{position: absolute;width: 55%;right: 0;padding-right: 5%;}
+.Support_container .SupportHelp .left_contact{position: absolute;width: 50%;left: 0;padding-left: 5.5%;}
+.Support_container .SupportHelp .right_contact{position: absolute;width: 50%;right: 0;}
 .Support_container .SupportHelp .S_bar2{position: absolute;background: #000; width: 15px; height: 71px;}
 .Support_container .SupportHelp h1{position: absolute;text-align: left;left: 17%;font-size: 38px;padding: 1.5% 0;}
 
@@ -1431,7 +1432,7 @@ border-bottom: 1px solid #ccc;
 .Support_icon .S_p1{text-align: left;font-size: 24px;padding-top: 4%; padding-bottom: 3%;}
 .Support_icon .S_p1>p{padding-bottom: 1%;}
 .Support_icon .S_p2{text-align: left;font-size: 36px;padding-top: 27%;}
-.Support_icon .S_p3{font-size: 24px;font-weight: bold;text-align: center;}
+.Support_icon .S_p3{font-size: 20px;font-weight: bold;text-align: center;}
 .thankyou_message{margin-top: 10%;}
 label{font-weight: bold;}
 #honeypot {

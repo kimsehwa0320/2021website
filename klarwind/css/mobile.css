@@ -1276,7 +1276,7 @@ border-bottom: 1px solid #ccc;
   position: absolute;max-width: 556px;height: 3000px;left: 50%;transform: translateX(-50%);padding: 0 5% 5% 5%;
 }
 
-.Support_container .SupportTab {z-index: 4;height: 2600px;text-align: center;}
+.Support_container .SupportTab {z-index: 4;height: 2600px;text-align: center;padding-top: 10%;}
 .Support_container .SupportTab h1{font-size: 24px;padding-top: 2%;}
 .Support_container .SupportTab .S_bar1{background: #000; width: 7px; height: 39px;margin: 0 auto;}
 .Support_container .SupportTab li{padding-top: 10%;text-align: center;}

@@ -835,7 +835,7 @@ border-bottom: 1px solid #ccc;
 .subContent .menu3st h3,
 .subContent .menu4st h3,
 .subContent .menu5st h3
-{font-size: 12px; font-weight: lighter;padding-bottom: 3%;text-align: center;}
+{font-size: 12px; font-weight: lighter;padding-bottom: 5%;text-align: center;}
 .subContent .menu1st h1{font-size: 20px;letter-spacing: -1px;text-align: center;}
 .subContent .menu2st h1,
 .subContent .menu3st h1,
@@ -883,7 +883,7 @@ border-bottom: 1px solid #ccc;
 }
 /* k700 text */
 .k700t1{font-size: 18px;letter-spacing: -1px;font-weight: bold;padding: 1% 0;text-align: center;}
-.k700t2{font-size: 12px;padding-top: 2%;padding-bottom: 3%;line-height: 17px;letter-spacing: 0.5px;text-align: center;}
+.k700t2{font-size: 14px;padding: 2% 3% 0 3%;padding-bottom: 3%;line-height: 17px;letter-spacing: 0.5px;text-align: center;}
 
 /* SubContainer_2 */
 .item1_txt>h3{padding-top: 7%;}
@@ -934,7 +934,7 @@ border-bottom: 1px solid #ccc;
 }
 .k3002{
   max-width: 557px;margin: 0 auto;
-  text-align: center;padding-top: 154%;
+  text-align: center;padding-top: 156%;
 }
 .k300Sub_2{max-width: 557px;height: 280px;}
 .k300Sub_2 h1{padding-bottom: 4%;}
@@ -956,7 +956,7 @@ border-bottom: 1px solid #ccc;
 .k300Sub_4 .product4_700{position: absolute;left: 50%;transform: translateX(-50%);}
 .k300Sub_4 .product4_700 img{width: 300px;}
 .k300Sub_4 .product4_700 h4{font-size: 12px;letter-spacing: -0.5px;}
-.k300Sub_4 .product4_700 p{font-size: 10px;line-height: 15px;}
+.k300Sub_4 .product4_700 p{font-size: 10px;line-height: 11px;}
 .k300Sub_4 .product4_700 ul{position: absolute;width: 360px;left: 50%;transform: translateX(-50%);}
 .k300Sub_4 .product4_700 li{float: left; width: 120px;_margin-right: 18px;}
 .k300Sub_4 .product4_700 li:last-child{margin-right: 0;}
@@ -988,8 +988,8 @@ border-bottom: 1px solid #ccc;
 }
 .k500sSub_5 .k500s_ul{position: absolute;width: 100%;left: 0;text-align: left;}
 .k500Sub_5 .k500_ul{position: absolute;width: 40%;right: 0;text-align: right;padding-top: 17%;}
-.k300Sub_5 ul{padding-top: 71%;}
-.k700Sub_5 ul{padding-top: 72.5%;}
+.k300Sub_5 ul{padding-top: 72.5%;}
+.k700Sub_5 ul{padding-top: 73%;}
 .k500sSub_5 .k500s_ul{padding-top: 23%;}
 .k300Sub_5 li,.k700Sub_5 li{float: left;width: 115px;}
 .k300Sub_5 li:last-child,.k700Sub_5 li:last-child{margin-right: 0;}
@@ -999,8 +999,8 @@ border-bottom: 1px solid #ccc;
 .k500Sub_5 li>p{padding-bottom: 2%;}
 .k500sSub_5 .pro5,.k500Sub_5 .pro5{padding: 3% 0;}
 .k300Sub_5 li:last-child, .k700Sub_5 li:last-child{margin-right:0;}
-.k300Sub_5 li>p, .k700Sub_5 li>p, .k500sSub_5 li>p,.k500Sub_5 li>p{font-size: 9px;line-height: 10.5px;}
-.k300Sub_5 li .pro5, .k700Sub_5 li .pro5,.k500sSub_5 li .pro5,.k500Sub_5 li .pro5{font-size: 12px;font-weight: bold;}
+.k300Sub_5 li>p, .k700Sub_5 li>p, .k500sSub_5 li>p,.k500Sub_5 li>p{font-size: 9px;line-height: 9.5px;}
+.k300Sub_5 li .pro5, .k700Sub_5 li .pro5,.k500sSub_5 li .pro5,.k500Sub_5 li .pro5{font-size: 11px;font-weight: bold;}
 
 
 .k300Sub_6{max-width: 557px;height: 290px; }

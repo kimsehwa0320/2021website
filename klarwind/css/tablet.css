@@ -1206,7 +1206,7 @@ border-bottom: 1px solid #ccc;
 .k500Sub_7 .pro_500_7 .smart_ul2 li:nth-child(2){margin-right: 0;}
 /* klarwind700 PRODUCT */
 .k700Sub_7{max-width: 992px;min-height:1100px;}
-.product7_700{background-image: url(images/product7.jpg);}
+.product7_700{background-image: url(../images/product7.jpg);}
 .k700Sub_7 ul{position: absolute;width:720px;left: 50%;transform: translateX(-50%);padding-top: 4%;}
 .k700Sub_7 li{float:left; width: 350px; height: auto;margin-right: 20px;box-sizing: border-box;padding-bottom: 3%;}
 .k700Sub_7 img{width: 100%;}

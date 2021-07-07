@@ -47,7 +47,6 @@
           anchors:["m1st","m2st","m3st","m4st","m5st","m6st"], //이동 위치 지정
           navigation:true,
           afterLoad:function(anchorslink,index){
-            console.log(anchorslink + "," + index);
             if(index == 1){
               $("#onView1st").addClass("move");
               $("#onView2st").addClass("move");
@@ -111,7 +110,6 @@
         e.preventDefault();
         // return false;
         var ahref = $(this).attr("href");
-        console.log(ahref);
         $("#glayLayer").show();
         $("#overLayer").show().html("<img src=\"" + ahref + "\">");
       });

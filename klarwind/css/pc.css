@@ -765,7 +765,7 @@ margin: 0 auto;
 .k500Sub_7 .pro_500_7 .smart_ul2 li:nth-child(2){margin-right: 0;}
 /* klarwind700 PRODUCT */
 .k700Sub_7{width: 100%;min-height:650px;}
-.product7_700{background-image: url(images/product7.jpg);}
+.product7_700{background-image: url(../images/product7.jpg);}
 .k700Sub_7 ul{position: absolute;width: 1920px;left: 50%;transform: translateX(-50%);padding-top: 4%;}
 .k700Sub_7 li{float:left; width: 25%; height: 600px;box-sizing: border-box;}
 
@@ -805,7 +805,7 @@ margin: 0 auto;
 
 
 .k300Sub_8{width: 100%;height: 1180px;margin-top: 65%;}
-.k700Sub_8{width: 100%;height: 1500px;margin-top: 19%;}
+.k700Sub_8{width: 100%;height: 1500px;margin-top: 21%;}
 .k500sSub_8{width: 100%;height: 1500px;margin-top: 5%;}
 .k300Sub_8 h1,.k700Sub_8 h1,.k500sSub_8 h1{padding-bottom: 1%;}
 .k300Sub_8 .product8{background-image: url(../images/product6.jpg);}

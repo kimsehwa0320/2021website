@@ -1374,7 +1374,7 @@ border-bottom: 1px solid #ccc;
 }
 .about_footer{
   position: absolute;left: 50%;transform: translateX(-50%);
-  width: 100%;top: 760%;
+  width: 100%;top: 730%;
 }
 .about_footer h6{
   position: absolute;left: 50%;transform: translateX(-50%);

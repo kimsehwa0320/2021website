@@ -413,8 +413,10 @@ nav#navTop #topMenu_2 img{width: 40px;}
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.4);
 }
 .ProductSub_banner .box img{
-  position: absolute;top: 47%;left: 50%;transform: translate(-50%,-50%);width: 80%;
+  position: absolute;top: 47%;left: 50%;transform: translate(-50%,-50%);
 }
+.ProductSub_banner .proimgbg{width: 95%;}
+.ProductSub_banner .proimgtop{width: 80%;}
 .ProductSub_banner h1{
   position: absolute;top: 0;right: 0;color: #52aff6;letter-spacing: -4px;
   font-size: 46px;padding-right: 3%;text-align: right;

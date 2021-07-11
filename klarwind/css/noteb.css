@@ -171,7 +171,7 @@ nav#navTop #topMenu_2 img{width: 40px;}
 #onView2st.move{bottom: 0;left: 28%;opacity: 1;}
 
 #onView3st{left:-100%;transition:0.5s;}
-#onView3st.move{left:3%;}
+#onView3st.move{left:2%;}
 #onView5st{right: -100%;transition:0.5s}
 #onView5st.move{right: 10%;}
 
@@ -201,7 +201,7 @@ nav#navTop #topMenu_2 img{width: 40px;}
 .section.page2 .page2_slide1 a{
   background: #52aff6; padding: 15px 20px;
   color:#fff;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-  transition: 0.3s;font-size: 14px;
+  transition: 0.3s;font-size: 18px;
 }
 .section.page2 .page2_slide1 a:hover{
   background: #fff;color:#52aff6;
@@ -236,7 +236,7 @@ nav#navTop #topMenu_2 img{width: 40px;}
 .it{font-style: italic;font-weight: bold;}
 .section.page3{width: 100%;padding: 0 5%;position: relative;left: 50%;transform: translateX(-50%);}
 .section.page3 .page3_t1{
-  position: absolute; font-size: 78px; font-weight: bold;
+  position: absolute; font-size: 62px; font-weight: bold;
   z-index: 10;text-align: right; letter-spacing: -2px;
   top: 50%;transform: translateY(-50%);
 }
@@ -418,8 +418,8 @@ nav#navTop #topMenu_2 img{width: 40px;}
 .ProductSub_banner .proimgbg{width: 85%;}
 .ProductSub_banner .proimgtop{width: 70%;}
 .ProductSub_banner h1{
-  position: absolute;top: 0;right: 0;color: #52aff6;letter-spacing: -4px;
-  font-size: 62px;padding-right: 3%;text-align: right;
+  position: absolute;top: 0;right: 0;color: #52aff6;letter-spacing: -3px;
+  font-size: 64px;padding-right: 3%;text-align: right;
   font-weight: bold;
 }
 .visualTxt1{

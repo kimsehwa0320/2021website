@@ -452,10 +452,10 @@ padding: 3% 0;
 font-size: 20px;
 border-bottom: 1px solid #ccc;
 }
-.accordionContent h4 { padding: 4% 0;font-size:24px; color:#626262;font-weight: 400;}
+.accordionContent h4 { padding: 4% 0;font-size:22px; color:#626262;font-weight: 400;}
 .accordionTxt li{padding-bottom: 2%;letter-spacing: -1px;}
 .accordionTxt li:last-child{padding-bottom: 0;}
-.accordionTxt li>span{font-size:21px;font-weight: bold;}
+.accordionTxt li>span{font-size:20px;font-weight: bold;}
 .accordionTxt h5{font-weight: 100;font-size: 22px;color:#626262;}
 
 
@@ -507,7 +507,7 @@ border-bottom: 1px solid #ccc;
 .subCategory .sB{width: 6px;}
 .subCategory .vI{color:#52aff6;}
 
-.subContent{padding-top: 23%;}
+.subContent{padding-top: 19%;}
 
 /* body - menu1st */
 .subContent .menu1st .imgbox,
@@ -525,7 +525,7 @@ border-bottom: 1px solid #ccc;
 .subContent .menu3st h3,
 .subContent .menu4st h3,
 .subContent .menu5st h3
-{font-size: 22px; font-weight: lighter;padding-bottom: 3%;}
+{font-size: 22px; font-weight: lighter;padding-bottom: 2%;}
 .w300{padding: 0 5% 7% 0;}
 .subContent .menu1st h1,
 .subContent .menu2st h1,
@@ -538,7 +538,7 @@ border-bottom: 1px solid #ccc;
 .subContent .menu3st h2,
 .subContent .menu4st h2,
 .subContent .menu5st h2
-{font-size: 42px; padding-top: 1%;padding-bottom: 4%;}
+{font-size: 38px; padding-top: 1%;padding-bottom: 4%;}
 .menu1st h4{font-size: 60px; margin-top: 2%;font-weight: bolder;}
 .menu1st p,
 .menu2st p,
@@ -567,7 +567,7 @@ border-bottom: 1px solid #ccc;
 .buttonAll a
 {
   background: #52aff6; color:#fff;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-  padding: 15px 20px; font-size: 26px;transition: 0.3s;
+  padding: 15px 20px; font-size: 20px;transition: 0.3s;
 }
 .menu1st a,
 .menu2st a,
@@ -587,7 +587,7 @@ border-bottom: 1px solid #ccc;
 .k700t2{font-size: 20px;padding-top: 2%;padding-bottom: 3%;line-height: 30px;letter-spacing: 0.5px;}
 
 /* SubContainer_2 */
-.item1_txt{padding-top: 7%;}
+.item1_txt{padding-top: 5.5%;}
 .k00img .product1,.product1_500,.product_700,.product_500s,
 .k300Sub_2 .product2,.product2_500,.product2_500s,.product2_700,
 .k300Sub_3 .product3,.product3_700,.product3_500s,.product3_500,
@@ -635,11 +635,10 @@ border-bottom: 1px solid #ccc;
 
 .k3002{
   position: absolute;width: 1360px;
-  margin-top: 112%;left: 50%;transform: translateX(-50%);
+  margin-top: 113%;left: 50%;transform: translateX(-50%);
   text-align: center;
 }
 .k300Sub_2{width: 100%;height: 1000px;}
-.k300Sub_2 h1{padding-bottom: 4%;}
 .k300Sub_2 .product2{background-image: url(../images/product1.jpg);}
 .k300Sub_2 .product2_500{background-image: url(../images/product2_500.jpg);}
 .k300Sub_2 .product2_500s{background-image: url(../images/product2_500s.jpg);}
@@ -743,7 +742,7 @@ border-bottom: 1px solid #ccc;
 .cg{width: 50%;height: 600px;}
 .cg img{width: 100%;height: 100%; object-fit:cover;}
 .k700Sub_6 .k700ul2 ul, .k300Sub2_6 .k700ul2 ul{display: flex;justify-content: center;align-items: center;}
-.k300Sub2_6 .k700ul2 h1{padding-top: 17%;}
+.k300Sub2_6 .k700ul2 h1{padding-top: 11%;}
 .k700Sub_6 .k700ul2 h1{padding-top: 10%;}
 .k700Sub_6 .k700ul2 h3, .k300Sub2_6 .k700ul2 h3{padding-bottom: 10%;}
 .k700Sub_6 .k700ul2 ul li, .k300Sub2_6 .k700ul2 ul li{float: left;width: 150px;padding-bottom: 5%;transition: 0.3s;}
@@ -840,7 +839,6 @@ border-bottom: 1px solid #ccc;
 
 .k300Sub_9{width: 100%;height: 1070px;}
 .k300Sub_9 img{width: 400px;height: 400px;}
-.k300Sub_9 h1{padding-bottom: 2%;}
 .p4{padding: 5% 0;}
 
 
@@ -874,7 +872,7 @@ border-bottom: 1px solid #ccc;
 .k300Sub_guide img{width: 100%;}
 .k300Sub_guide h1{padding-bottom: 1.5%;}
 .k300Sub_guide ul{position: absolute;width: 1360px;height: 900px;left: 50%;transform: translateX(-50%);}
-.guideTxt1{font-size: 18px;letter-spacing: 0.5px;padding-top: 58%;}
+.guideTxt1{font-size: 18px;letter-spacing: -0.5px;padding-top: 58%;}
 
 .chart {width: 100%;text-align: center;margin: 0 auto;}
 .chart span.title{
@@ -1571,4 +1569,3 @@ input[type=submit]:hover {
 .pb5{padding-bottom: 5%;}
 .pt5{padding-top: 5%;}
 .pt2{padding-top: 2%;}
-.mb2{margin-bottom: 2%;}

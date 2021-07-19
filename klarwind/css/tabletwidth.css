@@ -130,7 +130,7 @@ nav#navTop #topMenu_2 img{width: 40px;margin: 0 -50px;}
     position: absolute;
     top: 3%;
     overflow: hidden;
-    width: 600px;
+    width: 640px;
     right:5%;
     height: 150px;
 
@@ -168,9 +168,9 @@ strong {
     text-align: left;
     font-weight: bold;
 }
-.line{font-size:130px;height: 150px;}
-.line_2{font-size: 104px;height: 150px;padding-top: 15px;}
-.line_3{font-size: 82px;height: 150px;padding-top: 26px;}
+.line{font-size:140px;height: 150px;}
+.line_2{font-size: 114px;height: 150px;padding-top: 15px;}
+.line_3{font-size: 88px;height: 150px;padding-top: 26px;}
 
 .mainSlide img{display: block;margin: 0 auto;width: 90%;} /*사이 공백 없애고 사이즈 조정*/
 .mainSlide{

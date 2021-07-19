@@ -112,10 +112,64 @@ nav#navTop #topMenu_2 img{width: 40px;margin: 0 -50px;}
   position: relative;width: 100%;height: 100%;
   left: 50%;transform: translateX(-50%);
 }
-.section.page1 h1{
-  position: absolute;font-size: 98px;letter-spacing: -3px;top: 4%;text-align: center;
-  left: 50%;transform: translateX(-50%);width: 100%;
+
+.section.page1 .h1{
+  transform:translate(0, 0);
+  position: absolute;
+  text-align: center;
+  font-size: 52px;
+  top: 7%;
+  left: 7%;
+  letter-spacing: -3px;
+  font-weight: bold;
 }
+.h12{
+    position: absolute;
+    top: 3%;
+    overflow: hidden;
+    width: 470px;
+    right:7.5%;
+    height: 120px;
+
+}
+strong {
+    display: inline-block;
+    overflow: hidden;
+    height: 120px;
+    vertical-align: top;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.line{
+    animation: indexani 9s infinite;
+}
+@keyframes indexani{
+  0% {
+    margin-top: 0;
+}
+25% {
+    margin-top: -120px;
+}
+50% {
+    margin-top: -240px;
+}
+75% {
+    margin-top: -120px;
+}
+100% {
+    margin-top: 0;
+}
+
+}
+.line,.line_2,.line_3{
+    text-align: left;
+    font-weight: bold;
+}
+.line{font-size:106px;height: 120px;}
+.line_2{font-size: 84px;height: 120px;padding-top: 15px;}
+.line_3{font-size: 66px;height: 120px;padding-top: 26px;}
+
+
 .mainSlide img{display: block;margin: 0 auto;width: 85%;} /*사이 공백 없애고 사이즈 조정*/
 .mainSlide{
   height: 100%;

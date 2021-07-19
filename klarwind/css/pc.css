@@ -75,19 +75,64 @@ nav#navTop #topMenu_2 img{width: 40px;}
   position: relative;width: 100%;height: 100vh;
   left: 50%;transform: translateX(-50%);
 }
-.section.page1 h1{
+.section.page1 .h1{
+  transform: translate(0, 0);
   position: absolute;
   width: 50%;
     letter-spacing: -8px;
     left: 0;
-    line-height: 150px;
+    line-height: 70px;
     bottom: 7%;
-    font-size: 215px;
-    padding-left: 13px;
+    font-size: 100px;
+    padding-left: 23px;
+    font-weight: bold;
 
 }
-.h12{font-size: 134px;
-    padding-left: 10px;}
+.h12{
+    padding-left: 12px;
+    position: absolute;
+    bottom: 5%;
+    height: 150px;
+    overflow: hidden;
+    width: 960px;
+    letter-spacing: -4px;
+}
+strong {
+    display: inline-block;
+    overflow: hidden;
+    height: 150px;
+    vertical-align: top;
+    font-weight: bold;
+}
+.line{
+    animation: indexani 9s infinite;
+}
+@keyframes indexani{
+  0% {
+    margin-top: 0;
+}
+25% {
+    margin-top: -170px;
+}
+50% {
+    margin-top: -340px;
+}
+75% {
+    margin-top: -170px;
+}
+100% {
+    margin-top: 0;
+}
+
+}
+.line,.line_2,.line_3{
+    text-align: left;
+    font-weight: bold;
+    line-height: 160px;
+}
+.line{font-size: 200px;}
+.line_2{font-size: 170px;}
+.line_3{font-size: 130px;}
 
 .slideTxt{position: absolute;top: 37.5%;}
 .slideTxt p{

@@ -160,10 +160,11 @@ strong {
 .line,.line_2,.line_3{
     text-align: left;
     font-weight: bold;
+    line-height: 70px;
 }
 .line{font-size:54px;height: 80px;}
-.line_2{font-size: 43px;height: 80px;padding-top: 10px;}
-.line_3{font-size: 33px;height: 80px;padding-top: 15px;}
+.line_2{font-size: 43px;height: 80px;}
+.line_3{font-size: 43px;height: 80px;}
 
 
 

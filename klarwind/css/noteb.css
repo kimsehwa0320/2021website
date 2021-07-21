@@ -218,9 +218,9 @@ strong {
 #onView2st.move{bottom: 0;left: 28%;opacity: 1;}
 
 #onView3st{left:-100%;transition:0.5s;}
-#onView3st.move{left:2%;}
+#onView3st.move{left:3%;}
 #onView5st{right: -100%;transition:0.5s}
-#onView5st.move{right: 10%;}
+#onView5st.move{right: 5%;}
 
 #onView7st{opacity: 0;transition:1s}
 #onView7st.move{opacity: 1;}
@@ -300,7 +300,7 @@ strong {
   transform: translateY(-50%);left: 22%;
 }
 .section.page3 .page3_t2{
-  position: absolute;width: 32%;line-height: 30px;
+  position: absolute;width: 35%;line-height: 30px;
   top: 50%;transform: translateY(-50%);letter-spacing: -1px;
 }
 
@@ -404,9 +404,6 @@ strong {
 }
 
 .page6_column img {
-  margin-top: 10px;
-  vertical-align: middle;
-  width: 100%;
   transition: 0.3s;cursor: pointer;
 }
 

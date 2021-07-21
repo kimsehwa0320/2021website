@@ -192,7 +192,7 @@
 				g.appendChild(circle);
 				previewEl.appendChild(dummy);
 			}
-			
+
 			new GridFx(document.querySelector('.grid'), {
 				onInit : function(instance) {
 					createCircleOverlay(instance.previewEl);
@@ -207,7 +207,7 @@
 						win = {width: document.documentElement.clientWidth, height: window.innerHeight},
 						SVGCircleGroupEl = instance.previewEl.querySelector('svg > g'),
 						SVGCircleEl = SVGCircleGroupEl.querySelector('circle');
-						
+
 					SVGCircleEl.setAttributeNS(null, 'r', Math.sqrt(Math.pow(instance.previewEl.offsetWidth,2) + Math.pow(instance.previewEl.offsetHeight,2)));
 					// set the transform for the SVG g node. This will animate the circle overlay. The origin of the circle depends on the position of the clicked item.
 					if( gridImgOffset.left + gridImg.offsetWidth/2 < win.width/2 ) {

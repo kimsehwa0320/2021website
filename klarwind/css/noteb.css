@@ -670,15 +670,6 @@ strong {
 	color: transparent;
 }
 
-@media screen and (max-width: 40em) {
-	.description--preview h3 {
-		font-size: 0.5em;
-	}
-	.description--preview p,
-	.details {
-		display: none;
-	}
-}
 
 button {
   color: #9d9d9d;

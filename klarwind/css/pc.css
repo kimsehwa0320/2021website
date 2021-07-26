@@ -363,8 +363,10 @@ strong {
 }
 
 /* .section.page5 */
-.section.page6{min-width: 1701px;width: 100%;position: relative;left: 50%;transform: translateX(-50%);padding: 0 3%;}
-.section.page6 .container6{width: 100%;}
+.section.page6 .container6{
+  min-width: 1701px;width: 100%;padding: 2%;
+  position: relative;left: 50%;transform: translateX(-50%);
+}
 .grid {
 	position: relative;
 	margin: 0 auto;
@@ -389,7 +391,7 @@ strong {
 }
 
 .grid__item {
-	width: 25%;
+	width: 24%;
 	padding: 10px;
 }
 
@@ -433,12 +435,10 @@ strong {
 	pointer-events: none;
 }
 
-.preview button img{width: 30%;padding-top: 50%;}
-
 .preview::before {
 	content: '';
 	position: fixed;
-	top: 0;
+  top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
@@ -466,10 +466,12 @@ strong {
 
 .original {
 	position: relative;
+  object-fit:cover;
 	z-index: 120;
 	display: block;
-	object-fit: contain;
+	-webkit-transition: opacity 0.2s;
 	transition: opacity 0.2s;
+	-webkit-backface-visibility: hidden;
 }
 
 .preview--open .animate {
@@ -484,12 +486,16 @@ strong {
 	transition: transform 0.3s, opacity 0.2s;
 }
 
+.description {
+	color: #fff;
+}
+
 .js .description--grid {
 	display: none;
 }
 
 .description--preview {
-	font-size: 2.5em;
+	font-size: 2em;
 	position: absolute;
 	z-index: 140;
 	width: 100%;
@@ -529,6 +535,7 @@ strong {
 .description--preview h3 {
 	font-weight: normal;
 	margin: 0;
+  color:#000;
 }
 
 .description--preview p {
@@ -563,7 +570,7 @@ strong {
 	position: relative;
 	display: inline-block;
 	margin: 0 1em 0 0;
-	padding: 1.3em 0;
+	padding: 0.15em 0;
 	white-space: nowrap;
 	opacity: 0;
 	color: #9d9d9d;
@@ -608,6 +615,52 @@ strong {
 
 .details ul li:first-child {
 	font-weight: bold;
+	color: #909090;
+}
+
+.icon {
+	font-family: 'camera-icons';
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 1;
+	display: inline-block;
+	vertical-align: middle;
+	text-transform: none;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	speak: none;
+}
+
+.icon + span {
+	margin-left: 5px;
+	vertical-align: middle;
+}
+
+.icon-focal_length:before {
+	content: '\e600';
+}
+
+.icon-exposure_time:before {
+	content: '\e601';
+}
+
+.icon-iso:before {
+	content: '\e602';
+}
+
+.icon-camera:before {
+	content: '\e603';
+}
+
+.icon-aperture:before {
+	content: '\e604';
+}
+
+.details .icon {
+	margin-right: 5px;
+	color: #77d45b;
 }
 
 
@@ -657,6 +710,7 @@ strong {
 	height: 0;
 	color: transparent;
 }
+
 
 @media screen and (max-width: 40em) {
 	.description--preview h3 {

@@ -445,8 +445,6 @@ strong {
 	pointer-events: none;
 }
 
-.preview button img{width: 20%;}
-
 .preview::before {
 	content: '';
 	position: fixed;
@@ -480,11 +478,10 @@ strong {
 	position: relative;
 	z-index: 120;
 	display: block;
-	object-fit: contain;
 	-webkit-transition: opacity 0.2s;
 	transition: opacity 0.2s;
-	-webkit-backface-visibility: hidden;
 }
+
 
 .preview--open .animate {
 	/* open */
@@ -628,22 +625,15 @@ strong {
 /* Close button */
 
 .action {
-	font-size: 1.5em;
 	margin: 0;
 	padding: 0;
 	cursor: pointer;
 	vertical-align: top;
-	color: #6bd68a;
 	border: none;
 	background: none;
 }
 
-.action:hover,
-.action:focus {
-	color: #6bd68a;
-	outline: none;
-}
-
+.preview button img{width: 20%;}
 .action--close {
 	position: fixed;
 	z-index: 150;
@@ -682,7 +672,7 @@ strong {
 	}
 }
 
-button {
+.details button {
   color: #9d9d9d;
   border: 0;
   position: relative;
@@ -697,12 +687,12 @@ button {
   align-items: center;
   background-color: #fff;
 }
-button .text,
-button .icon-container {
+.details button .text,
+.details button .icon-container {
   position: relative;
   z-index: 2;
 }
-button .icon-container {
+.details button .icon-container {
   --icon-size: 25px;
   position: relative;
   width: var(--icon-size);
@@ -710,7 +700,7 @@ button .icon-container {
   margin-left: 15px;
   transition: transform 500ms ease;
 }
-button .icon-container .icon {
+.details button .icon-container .icon {
   position: absolute;
   left: 0;
   top: 0;
@@ -718,16 +708,16 @@ button .icon-container .icon {
   height: var(--icon-size);
   transition: transform 500ms ease, opacity 250ms ease;
 }
-button .icon-container .icon--left {
+.details button .icon-container .icon--left {
   transform: translateX(-100%);
   opacity: 0;
 }
-button .icon-container .icon svg {
+.details button .icon-container .icon svg {
   width: 100%;
   height: 100%;
   fill: #52aff6;
 }
-button::after {
+.details button::after {
   content: "";
   position: absolute;
   left: 0;
@@ -739,17 +729,17 @@ button::after {
   z-index: 1;
   transition: transform 500ms ease;
 }
-button:hover::after {
+.details button:hover::after {
   transform: translateX(65%);
 }
-button:hover .icon-container {
+.details button:hover .icon-container {
   transform: translateX(125%);
 }
-button:hover .icon-container .icon--left {
+.details button:hover .icon-container .icon--left {
   transform: translateX(0);
   opacity: 1;
 }
-button:hover .icon-container .icon--right {
+.details button:hover .icon-container .icon--right {
   transform: translateX(200%);
   opacity: 0;
 }

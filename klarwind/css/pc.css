@@ -92,7 +92,7 @@ nav#navTop #topMenu_2 img{width: 40px;}
     padding-left: 12px;
     position: absolute;
     bottom: 5%;
-    height: 150px;
+    height: 200px;
     overflow: hidden;
     width: 960px;
     letter-spacing: -4px;
@@ -100,39 +100,34 @@ nav#navTop #topMenu_2 img{width: 40px;}
 strong {
     display: inline-block;
     overflow: hidden;
-    height: 150px;
+    height: 200px;
     vertical-align: top;
     font-weight: bold;
 }
 .line{
-    animation: indexani 9s infinite;
-}
-@keyframes indexani{
-  0% {
-    margin-top: 0;
-}
-25% {
-    margin-top: -170px;
-}
-50% {
-    margin-top: -340px;
-}
-75% {
-    margin-top: -170px;
-}
-100% {
-    margin-top: 0;
+    animation: indexani 12s infinite;
 }
 
+
+@keyframes indexani {
+  0%{margin-top : 0;}
+  16%{margin-top : -200px;}
+  33%{margin-top : -400px;}
+  50%{margin-top : -600px;}
+  66%{margin-top : -400px;}
+  82%{margin-top : -200px;}
+  100%{margin-top : 0;}
 }
+
 .line,.line_2,.line_3{
     text-align: left;
     font-weight: bold;
-    line-height: 160px;
+    line-height: 200px;
 }
 .line{font-size: 200px;}
 .line_2{font-size: 170px;}
 .line_3{font-size: 174px;}
+.line_4{font-size: 200px;}
 
 .slideTxt{position: absolute;top: 37.5%;}
 .slideTxt p{

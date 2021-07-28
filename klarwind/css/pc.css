@@ -118,13 +118,13 @@ strong {
   82%{margin-top : -200px;}
   100%{margin-top : 0;}
 }
-@-ms-keyframes in {
+@keyframes in {
   0%{margin-top : 0;}
-  16%{margin-top : -200px;}
-  33%{margin-top : -400px;}
-  50%{margin-top : -600px;}
-  66%{margin-top : -400px;}
-  82%{margin-top : -200px;}
+  16%{margin-top : -400px;}
+  33%{margin-top : -800px;}
+  50%{margin-top : -1200px;}
+  66%{margin-top : -800px;}
+  82%{margin-top : -400px;}
   100%{margin-top : 0;}
 }
 

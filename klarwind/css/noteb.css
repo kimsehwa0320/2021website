@@ -107,6 +107,7 @@ strong {
 }
 .line{
     animation: indexani 12s infinite;
+    -ms-animation-play-state: paused;
 }
 @keyframes indexani {
   0%{margin-top : 0;}
@@ -117,15 +118,7 @@ strong {
   82%{margin-top : -156px;}
   100%{margin-top : 0;}
 }
-@-ms-keyframes in{
-  0%{margin-top : 0;}
-  16%{margin-top : -140px;}
-  33%{margin-top : -280px;}
-  50%{margin-top : -420px;}
-  66%{margin-top : -280px;}
-  82%{margin-top : -140px;}
-  100%{margin-top : 0;}
-}
+
 .line,.line_2,.line_3{
     text-align: left;
     font-weight: bold;
@@ -438,12 +431,6 @@ strong {
 
   .details button .icon-container{display: none;}
 
-  .line{
-      animation: in 12s infinite;
-  }
-  .line,.line_2,.line_3{
-      line-height: 140px;
-  }
 }
 
 .preview {

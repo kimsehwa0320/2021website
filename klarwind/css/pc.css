@@ -106,6 +106,7 @@ strong {
 }
 .line{
     animation: indexani 12s infinite;
+    -ms-animation-play-state: paused;
 }
 
 
@@ -118,15 +119,7 @@ strong {
   82%{margin-top : -200px;}
   100%{margin-top : 0;}
 }
-@keyframes in {
-  0%{margin-top : 0;}
-  16%{margin-top : -400px;}
-  33%{margin-top : -800px;}
-  50%{margin-top : -1200px;}
-  66%{margin-top : -800px;}
-  82%{margin-top : -400px;}
-  100%{margin-top : 0;}
-}
+
 
 .line,.line_2,.line_3{
     text-align: left;
@@ -435,8 +428,9 @@ strong {
   .details button .icon-container{display: none;}
   .section.page6 .container6{left: 48%;}
 
-  .line{animation: in 12s infinite;}
+  .line{animation: in 6s infinite;}
 }
+
 
 
 .preview {

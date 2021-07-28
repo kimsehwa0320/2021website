@@ -1929,7 +1929,7 @@ input[type=submit]:hover {
 }
 .scroll img{width: 70%;}
 .scroll{
-  position: absolute;left: 45.4%;top: 70%;transform: translate(-50%,-50%);
+  position: absolute;left: 45.3%;top: 70%;transform: translate(-50%,-50%);
   animation-name:xScroll;
   animation-duration:0.8s;
   animation-iteration-count:infinite;

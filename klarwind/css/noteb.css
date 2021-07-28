@@ -117,6 +117,15 @@ strong {
   82%{margin-top : -156px;}
   100%{margin-top : 0;}
 }
+@keyframes in{
+  0%{margin-top : 0;}
+  16%{margin-top : -156px;}
+  33%{margin-top : -312px;}
+  50%{margin-top : -468px;}
+  66%{margin-top : -312px;}
+  82%{margin-top : -156px;}
+  100%{margin-top : 0;}
+}
 .line,.line_2,.line_3{
     text-align: left;
     font-weight: bold;
@@ -380,7 +389,7 @@ strong {
 	top: 0;
 	left: 0;
 	pointer-events: none;
-	background: #252323 url(../img/loading.svg) no-repeat 50% 75px;
+	background: #252323 url(../images/loading.svg) no-repeat 50% 75px;
 	background-size: 60px auto;
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
@@ -428,6 +437,10 @@ strong {
   }
 
   .details button .icon-container{display: none;}
+
+  .line{
+      animation: in 12s infinite;
+  }
 
 }
 

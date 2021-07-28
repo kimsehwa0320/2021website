@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 html,body{ height: 100%;font-family: 'Noto Sans';}
 body{font-family: 'Noto Sans', sans-serif; min-width: 557px;max-width: 991px;height: 100%;}
 h1{font-family: 'Noto Sans', sans-serif; font-weight: 700;}
@@ -465,7 +464,7 @@ text-align: left;
 	top: 0;
 	left: 0;
 	pointer-events: none;
-	background: #252323 url(../img/loading.svg) no-repeat 50% 75px;
+	background: #252323 url(../images/loading.svg) no-repeat 50% 75px;
 	background-size: 60px auto;
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;

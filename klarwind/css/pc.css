@@ -118,6 +118,15 @@ strong {
   82%{margin-top : -200px;}
   100%{margin-top : 0;}
 }
+@-ms-keyframes in {
+  0%{margin-top : 0;}
+  16%{margin-top : -200px;}
+  33%{margin-top : -400px;}
+  50%{margin-top : -600px;}
+  66%{margin-top : -400px;}
+  82%{margin-top : -200px;}
+  100%{margin-top : 0;}
+}
 
 .line,.line_2,.line_3{
     text-align: left;
@@ -376,7 +385,7 @@ strong {
 	top: 0;
 	left: 0;
 	pointer-events: none;
-	background: #252323 url(../img/loading.svg) no-repeat 50% 75px;
+	background: #252323 url(../images/loading.svg) no-repeat 50% 75px;
 	background-size: 60px auto;
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
@@ -424,7 +433,9 @@ strong {
   }
 
   .details button .icon-container{display: none;}
+  .section.page6 .container6{left: 48%;}
 
+  .line{animation: in 12s infinite;}
 }
 
 

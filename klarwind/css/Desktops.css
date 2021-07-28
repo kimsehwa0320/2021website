@@ -117,7 +117,6 @@ strong {
   100%{margin-top : 0;}
 }
 
-
 .line,.line_2,.line_3{
     text-align: left;
     font-weight: bold;
@@ -416,6 +415,25 @@ strong {
 	max-width: 100%;
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
+  .original {
+    top: 8%;
+    transform: translateY(-50%);
+  }
+
+  .description--preview {
+  	margin-top: 10%;
+  }
+
+  .preview--image-loaded .action--close{
+  	margin-top: 10%;
+  }
+
+  .details button .icon-container{display: none;}
+
+}
+
+.details button:hover span{color:#52aff6;}
 .preview {
 	position: fixed;
 	z-index: 1000;

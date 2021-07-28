@@ -413,6 +413,24 @@ strong {
 	max-width: 100%;
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
+  .original {
+    top: 8%;
+    transform: translateY(-50%);
+  }
+
+  .description--preview {
+  	margin-top: 10%;
+  }
+
+  .preview--image-loaded .action--close{
+  	margin-top: 10%;
+  }
+
+  .details button .icon-container{display: none;}
+
+}
+
 .preview {
 	position: fixed;
 	z-index: 1000;
@@ -723,7 +741,7 @@ strong {
   transform: translateX(200%);
   opacity: 0;
 }
-
+.details button:hover span{color:#52aff6;}
 .page6_header {
   text-align: center;
   padding-bottom: 0.5%;

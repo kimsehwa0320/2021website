@@ -411,14 +411,20 @@ strong {
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
   .original {
-  	position: relative;
-    object-fit:cover;
-  	z-index: 120;
-  	display: block;
-  	-webkit-transition: opacity 0.2s;
-  	transition: opacity 0.2s;
-  	-webkit-backface-visibility: hidden;
+    top: 7%;
+    transform: translateY(-50%);
   }
+
+  .description--preview {
+  	margin-top: 8%;
+  }
+
+  .preview--image-loaded .action--close{
+  	margin-top: 8%;
+  }
+
+  .details button .icon-container{display: none;}
+
 }
 
 
@@ -792,7 +798,7 @@ strong {
   transform: translateX(200%);
   opacity: 0;
 }
-
+.details button:hover span{color:#52aff6;}
 .page6_header {
   text-align: center;
   padding-bottom: 0.5%;

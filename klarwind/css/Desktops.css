@@ -129,11 +129,11 @@ strong {
 .line,.line_2,.line_3{
     text-align: left;
     font-weight: bold;
-    line-height: 120px;
+    line-height: 108px;
 }
 .line,.line_4{font-size: 120px;}
-.line_2{font-size: 100px;}
-.line_3{font-size: 102px;}
+.line_2{font-size: 70px;}
+.line_3{font-size: 64px;}
 
 .slideTxt{position: absolute;top: 34%;}
 .slideTxt p{

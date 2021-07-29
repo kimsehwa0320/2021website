@@ -97,6 +97,7 @@ nav#navTop #topMenu_2 img{width: 40px;}
     overflow: hidden;
     width: 960px;
     letter-spacing: -4px;
+    text-align: left;
 }
 strong {
     display: inline-block;
@@ -122,11 +123,11 @@ strong {
 .line,.line_2,.line_3{
     text-align: left;
     font-weight: bold;
-    line-height: 156px;
+    line-height: 148px;
 }
 .line{font-size: 156px;}
-.line_2{font-size: 128px;}
-.line_3{font-size: 130px;}
+.line_2{font-size: 92px;}
+.line_3{font-size: 84px;}
 .line_4{font-size: 156px;}
 
 

@@ -145,32 +145,24 @@ strong {
 .line{
     animation: indexani 9s infinite;
 }
-@keyframes indexani{
-  0% {
-    margin-top: 0;
+@keyframes indexani {
+  0%{margin-top : 0;}
+  16%{margin-top : -130px;}
+  33%{margin-top : -260px;}
+  50%{margin-top : -390px;}
+  66%{margin-top : -260px;}
+  82%{margin-top : -130px;}
+  100%{margin-top : 0;}
 }
-25% {
-    margin-top: -130px;
-}
-50% {
-    margin-top: -260px;
-}
-75% {
-    margin-top: -130px;
-}
-100% {
-    margin-top: 0;
-}
-
-}
-.line,.line_2,.line_3{
+.line,.line_2,.line_3,.line_4{
     text-align: left;
     font-weight: bold;
-    line-height: 130px;
+    line-height: 135px;
 }
-.line{font-size:140px;height: 130px;}
-.line_2{font-size: 114px;height: 130px;}
-.line_3{font-size: 118px;height: 130px;}
+.line{font-size:140px;}
+.line_2{font-size: 80px;}
+.line_3{font-size: 70px;}
+.line_4{font-size: 140px;}
 
 .mainSlide img{display: block;margin: 0 auto;width: 90%;} /*사이 공백 없애고 사이즈 조정*/
 .mainSlide{

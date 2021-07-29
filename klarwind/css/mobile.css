@@ -123,7 +123,7 @@ nav#navTop #topMenu_2 img{width: 40px;margin: 0 -50px;}
     top: 7%;
     overflow: hidden;
     width: 240px;
-    right:5%;
+    right:4%;
     height: 80px;
 
 }
@@ -138,32 +138,25 @@ strong {
 .line{
     animation: indexani 9s infinite;
 }
-@keyframes indexani{
-  0% {
-    margin-top: 0;
+@keyframes indexani {
+  0%{margin-top : 0;}
+  16%{margin-top : -80px;}
+  33%{margin-top : -160px;}
+  50%{margin-top : -240px;}
+  66%{margin-top : -160px;}
+  82%{margin-top : -80px;}
+  100%{margin-top : 0;}
 }
-25% {
-    margin-top: -80px;
 }
-50% {
-    margin-top: -160px;
-}
-75% {
-    margin-top: -80px;
-}
-100% {
-    margin-top: 0;
-}
-
-}
-.line,.line_2,.line_3{
+.line,.line_2,.line_3,.line_4{
     text-align: left;
     font-weight: bold;
-    line-height: 70px;
+    line-height: 100px;
 }
 .line{font-size:54px;height: 80px;}
-.line_2{font-size: 43px;height: 80px;}
-.line_3{font-size: 43px;height: 80px;}
+.line_2{font-size: 30px;padding: 17px 0;}
+.line_3{font-size: 26px;padding: 20px 0;}
+.line_4{font-size: 54px;height: 80px;}
 
 
 

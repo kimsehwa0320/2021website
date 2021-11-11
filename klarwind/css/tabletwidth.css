@@ -1445,11 +1445,18 @@ border-bottom: 1px solid #ccc;
 .k00img .product1,.product1_500,.product_700,.product_500s,.product1_100,
 .k300Sub_2 .product2,.product2_500,.product2_500s,.product2_700,.product2_100,
 .k300Sub_3 .product3,.product3_700,.product3_500s,.product3_500,.product3_100,
-.k300Sub_4 .product4,.product5_300,
+.k300Sub_4 .product4,
 .k300Sub_6 .product6,.product700_bg,.product6_500s,.product6_500,
 .k300Sub_7 .product7,.product7_700,
 .k300Sub_8 .product8,.product8_500{
   padding-top: 2%;width: 100vw;height: 500px;
+  position: absolute;left: 50%;transform: translateX(-50%);
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.product5_300{
+  padding-top: 2%;width: 100vw;height: 600px;
   position: absolute;left: 50%;transform: translateX(-50%);
   background-position: center;
   -webkit-background-size: cover;
@@ -1593,7 +1600,7 @@ border-bottom: 1px solid #ccc;
 .k700Sub_5 .product5_700{background-image: url(../images/product5_700.jpg);}
 .k500sSub_5 .product5_500s{background-image: url(../images/product5_500s.jpg);}
 .k500Sub_5 .product5_500{background-image: url(../images/product5_500.jpg);}
-.k300Sub_5 h1, .k700Sub_5 h1{padding-top: 7%;position: absolute;left: 50%;transform: translateX(-50%);}
+.k300Sub_5 h1, .k700Sub_5 h1{padding-top: 3%;position: absolute;left: 50%;transform: translateX(-50%);}
 .k500sSub_5 h1{padding-top: 15%;position: absolute;}
 .k500Sub_5 h1{padding-bottom: 6%;padding-right: -3%;}
 .k300Sub_5 ul,.k700Sub_5 ul{
@@ -1674,8 +1681,8 @@ border-bottom: 1px solid #ccc;
 .k300Sub_7 h1,.k500Sub_7 h1{padding-bottom: 1.5%;}
 
 .k300Sub_7 .pro_7 .smart img,.k500Sub_7 .pro_500_7 .smart img{position: absolute;top: 20%;}
-.k300Sub_7 .pro_7 .smart img{right: 23%;width: 3.5%;}
-.k500Sub_7 .pro_500_7 .smart img{left: 23%;width: 4%;}
+.k300Sub_7 .pro_7 .smart img{right: 23%;width: 3%;}
+.k500Sub_7 .pro_500_7 .smart img{left: 24%;width: 3%;}
 .k300Sub_7 .pro_7 .smart .smart_ul{width: 50%;position: absolute;right: 0;top: 20%;}
 .k500Sub_7 .pro_500_7 .smart .smart_ul{width: 50%;position: absolute;left: 0;top: 20%;}
 .k300Sub_7 .pro_7 .smart .smart_ul1,.k300Sub_7 .pro_7 .smart .smart_ul2,

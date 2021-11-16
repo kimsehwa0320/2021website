@@ -814,28 +814,13 @@ strong {
   background: #f8f9fa; left: 50%;transform: translateX(-50%);
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.4);
 }
-
-.ProductSub_banner .box_sub a{
-  position: absolute;right: 2%;
-  top: 50%;transform: translateY(-50%);
-  background: #52aff6;
-  color: #fff;
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 40%);
-  padding: 10px 17px;
-  font-size: 18px;
-  transition: 0.3s;
-  font-weight: bold;
-}
-.ProductSub_banner .box_sub a:hover{
-  color:#52aff6;background: #fff;border: 1.5px solid #52aff6;
-}
 .ProductSub_banner .box img{
-  position: absolute;top: 47%;left: 50%;transform: translate(-50%,-50%);
+  position: absolute;top: 41%;left: 50%;transform: translate(-50%,-50%);
 }
 .ProductSub_banner .proimgbg{width: 95%;}
-.ProductSub_banner .proimgtop{width: 80%;}
+.ProductSub_banner .proimgtop{width: 100%;}
 
-.ProductSub_banner h1{
+/* .ProductSub_banner h1{
   position: absolute;top: 0;left:0;color: #52aff6;letter-spacing: -1.5px;
   font-size: 52px;padding-left: 5%;
   font-weight: bold;line-height: 57px;padding-top: 2%;
@@ -846,25 +831,28 @@ strong {
   bottom: 5%;
 }
 .visualTxt1 h2{letter-spacing: -0.5px;font-size: 18px;}
-.visualTxt1 p{font-size: 12px;width: 300px;}
+.visualTxt1 p{font-size: 12px;width: 300px;} */
 
-
-/* .ProductSub_banner h1{
+.ProductSub_banner .box_2{
+  position: absolute;width: 100%;height: 50%;bottom: 0;
+  background: #52aff6; left: 50%;transform: translateX(-50%);
+}
+.ProductSub_banner h1{
   position: absolute;text-align:center;color: #52aff6;letter-spacing: -1.5px;
   font-size: 20px;font-weight: bold;left: 50%; transform:translateX(-50%); padding-top: 4%;
 }
 .visualTxt1{
   position: absolute; text-align:right;
-  color:#fff; right: 0;
+  color:#f8f9fa; right: 0;
   bottom: 4%;right: 5%;
 }
 .visualTxt2{
-  position: absolute; text-align:left;line-height: 40px;
-  color:#fff; left: 0;font-size: 36px;
+  position: absolute; text-align:left;line-height: 42px;
+  color:#f8f9fa; left: 0;font-size: 40px;
   bottom: 4%;left: 5%;
 }
-.visualTxt1 h2{letter-spacing: -0.5px;font-size: 14px;padding-bottom: 2%;}
-.visualTxt1 p{font-size: 12px;} */
+.visualTxt1 h2{letter-spacing: -0.5px;font-size: 14px;padding-bottom: 4%;}
+.visualTxt1 p{font-size: 12px;}
 
 /* accordionMenu */
 .accordion_container{margin-left: 39.3%;}

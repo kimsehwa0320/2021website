@@ -793,21 +793,25 @@ strong {
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.4);
 }
 .ProductSub_banner .box img{
-  position: absolute;top: 47%;left: 50%;transform: translate(-50%,-50%);
+  position: absolute;top: 44%;left: 50%;transform: translate(-50%,-50%);
 }
 .ProductSub_banner .proimgbg{width: 85%;}
-.ProductSub_banner .proimgtop{width: 70%;}
-.ProductSub_banner h1{
-  position: absolute;top: 0;right: 0;color: #52aff6;letter-spacing: -3px;
-  font-size: 64px;padding-right: 3%;text-align: right;
-  font-weight: bold;
+.ProductSub_banner .proimgtop{width: 95%;}
+.ProductSub_banner .box_2{
+  position: absolute;width: 100%;height: 50%;bottom: 0;
+  background: #52aff6; left: 50%;transform: translateX(-50%);
 }
 .visualTxt1{
-  position: absolute; text-align:center;
-  color:#000; left: 50%; transform:translateX(-50%);
-  bottom: 5.5%;
+  position: absolute; text-align:right;
+  color:#f8f9fa; right: 0;
+  bottom: 4%;right: 5%;
 }
-.visualTxt1 h2{letter-spacing: -0.5px;font-size: 20px;}
+.visualTxt2{
+  position: absolute; text-align:left;line-height: 50px;
+  color:#f8f9fa; left: 0;font-size: 44px;
+  bottom: 4%;left: 5%;
+}
+.visualTxt1 h2{letter-spacing: -0.5px;font-size: 16px;padding-bottom: 4%;}
 .visualTxt1 p{font-size: 14px;}
 
 /* accordionMenu */

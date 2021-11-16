@@ -855,9 +855,10 @@ strong {
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.4);
 }
 .ProductSub_banner .box img{
-  position: absolute;top: 45%;left: 50%;transform: translate(-50%,-50%);
+  position: absolute;top: 42%;left: 50%;transform: translate(-50%,-50%);
 }
-.ProductSub_banner h1{
+.ProductSub_banner .proimgtop{width: 100%;}
+/* .ProductSub_banner h1{
   position: absolute;top: 0;right: 0;color: #52aff6;letter-spacing: -4px;
   font-size: 65px;padding-right: 4%;padding-top: 3%;text-align: right;
   font-weight: bold;
@@ -867,7 +868,23 @@ strong {
   color:#000; left: 50%; transform:translateX(-50%);
   bottom: 7%;
 }
-.visualTxt1 h2{letter-spacing: -0.5px;}
+.visualTxt1 h2{letter-spacing: -0.5px;} */
+.ProductSub_banner .box_2{
+  position: absolute;width: 100%;height: 50%;bottom: 0;
+  background: #52aff6; left: 50%;transform: translateX(-50%);
+}
+.visualTxt1{
+  position: absolute; text-align:right;
+  color:#f8f9fa; right: 0;
+  bottom: 4%;right: 5%;
+}
+.visualTxt2{
+  position: absolute; text-align:left;line-height: 62px;
+  color:#f8f9fa; left: 0;font-size: 58px;
+  bottom: 4%;left: 5%;
+}
+.visualTxt1 h2{letter-spacing: -0.5px;font-size: 22px;padding-bottom: 4%;}
+.visualTxt1 p{font-size: 18px;}
 
 /* accordionMenu */
 .accordion_container{margin-left: 39.3%;}

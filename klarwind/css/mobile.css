@@ -1880,7 +1880,7 @@ input[type=submit]:hover {
   background: #007cd3;
 }
 .bx-wrapper .bx-pager.bx-default-pager a{
-  background: #000; width: 20px; height: 20px;border-radius: 10px; margin:0 7px;
+  background: #000; width: 15px; height: 15px;border-radius: 10px; margin:0 7px;
 }
 
 
